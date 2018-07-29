@@ -43,6 +43,7 @@ public class Main extends Application {
     private IntegerProperty currentMedicalTreatmentMode = new SimpleIntegerProperty();
     private IntegerProperty currentIntegratedQueryMode = new SimpleIntegerProperty();
     private MedicalInformation medicalInformation;
+    private PublicServiceTackle publicServiceTackle;
 
 
     public Main() {
@@ -353,7 +354,6 @@ public class Main extends Application {
         doPane = stackPane;
 
         if (currentMedicalMode.get() != 0) {
-
             if (currentMedicalMode.get() == 1) {
                 medicalInformation.layoutInitialPane();
                 doPane = medicalInformation.getInitialPane();
@@ -473,9 +473,31 @@ public class Main extends Application {
 
         }
 
+
+
         if (currentPublicServiceTackleMode.get() != 0) {
             if (currentPublicServiceTackleMode.get() == 1) {
+                publicServiceTackle.layoutInitialPane();
+                doPane = publicServiceTackle.getInitialPane();
 
+                if (publicServiceTackle.getWhichChoice() != 0) {
+                    publicServiceTackle.layoutPublicServiceTacklePane(publicServiceTackle.getWhichChoice());
+                    doPane = publicServiceTackle.getPublicServiceTacklePane();
+                }
+
+                if (publicServiceTackle.getIsSuccessful() != 0) {
+                    if (publicServiceTackle.getIsSuccessful() != 5) {
+                        currentPublicServiceTackleMode.set(0);
+                    }
+                    publicServiceTackle.layoutPublicServiceTackleSuccessfulPane(publicServiceTackle.getIsSuccessful());
+                    doPane = publicServiceTackle.getSuccessPane();
+                }
+
+                if (publicServiceTackle.getIsNotFound() == 1) {
+                    currentPublicServiceTackleMode.set(0);
+                    publicServiceTackle.setIsNotFound(0);
+                    publicServiceTackle.setWhichChoice(0);
+                }
             }
         }
 
@@ -512,7 +534,13 @@ public class Main extends Application {
     }
 
     public void listenPublicServiceTackle() {
-
+        (publicServiceTackle.isChangedProperty()).addListener(new InvalidationListener() {
+            @Override
+            public void invalidated(javafx.beans.Observable observable) {
+                layoutDoPane();
+                layoutMainPane();
+            }
+        });
     }
 
     public void listenMedicalInsuranceCenterReimbursement() {
@@ -581,6 +609,8 @@ public class Main extends Application {
         widthProperty = primaryStage.widthProperty();
         heightProperty = primaryStage.heightProperty();
         medicalInformation = new MedicalInformation(widthProperty, heightProperty);
+        publicServiceTackle = new PublicServiceTackle(widthProperty, heightProperty);
+
         currentMode.set(0);
         currentMedicalMode.set(0);
         currentPublicServiceTackleMode.set(0);

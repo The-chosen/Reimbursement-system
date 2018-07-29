@@ -1,12 +1,13 @@
 package sample;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Person {
-    private int personId;
+public class Person implements Serializable {
+    private String personId;
     private String personName;
     private String gender;
-    private String birthday;
+    private birthday birthday;
     private String documentCategory;
     private String documentIdentity;
     private String nationality;
@@ -20,8 +21,8 @@ public class Person {
 
     }
 
-    public Person(int personId, String personName, String gender,
-                  String birthday, String documentCategory, String documentIdentity,
+    public Person(String personId, String personName, String gender,
+                  birthday birthday, String documentCategory, String documentIdentity,
                   String nationality, String livePlace, String phoneNumber,
                   double totalPrice, ArrayList<visitInfo> visitInfoLs, String designatedHospitalNumber) {
         this.personId = personId;
@@ -38,11 +39,11 @@ public class Person {
         this.designatedHospitalNumber = designatedHospitalNumber;
     }
 
-    public int getPersonId() {
+    public String getPersonId() {
         return personId;
     }
 
-    public void setPersonId(int personId) {
+    public void setPersonId(String personId) {
         this.personId = personId;
     }
 
@@ -62,11 +63,11 @@ public class Person {
         this.gender = gender;
     }
 
-    public String getBirthday() {
+    public birthday getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(String birthday) {
+    public void setBirthday(birthday birthday) {
         this.birthday = birthday;
     }
 
