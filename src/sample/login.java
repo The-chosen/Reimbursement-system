@@ -94,7 +94,7 @@ public class login extends Application {
             String password = passwordField.getText();
             boolean isRight = isRight(name, password);
             if (isRight) {
-            primaryStage.hide();
+            primaryStage.close();
             Main main = new Main();
             main.start(new Stage());
             }

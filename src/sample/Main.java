@@ -1,8 +1,11 @@
 package sample;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.beans.InvalidationListener;
 import javafx.beans.binding.DoubleBinding;
+import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.ReadOnlyDoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -19,22 +22,27 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 
 import java.util.Observable;
 
 public class Main extends Application {
-    Pane navigationPane;
-    Pane sidebarPane;
-    Pane topPane;
-    Pane doPane;
-    Pane pane;
-    ReadOnlyDoubleProperty widthProperty;
-    ReadOnlyDoubleProperty heightProperty;
-    DoubleBinding sideBarProperty;
-    IntegerProperty currentMode = new SimpleIntegerProperty();
-    IntegerProperty currentMedicalMode = new SimpleIntegerProperty();
-    IntegerProperty currentMedicalTreatmentMode = new SimpleIntegerProperty();
+    private Pane navigationPane;
+    private Pane sidebarPane;
+    private Pane topPane;
+    private Pane doPane;
+    private Pane pane;
+    private ReadOnlyDoubleProperty widthProperty;
+    private ReadOnlyDoubleProperty heightProperty;
+    private DoubleBinding sideBarProperty;
+    private IntegerProperty currentMode = new SimpleIntegerProperty();
+    private IntegerProperty currentMedicalMode = new SimpleIntegerProperty();
+    private IntegerProperty currentPublicServiceTackleMode = new SimpleIntegerProperty();
+    private IntegerProperty currentMedicalInsuranceCenterReimbursementMode = new SimpleIntegerProperty();
+    private IntegerProperty currentMedicalTreatmentMode = new SimpleIntegerProperty();
+    private IntegerProperty currentIntegratedQueryMode = new SimpleIntegerProperty();
+    private MedicalInformation medicalInformation;
 
 
     public Main() {
@@ -43,6 +51,7 @@ public class Main extends Application {
         topPane = new Pane();
         doPane = new Pane();
         pane = new VBox();
+
     }
 
     public void layoutMainPane() {
@@ -143,15 +152,21 @@ public class Main extends Application {
             sp4.setId("ssp1");
             StackPane sp5 = new StackPane();
             sp5.setId("ssp1");
+            ImageView imageView = new ImageView("img/logo.png");
+            imageView.fitHeightProperty().bind(heightProperty.divide(7));
+            imageView.fitWidthProperty().bind(widthProperty.divide(9.2));
             StackPane sp = new StackPane();
-            sp.setId("ssp");
+            sp.setId("ssp1");
+            sp.getChildren().add(imageView);
+            sp.setAlignment(Pos.BOTTOM_CENTER);
+            sp.prefHeightProperty().bind(heightProperty);
+            sp.prefWidthProperty().bind(widthProperty.divide(5.35));
 
             Text text1 = new Text("药物");
             Text text2 = new Text("诊疗");
             Text text3 = new Text("服务设施");
             Text text4 = new Text("定点医疗机构");
             Text text5 = new Text("医疗待遇计算参数");
-            Text text = new Text("");
             text1.setFont(new Font(16));
             text2.setFont(new Font(16));
             text3.setFont(new Font(16));
@@ -163,11 +178,7 @@ public class Main extends Application {
             sp3.getChildren().add(text3);
             sp4.getChildren().add(text4);
             sp5.getChildren().add(text5);
-            sp.getChildren().add(text);
 
-
-            sp.prefHeightProperty().bind(heightProperty);
-            sp.prefWidthProperty().bind(widthProperty.divide(5.4));
 
             vBox.getChildren().addAll(sp1, sp2, sp3, sp4, sp5, sp);
 
@@ -195,37 +206,51 @@ public class Main extends Application {
         else if (currentMode.get() == 2) {
             StackPane sp1 = new StackPane();
             sp1.setId("ssp1");
+            ImageView imageView = new ImageView("img/logo.png");
+            imageView.fitHeightProperty().bind(heightProperty.divide(7));
+            imageView.fitWidthProperty().bind(widthProperty.divide(9.2));
             StackPane sp = new StackPane();
-            sp.setId("ssp");
+            sp.setId("ssp1");
+            sp.getChildren().add(imageView);
+            sp.setAlignment(Pos.BOTTOM_CENTER);
+            sp.prefHeightProperty().bind(heightProperty);
+            sp.prefWidthProperty().bind(widthProperty.divide(5.35));
 
             Text text1 = new Text("参保人信息");
             text1.setFont(new Font(16));
-            Text text = new Text("");
 
             sp1.getChildren().add(text1);
-            sp.getChildren().add(text);
-            sp.prefHeightProperty().bind(heightProperty);
-            sp.prefWidthProperty().bind(widthProperty.divide(5.4));
 
             vBox.getChildren().addAll(sp1, sp);
+
+            sp1.setOnMouseClicked(e -> {
+                currentPublicServiceTackleMode.set(1);
+            });
         }
 
         else if (currentMode.get() == 3) {
             StackPane sp1 = new StackPane();
             sp1.setId("ssp1");
+            ImageView imageView = new ImageView("img/logo.png");
+            imageView.fitHeightProperty().bind(heightProperty.divide(7));
+            imageView.fitWidthProperty().bind(widthProperty.divide(9.2));
             StackPane sp = new StackPane();
-            sp.setId("ssp");
+            sp.setId("ssp1");
+            sp.getChildren().add(imageView);
+            sp.setAlignment(Pos.BOTTOM_CENTER);
+            sp.prefHeightProperty().bind(heightProperty);
+            sp.prefWidthProperty().bind(widthProperty.divide(5.35));
 
             Text text1 = new Text("医保中心报销");
             text1.setFont(new Font(16));
-            Text text = new Text("");
 
             sp1.getChildren().add(text1);
-            sp.getChildren().add(text);
-            sp.prefHeightProperty().bind(heightProperty);
-            sp.prefWidthProperty().bind(widthProperty.divide(5.4));
 
             vBox.getChildren().addAll(sp1, sp);
+
+            sp1.setOnMouseClicked(e -> {
+                currentMedicalInsuranceCenterReimbursementMode.set(1);
+            });
         }
 
         else if (currentMode.get() == 4) {
@@ -233,20 +258,24 @@ public class Main extends Application {
             sp1.setId("ssp1");
             StackPane sp2 = new StackPane();
             sp2.setId("ssp1");
+            ImageView imageView = new ImageView("img/logo.png");
+            imageView.fitHeightProperty().bind(heightProperty.divide(7));
+            imageView.fitWidthProperty().bind(widthProperty.divide(9.2));
             StackPane sp = new StackPane();
-            sp.setId("ssp");
+            sp.setId("ssp1");
+            sp.getChildren().add(imageView);
+            sp.setAlignment(Pos.BOTTOM_CENTER);
+            sp.prefHeightProperty().bind(heightProperty);
+            sp.prefWidthProperty().bind(widthProperty.divide(5.35));
 
             Text text1 = new Text("特检特治");
             text1.setFont(new Font(16));
             Text text2 = new Text("不同医保医院");
             text2.setFont(new Font(16));
-            Text text = new Text("");
+
 
             sp1.getChildren().add(text1);
             sp2.getChildren().add(text2);
-            sp.getChildren().add(text);
-            sp.prefHeightProperty().bind(heightProperty);
-            sp.prefWidthProperty().bind(widthProperty.divide(5.4));
 
             vBox.getChildren().addAll(sp1, sp2, sp);
 
@@ -262,19 +291,27 @@ public class Main extends Application {
         else if (currentMode.get() == 5) {
             StackPane sp1 = new StackPane();
             sp1.setId("ssp1");
+            ImageView imageView = new ImageView("img/logo.png");
+            imageView.fitHeightProperty().bind(heightProperty.divide(7));
+            imageView.fitWidthProperty().bind(widthProperty.divide(9.2));
             StackPane sp = new StackPane();
-            sp.setId("ssp");
+            sp.setId("ssp1");
+            sp.getChildren().add(imageView);
+            sp.setAlignment(Pos.BOTTOM_CENTER);
+            sp.prefHeightProperty().bind(heightProperty);
+            sp.prefWidthProperty().bind(widthProperty.divide(5.35));
 
             Text text1 = new Text("综合查询");
             text1.setFont(new Font(16));
-            Text text = new Text("");
+
 
             sp1.getChildren().add(text1);
-            sp.getChildren().add(text);
-            sp.prefHeightProperty().bind(heightProperty);
-            sp.prefWidthProperty().bind(widthProperty.divide(5.4));
 
             vBox.getChildren().addAll(sp1, sp);
+
+            sp1.setOnMouseClicked(e -> {
+                currentIntegratedQueryMode.set(1);
+            });
         }
 
         else {
@@ -295,11 +332,11 @@ public class Main extends Application {
     }
 
     public void layoutTopPane() {
-        Text text = new Text("医疗保险中心报销系统");
-        text.setFont(new Font("微软雅黑", 30));
-        text.setStroke(Color.WHITE);
+        ImageView imageView = new ImageView("img/title.png");
+        imageView.fitHeightProperty().bind(heightProperty.divide(9));
+        imageView.fitWidthProperty().bind(widthProperty.divide(1.8));
         StackPane sp = new StackPane();
-        sp.getChildren().add(text);
+        sp.getChildren().add(imageView);
         sp.setId("topPaneStackPane");
         sp.setAlignment(Pos.BOTTOM_LEFT);
         topPane = sp;
@@ -317,16 +354,161 @@ public class Main extends Application {
 
         if (currentMedicalMode.get() != 0) {
 
+            if (currentMedicalMode.get() == 1) {
+                medicalInformation.layoutInitialPane();
+                doPane = medicalInformation.getInitialPane();
+
+                if (medicalInformation.getWhichChoice() != 0) {
+                    medicalInformation.layoutMedicinePane(medicalInformation.getWhichChoice());
+                    doPane = medicalInformation.getMedicinePane();
+                }
+
+                if (medicalInformation.getIsSuccessful() != 0) {
+                    if (medicalInformation.getIsSuccessful() != 5) {
+                        currentMedicalMode.set(0);
+                    }
+                    medicalInformation.layoutMedicineSuccessfulPane(medicalInformation.getIsSuccessful());
+                    doPane = medicalInformation.getSuccessPane();
+                }
+
+                if (medicalInformation.getIsNotFound() == 1) {
+                    currentMedicalMode.set(0);
+                    medicalInformation.setIsNotFound(0);
+                    medicalInformation.setWhichChoice(0);
+                }
+            }
+            else if (currentMedicalMode.get() == 2) {
+                medicalInformation.layoutInitialPane();
+                doPane = medicalInformation.getInitialPane();
+
+                if (medicalInformation.getWhichChoice() != 0) {
+                    medicalInformation.layoutTreatmentPane(medicalInformation.getWhichChoice());
+                    doPane = medicalInformation.getTreatmentPane();
+                }
+
+                if (medicalInformation.getIsSuccessful() != 0) {
+                    if (medicalInformation.getIsSuccessful() != 5) {
+                        currentMedicalMode.set(0);
+                    }
+                    medicalInformation.layoutTreatmentSuccessfulPane(medicalInformation.getIsSuccessful());
+                    doPane = medicalInformation.getSuccessPane();
+                }
+                if (medicalInformation.getIsNotFound() == 1) {
+                    currentMedicalMode.set(0);
+                    medicalInformation.setIsNotFound(0);
+                    medicalInformation.setWhichChoice(0);
+                }
+
+            }
+            else if (currentMedicalMode.get() == 3) {
+                medicalInformation.layoutInitialPane();
+                doPane = medicalInformation.getInitialPane();
+
+                if (medicalInformation.getWhichChoice() != 0) {
+                    medicalInformation.layoutServiceFacilityPane(medicalInformation.getWhichChoice());
+                    doPane = medicalInformation.getServiceFacilityPane();
+                }
+
+                if (medicalInformation.getIsSuccessful() != 0) {
+                    if (medicalInformation.getIsSuccessful() != 5) {
+                        currentMedicalMode.set(0);
+                    }
+                    medicalInformation.layoutServiceFacilitySuccessfulPane(medicalInformation.getIsSuccessful());
+                    doPane = medicalInformation.getSuccessPane();
+                }
+                if (medicalInformation.getIsNotFound() == 1) {
+                    currentMedicalMode.set(0);
+                    medicalInformation.setIsNotFound(0);
+                    medicalInformation.setWhichChoice(0);
+                }
+            }
+
+            else if (currentMedicalMode.get() == 4) {
+                medicalInformation.layoutInitialPane();
+                doPane = medicalInformation.getInitialPane();
+
+                if (medicalInformation.getWhichChoice() != 0) {
+                    medicalInformation.layoutFixedMedicalInstitutionPane(medicalInformation.getWhichChoice());
+                    doPane = medicalInformation.getFixedMedicalInstitutionPane();
+                }
+
+                if (medicalInformation.getIsSuccessful() != 0) {
+                    if (medicalInformation.getIsSuccessful() != 5) {
+                        currentMedicalMode.set(0);
+                    }
+                    medicalInformation.layoutFixedMedicalInstitutionSuccessfulPane(medicalInformation.getIsSuccessful());
+                    doPane = medicalInformation.getSuccessPane();
+                }
+                if (medicalInformation.getIsNotFound() == 1) {
+                    currentMedicalMode.set(0);
+                    medicalInformation.setIsNotFound(0);
+                    medicalInformation.setWhichChoice(0);
+                }
+            }
+            else if (currentMedicalMode.get() == 5) {
+                medicalInformation.layoutInitialPane();
+                doPane = medicalInformation.getInitialPane();
+
+                if (medicalInformation.getWhichChoice() != 0) {
+                    medicalInformation.layoutMedicalTreatmentCalculationParameterPane(medicalInformation.getWhichChoice());
+                    doPane = medicalInformation.getMedicalTreatmentCalculationParameterPane();
+                }
+
+                if (medicalInformation.getIsSuccessful() != 0) {
+                    if (medicalInformation.getIsSuccessful() != 5) {
+                        currentMedicalMode.set(0);
+                    }
+                    medicalInformation.layoutMedicalTreatmentCalculationParameterSuccessfulPane(medicalInformation.getIsSuccessful());
+                    doPane = medicalInformation.getSuccessPane();
+                }
+
+                if (medicalInformation.getIsNotFound() == 1) {
+                    currentMedicalMode.set(0);
+                    medicalInformation.setIsNotFound(0);
+                    medicalInformation.setWhichChoice(0);
+                }
+            }
+
+
+
         }
 
+        if (currentPublicServiceTackleMode.get() != 0) {
+            if (currentPublicServiceTackleMode.get() == 1) {
+
+            }
+        }
+
+        if (currentMedicalInsuranceCenterReimbursementMode.get() != 0) {
+            if (currentMedicalInsuranceCenterReimbursementMode.get() == 1) {
+
+            }
+        }
 
         if (currentMedicalTreatmentMode.get() != 0) {
+            if (currentMedicalTreatmentMode.get() == 1) {
 
+            }
+            else if (currentMedicalTreatmentMode.get() == 2) {
+
+            }
+        }
+
+        if (currentIntegratedQueryMode.get() != 0) {
+            if (currentIntegratedQueryMode.get() == 1) {
+
+            }
         }
     }
 
     public void listenMedicalInformation() {
-
+        (medicalInformation.isChangedProperty()).addListener(new InvalidationListener() {
+            @Override
+            public void invalidated(javafx.beans.Observable observable) {
+                layoutDoPane();
+                layoutMainPane();
+            }
+        });
     }
 
     public void listenPublicServiceTackle() {
@@ -398,31 +580,64 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         widthProperty = primaryStage.widthProperty();
         heightProperty = primaryStage.heightProperty();
+        medicalInformation = new MedicalInformation(widthProperty, heightProperty);
         currentMode.set(0);
         currentMedicalMode.set(0);
+        currentPublicServiceTackleMode.set(0);
+        currentMedicalInsuranceCenterReimbursementMode.set(0);
         currentMedicalTreatmentMode.set(0);
+        currentIntegratedQueryMode.set(0);
         layoutTopPane();
         layoutNavigationPane();
         layoutSidebarPane();
         layoutDoPane();
         layoutMainPane();
 
-
         currentMode.addListener(new InvalidationListener() {
             @Override
             public void invalidated(javafx.beans.Observable observable) {
-                layoutSidebarPane();
-                layoutMainPane();
-                if (currentMode.get() == 1) {
-                    currentMedicalTreatmentMode.set(0);
-                }
-                else if (currentMode.get() == 4) {
+                if (currentMode.get() != 1) {
                     currentMedicalMode.set(0);
                 }
+
+                if (currentMode.get() != 2) {
+                    currentPublicServiceTackleMode.set(0);
+                }
+
+                if (currentMode.get() != 3) {
+                    currentMedicalInsuranceCenterReimbursementMode.set(0);
+                }
+
+                if (currentMode.get() != 4) {
+                    currentMedicalTreatmentMode.set(0);
+                }
+
+                if (currentMode.get() != 5) {
+                    currentIntegratedQueryMode.set(0);
+                }
+                layoutSidebarPane();
+                layoutDoPane();
+                layoutMainPane();
             }
         });
 
         currentMedicalMode.addListener(new InvalidationListener() {
+            @Override
+            public void invalidated(javafx.beans.Observable observable) {
+                layoutDoPane();
+                layoutMainPane();
+            }
+        });
+
+        currentPublicServiceTackleMode.addListener(new InvalidationListener() {
+            @Override
+            public void invalidated(javafx.beans.Observable observable) {
+                layoutDoPane();
+                layoutMainPane();
+            }
+        });
+
+        currentMedicalInsuranceCenterReimbursementMode.addListener(new InvalidationListener() {
             @Override
             public void invalidated(javafx.beans.Observable observable) {
                 layoutDoPane();
@@ -438,10 +653,28 @@ public class Main extends Application {
             }
         });
 
+        currentIntegratedQueryMode.addListener(new InvalidationListener() {
+            @Override
+            public void invalidated(javafx.beans.Observable observable) {
+                layoutDoPane();
+                layoutMainPane();
+            }
+        });
+
+        listenMedicalInformation();
+
+        listenPublicServiceTackle();
+
+        listenMedicalInsuranceCenterReimbursement();
+
+        listenMedicalTreatmentApproval();
+
+        listenIntegratedQuery();
 
         Scene scene = new Scene(pane, 900, 600);
         primaryStage.setScene(scene);
-        scene.getStylesheets().addAll(getClass().getResource("../css/Main.css").toExternalForm());
+        scene.getStylesheets().addAll(getClass().getResource("../css/Main.css").toExternalForm(),
+                getClass().getResource("../css/MedicalInformation.css").toExternalForm());
         primaryStage.show();
     }
     public static void main(String[] args) {

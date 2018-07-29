@@ -1,29 +1,29 @@
 #topPaneStackPane {
     -fx-background-color: lightseagreen;
-    -fx-padding: 30, 800;
+    -fx-padding: 10, 800;
     -fx-min-width: 900;
 }
 
 #nsp1 {
     -fx-padding: 10 20 10 20;
     -fx-background-color: cadetblue;
-    -fx-border-color: whitesmoke;
+    -fx-border-color: lightcyan;
 }
 
 #nsp {
     -fx-background-color: cadetblue;
-    -fx-border-color: whitesmoke;
+    -fx-border-color: lightcyan;
 }
 
 #ssp1 {
     -fx-padding: 20 20 20 20;
     -fx-background-color: darkcyan;
-    -fx-border-color: whitesmoke;
+    -fx-border-color: lightcyan;
 }
 
 #ssp {
     -fx-background-color: darkcyan;
-    -fx-border-color: whitesmoke;
+    -fx-border-color: lightcyan;
 }
 
 #welcomePane {
