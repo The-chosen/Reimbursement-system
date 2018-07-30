@@ -7,7 +7,7 @@ public class Person implements Serializable {
     private String personId;
     private String personName;
     private String gender;
-    private birthday birthday;
+    private time birthday;
     private String documentCategory;
     private String documentIdentity;
     private String nationality;
@@ -16,15 +16,17 @@ public class Person implements Serializable {
     private double totalPrice;
     private ArrayList<visitInfo> visitInfoLs;
     private String designatedHospitalNumber;
-
+    private ArrayList<personVisitApprovalInfo> personVisitApprovalInfoLs;
+    private ArrayList<specialSpectionApproval> specialSpectionApprovaLs;
     public Person() {
 
     }
 
     public Person(String personId, String personName, String gender,
-                  birthday birthday, String documentCategory, String documentIdentity,
+                  time birthday, String documentCategory, String documentIdentity,
                   String nationality, String livePlace, String phoneNumber,
-                  double totalPrice, ArrayList<visitInfo> visitInfoLs, String designatedHospitalNumber) {
+                  double totalPrice, ArrayList<visitInfo> visitInfoLs, String designatedHospitalNumber,
+                  ArrayList<personVisitApprovalInfo> personVisitApprovalInfoLs, ArrayList<specialSpectionApproval> specialSpectionApprovaLs) {
         this.personId = personId;
         this.personName = personName;
         this.gender = gender;
@@ -37,6 +39,24 @@ public class Person implements Serializable {
         this.totalPrice = totalPrice;
         this.visitInfoLs = visitInfoLs;
         this.designatedHospitalNumber = designatedHospitalNumber;
+        this.personVisitApprovalInfoLs = personVisitApprovalInfoLs;
+        this.specialSpectionApprovaLs = specialSpectionApprovaLs;
+    }
+
+    public ArrayList<personVisitApprovalInfo> getPersonVisitApprovalInfoLs() {
+        return personVisitApprovalInfoLs;
+    }
+
+    public void setPersonVisitApprovalInfoLs(ArrayList<personVisitApprovalInfo> personVisitApprovalInfoLs) {
+        this.personVisitApprovalInfoLs = personVisitApprovalInfoLs;
+    }
+
+    public ArrayList<specialSpectionApproval> getSpecialSpectionApprovaLs() {
+        return specialSpectionApprovaLs;
+    }
+
+    public void setSpecialSpectionApprovaLs(ArrayList<specialSpectionApproval> specialSpectionApprovaLs) {
+        this.specialSpectionApprovaLs = specialSpectionApprovaLs;
     }
 
     public String getPersonId() {
@@ -63,11 +83,11 @@ public class Person implements Serializable {
         this.gender = gender;
     }
 
-    public birthday getBirthday() {
+    public time getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(birthday birthday) {
+    public void setBirthday(time birthday) {
         this.birthday = birthday;
     }
 

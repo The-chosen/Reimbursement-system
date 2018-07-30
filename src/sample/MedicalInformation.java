@@ -137,9 +137,6 @@ public class MedicalInformation {
 
     }
 
-
-
-
     public void layoutMedicinePane(int num) {
         whichChoice = 0;
         if (num == 1) {

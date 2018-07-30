@@ -2,12 +2,12 @@ package sample;
 
 import java.io.Serializable;
 
-class birthday implements Serializable{
+class time implements Serializable{
     private String year;
     private String month;
     private String date;
 
-    public birthday(String year, String month, String date) {
+    public time(String year, String month, String date) {
         this.year = year;
         this.month = month;
         this.date = date;

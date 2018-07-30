@@ -44,7 +44,9 @@ public class Main extends Application {
     private IntegerProperty currentIntegratedQueryMode = new SimpleIntegerProperty();
     private MedicalInformation medicalInformation;
     private PublicServiceTackle publicServiceTackle;
-
+    private MedicalInsuranceCenterReimbursement medicalInsuranceCenterReimbursement;
+    private MedicalTreatmentApproval medicalTreatmentApproval;
+    private IntegratedQuery integratedQuery;
 
     public Main() {
         navigationPane = new Pane();
@@ -501,24 +503,157 @@ public class Main extends Application {
             }
         }
 
+
+
+
+
         if (currentMedicalInsuranceCenterReimbursementMode.get() != 0) {
             if (currentMedicalInsuranceCenterReimbursementMode.get() == 1) {
+                medicalInsuranceCenterReimbursement.layoutinitialPane();
+                doPane = medicalInsuranceCenterReimbursement.getInitialPane();
+
+                if (medicalInsuranceCenterReimbursement.getShowPersonInfoPaneId() == 1) {
+                    medicalInsuranceCenterReimbursement.layoutshowPersonInfoPane();
+                    doPane = medicalInsuranceCenterReimbursement.getShowPersonInfoPane();
+                }
+
+                if (medicalInsuranceCenterReimbursement.getEnterVisitInfoPaneId() == 1) {
+                    medicalInsuranceCenterReimbursement.layoutenterVisitInfoPane();
+                    doPane = medicalInsuranceCenterReimbursement.getEnterVisitInfoPane();
+                }
+
+                if (medicalInsuranceCenterReimbursement.getEnterPresciptionDetailPaneId() == 1) {
+                    medicalInsuranceCenterReimbursement.layoutenterPresciptionDetailPane();
+                    doPane = medicalInsuranceCenterReimbursement.getEnterPresciptionDetailPane();
+                }
+
+                if (medicalInsuranceCenterReimbursement.getNotApprovedPaneId() == 1) {
+                    medicalInsuranceCenterReimbursement.layoutnotApprovedPane();
+                    doPane = medicalInsuranceCenterReimbursement.getNotApprovedPane();
+                }
+
+                if (medicalInsuranceCenterReimbursement.getShowCalculationPaneId() == 1) {
+                    medicalInsuranceCenterReimbursement.layoutshowCalculationPane();
+                    doPane = medicalInsuranceCenterReimbursement.getShowCalculationPane();
+                }
+
 
             }
         }
+
+
+
+
+
 
         if (currentMedicalTreatmentMode.get() != 0) {
             if (currentMedicalTreatmentMode.get() == 1) {
+                medicalTreatmentApproval.layoutSerchIdPane(currentMedicalTreatmentMode.get());
+                doPane = medicalTreatmentApproval.getSerchIdPane();
 
+                if (medicalTreatmentApproval.getPersonApprovalHasPaneId() == 1) {
+                    medicalTreatmentApproval.layoutpersonApprovalHasPane();
+                    doPane = medicalTreatmentApproval.getPersonApprovalHasPane();
+                }
+
+                if (medicalTreatmentApproval.getPersonApprovalNotPaneId() == 1) {
+                    medicalTreatmentApproval.layoutpersonApprovalNotPane();
+                    doPane = medicalTreatmentApproval.getPersonApprovalNotPane();
+                }
+
+                if (medicalTreatmentApproval.getPersonApprovalAddPaneId() == 1) {
+                    medicalTreatmentApproval.layoutpersonApprovalAddPane();
+                    doPane = medicalTreatmentApproval.getPersonApprovalAddPane();
+                }
+
+                if (medicalTreatmentApproval.getPersonApprovalDeletePaneId() == 1) {
+                    medicalTreatmentApproval.layoutpersonApprovalDeletePane();
+                    doPane = medicalTreatmentApproval.getPersonApprovalDeletePane();
+                }
+
+                if (medicalTreatmentApproval.getPersonApprovalChangePaneId() == 1) {
+                    medicalTreatmentApproval.layoutpersonApprovalChangePane();
+                    doPane = medicalTreatmentApproval.getPersonApprovalChangePane();
+                }
+
+                if (medicalTreatmentApproval.getSuccessId() != 0) {
+                    currentMedicalTreatmentMode.set(0);
+                    medicalTreatmentApproval.layoutSuccessfulPane(medicalTreatmentApproval.getSuccessId());
+                    doPane = medicalTreatmentApproval.getSuccessPane();
+                }
             }
             else if (currentMedicalTreatmentMode.get() == 2) {
+                medicalTreatmentApproval.layoutSerchIdPane(currentMedicalTreatmentMode.get());
+                doPane = medicalTreatmentApproval.getSerchIdPane();
 
+                if (medicalTreatmentApproval.getSpecialSpectionHasPaneId() == 1) {
+                    medicalTreatmentApproval.layoutspecialSpectionHasPane();
+                    doPane = medicalTreatmentApproval.getSpecialSpectionHasPane();
+                }
+
+                if (medicalTreatmentApproval.getSpecialSpectionNotPaneId() == 1) {
+                    medicalTreatmentApproval.layoutspecialSpectionNotPane();
+                    doPane = medicalTreatmentApproval.getSpecialSpectionNotPane();
+                }
+
+                if (medicalTreatmentApproval.getSpecialSpectionAddPaneId() == 1) {
+                    medicalTreatmentApproval.layoutspecialSpectionAddPane();
+                    doPane = medicalTreatmentApproval.getSpecialSpectionAddPane();
+                }
+
+                if (medicalTreatmentApproval.getSpecialSpectionDeletePaneId() == 1) {
+                    medicalTreatmentApproval.layoutspecialSpectionDeletePane();
+                    doPane = medicalTreatmentApproval.getSpecialSpectionDeletePane();
+                }
+
+                if (medicalTreatmentApproval.getSpecialSpectionChangePaneId() == 1) {
+                    medicalTreatmentApproval.layoutspecialSpectionChangePane();
+                    doPane = medicalTreatmentApproval.getSpecialSpectionChangePane();
+                }
+
+                if (medicalTreatmentApproval.getSuccessId() != 0) {
+                    currentMedicalTreatmentMode.set(0);
+                    medicalTreatmentApproval.layoutSuccessfulPane(medicalTreatmentApproval.getSuccessId());
+                    doPane = medicalTreatmentApproval.getSuccessPane();
+                }
             }
         }
 
+
+
+
+
+
+
+
+
+
+
         if (currentIntegratedQueryMode.get() != 0) {
             if (currentIntegratedQueryMode.get() == 1) {
+                integratedQuery.layoutInitialPane();
+                doPane = integratedQuery.getInitialPane();
 
+                if (integratedQuery.getIsPane1() == 1) {
+                    integratedQuery.layoutPane1();
+                    doPane = integratedQuery.getPane1();
+                }
+
+                if (integratedQuery.getIsPane2() == 1) {
+                    integratedQuery.layoutPane2();
+                    doPane = integratedQuery.getPane2();
+                }
+
+                if (integratedQuery.getIsPane3() == 1) {
+                    currentIntegratedQueryMode.set(0);
+                    integratedQuery.layoutPane3();
+                    doPane = integratedQuery.getPane3();
+                }
+
+                if (integratedQuery.getIsNotFound() == 1) {
+                    currentIntegratedQueryMode.set(0);
+                    integratedQuery.setIsNotFound(0);
+                }
             }
         }
     }
@@ -544,15 +679,33 @@ public class Main extends Application {
     }
 
     public void listenMedicalInsuranceCenterReimbursement() {
-
+        (medicalInsuranceCenterReimbursement.isChangedProperty()).addListener(new InvalidationListener() {
+            @Override
+            public void invalidated(javafx.beans.Observable observable) {
+                layoutDoPane();
+                layoutMainPane();
+            }
+        });
     }
 
     public void listenMedicalTreatmentApproval() {
-
+        (medicalTreatmentApproval.isChangedProperty()).addListener(new InvalidationListener() {
+            @Override
+            public void invalidated(javafx.beans.Observable observable) {
+                layoutDoPane();
+                layoutMainPane();
+            }
+        });
     }
 
     public void listenIntegratedQuery() {
-
+        (integratedQuery.isChangedProperty()).addListener(new InvalidationListener() {
+            @Override
+            public void invalidated(javafx.beans.Observable observable) {
+                layoutDoPane();
+                layoutMainPane();
+            }
+        });
     }
 
 
@@ -610,6 +763,9 @@ public class Main extends Application {
         heightProperty = primaryStage.heightProperty();
         medicalInformation = new MedicalInformation(widthProperty, heightProperty);
         publicServiceTackle = new PublicServiceTackle(widthProperty, heightProperty);
+        medicalInsuranceCenterReimbursement = new MedicalInsuranceCenterReimbursement(widthProperty, heightProperty);
+        medicalTreatmentApproval = new MedicalTreatmentApproval(widthProperty, heightProperty);
+        integratedQuery = new IntegratedQuery(widthProperty, heightProperty);
 
         currentMode.set(0);
         currentMedicalMode.set(0);

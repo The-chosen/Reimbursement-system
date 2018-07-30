@@ -240,16 +240,19 @@ public class PublicServiceTackle {
                 String month = tf11.getText();
                 String date = tf12.getText();
 
-                birthday birthday = new birthday(year, month, date);
+                time birthday = new time(year, month, date);
 
                 ArrayList<visitInfo> visitInfoLs = new ArrayList<>();
+                ArrayList<personVisitApprovalInfo> personVisitApprovalInfoArrayLs = new ArrayList<>();
+                ArrayList<specialSpectionApproval> specialSpectionApprovaLs = new ArrayList<>();
 
                 double totalPrice = 0;
 
                 Person person = new Person(personId, personName, gender,
                         birthday, documentCategory, documentIdentity,
                         nationality, livePlace, phoneNumber,
-                totalPrice, visitInfoLs, designatedHospitalNumber);
+                totalPrice, visitInfoLs, designatedHospitalNumber,
+                        personVisitApprovalInfoArrayLs, specialSpectionApprovaLs);
                 File file = new File("src/files/person.dat");
                 writeFile(file, person);
 
@@ -571,16 +574,19 @@ public class PublicServiceTackle {
                         String month = tf11.getText();
                         String date = tf12.getText();
 
-                        birthday birthday = new birthday(year, month, date);
+                        time birthday = new time(year, month, date);
 
                         ArrayList<visitInfo> visitInfoLs = new ArrayList<>();
+                        ArrayList<personVisitApprovalInfo> personVisitApprovalInfoArrayLs = new ArrayList<>();
+                        ArrayList<specialSpectionApproval> specialSpectionApprovaLs = new ArrayList<>();
 
                         double totalPrice = 0;
 
                         Person person1 = new Person(personId, personName, gender,
                                 birthday, documentCategory, documentIdentity,
                                 nationality, livePlace, phoneNumber,
-                                totalPrice, visitInfoLs, designatedHospitalNumber);
+                                totalPrice, visitInfoLs, designatedHospitalNumber, personVisitApprovalInfoArrayLs,
+                                specialSpectionApprovaLs);
                         File file1 = new File("src/files/person.dat");
                         changeInFile(file1, textField.getText(), person1);
 
