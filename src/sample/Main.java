@@ -576,11 +576,23 @@ public class Main extends Application {
                     doPane = medicalTreatmentApproval.getPersonApprovalChangePane();
                 }
 
+
+                if (medicalTreatmentApproval.getChooseAPaneId() == 1) {
+                    medicalTreatmentApproval.layoutPersonApprovalChoosePane();
+                    doPane = medicalTreatmentApproval.getChooseAPane();
+                }
+
+                if (medicalTreatmentApproval.getChooseSPaneId() == 1) {
+                    medicalTreatmentApproval.layoutSpecialSpectionChoosePane();
+                    doPane = medicalTreatmentApproval.getChooseSPane();
+                }
                 if (medicalTreatmentApproval.getSuccessId() != 0) {
                     currentMedicalTreatmentMode.set(0);
                     medicalTreatmentApproval.layoutSuccessfulPane(medicalTreatmentApproval.getSuccessId());
                     doPane = medicalTreatmentApproval.getSuccessPane();
                 }
+
+
             }
             else if (currentMedicalTreatmentMode.get() == 2) {
                 medicalTreatmentApproval.layoutSerchIdPane(currentMedicalTreatmentMode.get());
@@ -609,6 +621,16 @@ public class Main extends Application {
                 if (medicalTreatmentApproval.getSpecialSpectionChangePaneId() == 1) {
                     medicalTreatmentApproval.layoutspecialSpectionChangePane();
                     doPane = medicalTreatmentApproval.getSpecialSpectionChangePane();
+                }
+
+                if (medicalTreatmentApproval.getChooseAPaneId() == 1) {
+                    medicalTreatmentApproval.layoutPersonApprovalChoosePane();
+                    doPane = medicalTreatmentApproval.getChooseAPane();
+                }
+
+                if (medicalTreatmentApproval.getChooseSPaneId() == 1) {
+                    medicalTreatmentApproval.layoutSpecialSpectionChoosePane();
+                    doPane = medicalTreatmentApproval.getChooseSPane();
                 }
 
                 if (medicalTreatmentApproval.getSuccessId() != 0) {

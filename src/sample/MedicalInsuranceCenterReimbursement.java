@@ -2,10 +2,11 @@ package sample;
 
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.ReadOnlyDoubleProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.scene.layout.Pane;
 
 public class MedicalInsuranceCenterReimbursement {
-    private BooleanProperty isChanged;
+    private BooleanProperty isChanged = new SimpleBooleanProperty();
     private ReadOnlyDoubleProperty widthProperty;
     private ReadOnlyDoubleProperty heightProperty;
 
