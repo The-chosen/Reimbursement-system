@@ -253,7 +253,7 @@ public class MedicalInsuranceCenterReimbursement {
         tf11.setMaxSize(170, 10);
 
 
-        Label lb1 = new Label("审批医疗类别ID:");
+        Label lb1 = new Label("审批医疗类别:");
         Label lb2 = new Label("医院级别:");
         Label lb3 = new Label("开始日期:");
         Label lb4 = new Label("结束日期:");
@@ -901,7 +901,9 @@ public class MedicalInsuranceCenterReimbursement {
 
     public void layoutshowCalculationPane() {
         showCalculationPaneId = 0;
+        int preparePrice = 0;
         StackPane stackPane = new StackPane();
+        stackPane.prefWidthProperty().bind(widthProperty.divide(1.25));
         stackPane.setId("sp");
 
         VBox vBox = new VBox();
@@ -920,7 +922,7 @@ public class MedicalInsuranceCenterReimbursement {
             Label lb4 = new Label("药品适用医院等级");
             Label lb5 = new Label("就诊医院等级");
             Label lb6 = new Label("药品是否在基本医疗保险费用目录里:");
-            Label lb7 = new Label("该药品可给予报销费用:");
+            Label lb7 = new Label("该药品可给予的预结算费用:");
 
             String hospitalPrice = medicine.getHospitalPrice();
             String centerPrice = medicine.getCeterPrice();
@@ -969,6 +971,8 @@ public class MedicalInsuranceCenterReimbursement {
                 }
             }
 
+            preparePrice += Double.parseDouble(conclusion);
+
             Text t7 = new Text(conclusion);
 
             gridPane.add(lb1, 0, 0);
@@ -1002,7 +1006,7 @@ public class MedicalInsuranceCenterReimbursement {
             Label lb2 = new Label("诊疗类别:");
             Label lb3 = new Label("诊疗适用医院等级:");
             Label lb4 = new Label("就诊医院等级");
-            Label lb5 = new Label("该诊疗可给予报销费用:");
+            Label lb5 = new Label("该诊疗可给予的预结算费用:");
 
             String treatmentPrice = treatment.getPrice();
             String treatmentLevel = treatment.getTreatmentLevel();
@@ -1035,6 +1039,8 @@ public class MedicalInsuranceCenterReimbursement {
 
             Text t5 = new Text(conclusion);
 
+            preparePrice += Double.parseDouble(conclusion);
+
             gridPane.add(lb1, 0, 0);
             gridPane.add(lb2, 0, 1);
             gridPane.add(lb3, 0, 2);
@@ -1047,51 +1053,102 @@ public class MedicalInsuranceCenterReimbursement {
             gridPane.add(t4, 1, 3);
             gridPane.add(t5, 1, 4);
 
+
+
             vBox2.getChildren().add(gridPane);
 
+        }
 
 
+        GridPane gridPane = new GridPane();
+
+        Label lb1 = new Label("起付费用:");
+        Label lb2 = new Label("封顶费用:");
+        Label lb3 = new Label("最终结算费用:");
 
 
-
-            File file = new File("src/files/person.dat");
-
-            LinkedList<Object> linkedList = new LinkedList<>();
-
-            try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))){
-                linkedList = (LinkedList<Object>)ois.readObject();
+        File file = new File("src/files/medicalTreatmentCalculationParameter.dat");
+        LinkedList<Object> linkedList = new LinkedList<>();
+        try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))){
+            linkedList = (LinkedList<Object>) ois.readObject();
+        }
+        catch (Exception ex) {
+            if (ex instanceof EOFException) {
+                System.out.println("Nothing written into the file now!");
             }
-            catch (Exception ex) {
-                if (ex instanceof EOFException) {
-                    linkedList = new LinkedList<>();
-                }
-                else {
-                    System.out.println(ex);
-                    System.out.println("Exception when reading information!");
-                    System.out.println(ex.getStackTrace());
-                }
-            }
-
-            try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file, false))){
-                linkedList.add(person);
-                oos.writeObject(linkedList);
-            }
-            catch (Exception ex) {
+            else {
                 System.out.println(ex);
-                System.out.println("Exception when writing information!");
+                System.out.println("Exception when reading in medical information!");
                 System.out.println(ex.getStackTrace());
             }
 
-            person = null;
-            visitInfo = null;
-            isEnteredOutpatientNumber = 0;
         }
 
-        vBox.getChildren().addAll(vBox1, vBox2);
+        MedicalTreatmentCalculationParameter medicalTreatmentCalculationParameter = (MedicalTreatmentCalculationParameter)linkedList.get(0);
+        double thresholdPrice = medicalTreatmentCalculationParameter.getThresholdPrice();
+        double cappingLine = medicalTreatmentCalculationParameter.getCappingLine();
+        Text t1 = new Text(thresholdPrice + "");
+        Text t2 = new Text(cappingLine + "");
+
+        double totalPrice = person.getTotalPrice();
+        double nowPrice = totalPrice + preparePrice - thresholdPrice;
+        double finalPrice;
+        if (nowPrice > cappingLine) {
+            finalPrice = nowPrice - cappingLine;
+        }
+        else {
+            finalPrice = nowPrice;
+        }
+
+        Text t3 = new Text(finalPrice + "");
+        person.setTotalPrice(totalPrice + finalPrice);
+
+        gridPane.add(lb1, 0, 0);
+        gridPane.add(lb2, 0, 1);
+        gridPane.add(lb3, 0, 2);
+        gridPane.add(t1, 1, 0);
+        gridPane.add(t2, 1, 1);
+        gridPane.add(t3, 1, 2);
+
+
+
+        vBox.getChildren().addAll(vBox1, vBox2, gridPane);
+        vBox.setPadding(new Insets(20, 0, 10, 0));
         stackPane.getChildren().addAll(vBox);
+        showCalculationPane = stackPane;
 
 
+        File file1 = new File("src/files/person.dat");
 
+        LinkedList<Object> linkedList1 = new LinkedList<>();
+
+        try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file1))){
+            linkedList1 = (LinkedList<Object>)ois.readObject();
+        }
+        catch (Exception ex) {
+            if (ex instanceof EOFException) {
+                linkedList1 = new LinkedList<>();
+            }
+            else {
+                System.out.println(ex);
+                System.out.println("Exception when reading information!");
+                System.out.println(ex.getStackTrace());
+            }
+        }
+
+        try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file1, false))){
+            linkedList1.add(person);
+            oos.writeObject(linkedList1);
+        }
+        catch (Exception ex) {
+            System.out.println(ex);
+            System.out.println("Exception when writing information!");
+            System.out.println(ex.getStackTrace());
+        }
+
+        person = null;
+        visitInfo = null;
+        isEnteredOutpatientNumber = 0;
     }
 
 

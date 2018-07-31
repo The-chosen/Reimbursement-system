@@ -548,6 +548,7 @@ public class Main extends Application {
                 }
 
                 if (medicalInsuranceCenterReimbursement.getShowCalculationPaneId() == 1) {
+                    currentMedicalInsuranceCenterReimbursementMode.set(0);
                     medicalInsuranceCenterReimbursement.layoutshowCalculationPane();
                     doPane = medicalInsuranceCenterReimbursement.getShowCalculationPane();
                 }
@@ -565,7 +566,7 @@ public class Main extends Application {
 
 
         if (currentMedicalTreatmentMode.get() != 0) {
-            if (currentMedicalTreatmentMode.get() == 1) {
+            if (currentMedicalTreatmentMode.get() == 2) {
                 medicalTreatmentApproval.layoutSerchIdPane(currentMedicalTreatmentMode.get());
                 doPane = medicalTreatmentApproval.getSerchIdPane();
 
@@ -626,7 +627,7 @@ public class Main extends Application {
 
 
             }
-            else if (currentMedicalTreatmentMode.get() == 2) {
+            else if (currentMedicalTreatmentMode.get() == 1) {
                 medicalTreatmentApproval.layoutSerchIdPane(currentMedicalTreatmentMode.get());
                 doPane = medicalTreatmentApproval.getSerchIdPane();
 

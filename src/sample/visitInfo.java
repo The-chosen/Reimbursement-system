@@ -1,6 +1,8 @@
 package sample;
 
-public class visitInfo {
+import java.io.Serializable;
+
+public class visitInfo implements Serializable {
     private String personId;
     private String medicalCategory;
     private String institutionId;

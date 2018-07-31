@@ -25,3 +25,10 @@
 .TextField {
     -fx-min-width: 30;
 }
+
+#visitInfo {
+    -fx-background-color: lightcyan;
+    -fx-border-color: cadetblue;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}

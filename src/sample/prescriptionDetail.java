@@ -1,8 +1,9 @@
 package sample;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class prescriptionDetail {
+public class prescriptionDetail implements Serializable{
     private String outpatientNumber;
     private ArrayList<Medicine> medicineLs = new ArrayList<>();
     private ArrayList<Treatment> treatmentLs = new ArrayList<>();
