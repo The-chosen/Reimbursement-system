@@ -722,24 +722,29 @@ public class PublicServiceTackle {
     }
 
     public Object selectFromTheFile(File file, String id) {
+        LinkedList<Object> linkedList = new LinkedList<>();
 
         try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))){
-            LinkedList<Object> linkedList = (LinkedList<Object>)ois.readObject();
-
-            for (int i = 0; i < linkedList.size(); i++) {
-
-                if (((Person)(linkedList.get(i))).getPersonId().equals(id)) {
-                    return linkedList.get(i);
-                }
-
-            }
-
+            linkedList = (LinkedList<Object>)ois.readObject();
         }
         catch (Exception ex) {
-            System.out.println(ex);
-            System.out.println("Exception when reading in medical information!");
-            System.out.println(ex.getStackTrace());
+            if (ex instanceof EOFException) {
+                linkedList = new LinkedList<>();
+            }
+            else {
+                System.out.println(ex);
+                System.out.println("Exception when reading in medical information!");
+                System.out.println(ex.getStackTrace());
+            }
         }
+
+
+        for (int i = 0; i < linkedList.size(); i++) {
+            if (((Person)(linkedList.get(i))).getPersonId().equals(id)) {
+                return linkedList.get(i);
+            }
+        }
+
         return null;
     }
 

@@ -1,39 +1,53 @@
 package sample;
 
 public class visitInfo {
-    private int personId;
+    private String personId;
     private String medicalCategory;
     private String institutionId;
     private String institutionName;
-    private String admissionDate;
-    private String dischargeDate;
+    private time admissionTime;
+    private time dischargeTime;
     private String institutionLevel;
     private String dischargeReason;
-    private prescriptionDetail prescriptionDetail;
+    private prescriptionDetail prescriptionDetail = new prescriptionDetail();
 
     public visitInfo() {
 
     }
 
-    public visitInfo(int personId, String medicalCategory, String institutionId,
-                     String institutionName, String admissionDate, String dischargeDate,
+    public visitInfo(String personId, String medicalCategory, String institutionId,
+                     String institutionName, time admissionTime, time dischargeTime,
                      String institutionLevel, String dischargeReason, sample.prescriptionDetail prescriptionDetail) {
         this.personId = personId;
         this.medicalCategory = medicalCategory;
         this.institutionId = institutionId;
         this.institutionName = institutionName;
-        this.admissionDate = admissionDate;
-        this.dischargeDate = dischargeDate;
+        this.admissionTime = admissionTime;
+        this.dischargeTime = dischargeTime;
         this.institutionLevel = institutionLevel;
         this.dischargeReason = dischargeReason;
         this.prescriptionDetail = prescriptionDetail;
     }
 
-    public int getPersonId() {
+    public visitInfo(String personId, String medicalCategory, String institutionId,
+                     String institutionName, time admissionTime, time dischargeTime,
+                     String institutionLevel, String dischargeReason) {
+        this.personId = personId;
+        this.medicalCategory = medicalCategory;
+        this.institutionId = institutionId;
+        this.institutionName = institutionName;
+        this.admissionTime = admissionTime;
+        this.dischargeTime = dischargeTime;
+        this.institutionLevel = institutionLevel;
+        this.dischargeReason = dischargeReason;
+        this.prescriptionDetail = prescriptionDetail;
+    }
+
+    public String getPersonId() {
         return personId;
     }
 
-    public void setPersonId(int personId) {
+    public void setPersonId(String personId) {
         this.personId = personId;
     }
 
@@ -61,20 +75,20 @@ public class visitInfo {
         this.institutionName = institutionName;
     }
 
-    public String getAdmissionDate() {
-        return admissionDate;
+    public time getAdmissionTime() {
+        return admissionTime;
     }
 
-    public void setAdmissionDate(String admissionDate) {
-        this.admissionDate = admissionDate;
+    public void setAdmissionTime(time admissionTime) {
+        this.admissionTime = admissionTime;
     }
 
-    public String getDischargeDate() {
-        return dischargeDate;
+    public time getDischargeTime() {
+        return dischargeTime;
     }
 
-    public void setDischargeDate(String dischargeDate) {
-        this.dischargeDate = dischargeDate;
+    public void setDischargeTime(time dischargeTime) {
+        this.dischargeTime = dischargeTime;
     }
 
     public String getInstitutionLevel() {

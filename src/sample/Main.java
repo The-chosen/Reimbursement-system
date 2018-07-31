@@ -522,13 +522,28 @@ public class Main extends Application {
                     doPane = medicalInsuranceCenterReimbursement.getEnterVisitInfoPane();
                 }
 
-                if (medicalInsuranceCenterReimbursement.getEnterPresciptionDetailPaneId() == 1) {
-                    medicalInsuranceCenterReimbursement.layoutenterPresciptionDetailPane();
-                    doPane = medicalInsuranceCenterReimbursement.getEnterPresciptionDetailPane();
+                if (medicalInsuranceCenterReimbursement.getEnterMedicineDetailPaneId() == 1) {
+                    medicalInsuranceCenterReimbursement.layoutenterMedicineDetailPane();
+                    doPane = medicalInsuranceCenterReimbursement.getEnterMedicineDetailPane();
                 }
 
-                if (medicalInsuranceCenterReimbursement.getNotApprovedPaneId() == 1) {
-                    medicalInsuranceCenterReimbursement.layoutnotApprovedPane();
+                if (medicalInsuranceCenterReimbursement.getEnterTreatmentDetailPaneId() == 1) {
+                    medicalInsuranceCenterReimbursement.layoutenterTreatmentDetailPane();
+                    doPane = medicalInsuranceCenterReimbursement.getEnterTreatmentDetailPane();
+                }
+
+                if (medicalInsuranceCenterReimbursement.getEnterServiceFacilityDetailPaneId() == 1) {
+                    medicalInsuranceCenterReimbursement.layoutenterServiceFacilityDetailPane();
+                    doPane = medicalInsuranceCenterReimbursement.getEnterServiceFacilityDetailPane();
+                }
+
+                if (medicalInsuranceCenterReimbursement.getChoosePaneId() == 1) {
+                    medicalInsuranceCenterReimbursement.layoutchoosePane();
+                    doPane = medicalInsuranceCenterReimbursement.getChoosePane();
+                }
+
+                if (medicalInsuranceCenterReimbursement.getNotApprovedPaneId() != 0) {
+                    medicalInsuranceCenterReimbursement.layoutnotApprovedPane(medicalInsuranceCenterReimbursement.getNotApprovedPaneId());
                     doPane = medicalInsuranceCenterReimbursement.getNotApprovedPane();
                 }
 
@@ -537,7 +552,10 @@ public class Main extends Application {
                     doPane = medicalInsuranceCenterReimbursement.getShowCalculationPane();
                 }
 
-
+                if (publicServiceTackle.getIsNotFound() == 1) {
+                    currentMedicalInsuranceCenterReimbursementMode.set(0);
+                    publicServiceTackle.setIsNotFound(0);
+                }
             }
         }
 
@@ -586,10 +604,24 @@ public class Main extends Application {
                     medicalTreatmentApproval.layoutSpecialSpectionChoosePane();
                     doPane = medicalTreatmentApproval.getChooseSPane();
                 }
+
+                if (medicalTreatmentApproval.getShowPersonApprovalId() == 1) {
+                    medicalTreatmentApproval.layoutShowPersonApprovalPane();
+                    doPane = medicalTreatmentApproval.getShowPersonApprovalPane();
+                }
+
                 if (medicalTreatmentApproval.getSuccessId() != 0) {
-                    currentMedicalTreatmentMode.set(0);
+                    if (medicalTreatmentApproval.getSuccessId() != 5){
+                        currentMedicalTreatmentMode.set(0);
+                    }
+
                     medicalTreatmentApproval.layoutSuccessfulPane(medicalTreatmentApproval.getSuccessId());
                     doPane = medicalTreatmentApproval.getSuccessPane();
+                }
+
+                if (medicalTreatmentApproval.getIsNotFound() == 1) {
+                    currentMedicalTreatmentMode.set(0);
+                    medicalTreatmentApproval.setIsNotFound(0);
                 }
 
 
@@ -634,9 +666,22 @@ public class Main extends Application {
                 }
 
                 if (medicalTreatmentApproval.getSuccessId() != 0) {
-                    currentMedicalTreatmentMode.set(0);
+                    if (medicalTreatmentApproval.getSuccessId() != 6){
+                        currentMedicalTreatmentMode.set(0);
+                    }
+
                     medicalTreatmentApproval.layoutSuccessfulPane(medicalTreatmentApproval.getSuccessId());
                     doPane = medicalTreatmentApproval.getSuccessPane();
+                }
+
+                if (medicalTreatmentApproval.getShowSpecialApprovalId() == 1) {
+                    medicalTreatmentApproval.layoutShowSpecialApprovalPane();
+                    doPane = medicalTreatmentApproval.getShowSpecialApprovalPane();
+                }
+
+                if (medicalTreatmentApproval.getIsNotFound() == 1) {
+                    currentMedicalTreatmentMode.set(0);
+                    medicalTreatmentApproval.setIsNotFound(0);
                 }
             }
         }

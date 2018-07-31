@@ -953,7 +953,7 @@ public class MedicalInformation {
                     Label lb2 = new Label("诊疗项目名称:");
                     Label lb3 = new Label("诊疗项目级别:");
                     Label lb4 = new Label("医院级别:");
-                    Label lb5 = new Label("生产厂家:");
+                    Label lb5 = new Label("费用:");
 
 
                     Label lb16 = new Label("备注:");
@@ -964,7 +964,7 @@ public class MedicalInformation {
                     Text t2 = new Text(treatment.getTreatmentName());
                     Text t3 = new Text(treatment.getTreatmentLevel());
                     Text t4 = new Text(treatment.getHospitalLevel());
-                    Text t5 = new Text(treatment.getManufacturer());
+                    Text t5 = new Text(treatment.getPrice());
                     Text t6 = new Text(treatment.getRemark());
 
 
@@ -1070,7 +1070,7 @@ public class MedicalInformation {
                     TextField tf2 = new TextField(treatment.getTreatmentName());
                     TextField tf3 = new TextField(treatment.getTreatmentLevel());
                     TextField tf4 = new TextField(treatment.getHospitalLevel());
-                    TextField tf5 = new TextField(treatment.getManufacturer());
+                    TextField tf5 = new TextField(treatment.getPrice());
 
                     tf1.setMaxSize(150, 10);
                     tf2.setMaxSize(170, 10);

@@ -3,12 +3,45 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$11.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/sample/IntegratedQuery.java" afterPath="$PROJECT_DIR$/src/sample/IntegratedQuery.java" />
+      <change beforePath="$PROJECT_DIR$/ExperimentDiagram.asta.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/files/medicine.dat" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/files/medicine.dat" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/files/person.dat" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/files/person.dat" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$1.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$10.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$10.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$2.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$3.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$3.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$4.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$4.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$5.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$5.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$6.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$6.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$7.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$7.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$8.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$8.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$9.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main$9.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/Main.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/MedicalInsuranceCenterReimbursement.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/MedicalInsuranceCenterReimbursement.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/MedicalTreatmentApproval$1.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/MedicalTreatmentApproval$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/MedicalTreatmentApproval$2.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/MedicalTreatmentApproval$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/MedicalTreatmentApproval.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/MedicalTreatmentApproval.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/PublicServiceTackle.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/PublicServiceTackle.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/personVisitApprovalInfo.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/personVisitApprovalInfo.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/prescriptionDetail.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/prescriptionDetail.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/specialSpectionApproval.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/specialSpectionApproval.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/visitInfo.class" afterPath="$PROJECT_DIR$/out/production/EXPERIMENT/sample/visitInfo.class" />
+      <change beforePath="$PROJECT_DIR$/src/files/fixedMedicalInstitution.dat" afterPath="$PROJECT_DIR$/src/files/fixedMedicalInstitution.dat" />
+      <change beforePath="$PROJECT_DIR$/src/files/medicalTreatmentCalculationParameter.dat" afterPath="$PROJECT_DIR$/src/files/medicalTreatmentCalculationParameter.dat" />
+      <change beforePath="$PROJECT_DIR$/src/files/medicine.dat" afterPath="$PROJECT_DIR$/src/files/medicine.dat" />
+      <change beforePath="$PROJECT_DIR$/src/files/person.dat" afterPath="$PROJECT_DIR$/src/files/person.dat" />
+      <change beforePath="$PROJECT_DIR$/src/files/serviceFacility.dat" afterPath="$PROJECT_DIR$/src/files/serviceFacility.dat" />
+      <change beforePath="$PROJECT_DIR$/src/files/treatment.dat" afterPath="$PROJECT_DIR$/src/files/treatment.dat" />
       <change beforePath="$PROJECT_DIR$/src/sample/Main.java" afterPath="$PROJECT_DIR$/src/sample/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/sample/MedicalInformation.java" afterPath="$PROJECT_DIR$/src/sample/MedicalInformation.java" />
       <change beforePath="$PROJECT_DIR$/src/sample/MedicalInsuranceCenterReimbursement.java" afterPath="$PROJECT_DIR$/src/sample/MedicalInsuranceCenterReimbursement.java" />
       <change beforePath="$PROJECT_DIR$/src/sample/MedicalTreatmentApproval.java" afterPath="$PROJECT_DIR$/src/sample/MedicalTreatmentApproval.java" />
-      <change beforePath="$PROJECT_DIR$/类图.docx" afterPath="$PROJECT_DIR$/类图.docx" />
+      <change beforePath="$PROJECT_DIR$/src/sample/PublicServiceTackle.java" afterPath="$PROJECT_DIR$/src/sample/PublicServiceTackle.java" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Treatment.java" afterPath="$PROJECT_DIR$/src/sample/Treatment.java" />
+      <change beforePath="$PROJECT_DIR$/src/sample/personVisitApprovalInfo.java" afterPath="$PROJECT_DIR$/src/sample/personVisitApprovalInfo.java" />
+      <change beforePath="$PROJECT_DIR$/src/sample/prescriptionDetail.java" afterPath="$PROJECT_DIR$/src/sample/prescriptionDetail.java" />
+      <change beforePath="$PROJECT_DIR$/src/sample/specialSpectionApproval.java" afterPath="$PROJECT_DIR$/src/sample/specialSpectionApproval.java" />
+      <change beforePath="$PROJECT_DIR$/src/sample/visitInfo.java" afterPath="$PROJECT_DIR$/src/sample/visitInfo.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,14 +99,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="663" column="56" lean-forward="true" selection-start-line="663" selection-start-column="56" selection-end-line="663" selection-end-column="56" />
+            <state relative-caret-position="364">
+              <caret line="544" column="80" lean-forward="false" selection-start-line="544" selection-start-column="80" selection-end-line="544" selection-end-column="80" />
               <folding>
                 <element signature="method#Main#0;class#Main#0" expanded="false" />
-                <element signature="method#layoutMainPane#0;class#Main#0" expanded="false" />
                 <element signature="e#2272#2306#0" expanded="false" />
                 <element signature="method#layoutNavigationPane#0;class#Main#0" expanded="false" />
                 <element signature="e#3607#3671#0" expanded="false" />
@@ -95,32 +127,123 @@
                 <element signature="e#11184#11255#0" expanded="false" />
                 <element signature="method#layoutTopPane#0;class#Main#0" expanded="false" />
                 <element signature="method#listenMedicalInformation#0;class#Main#0" expanded="false" />
-                <element signature="class#27323:27533" expanded="false" />
-                <element signature="method#invalidated#0;class#27323:27533" expanded="false" />
+                <element signature="class#29595:29805" expanded="false" />
+                <element signature="method#invalidated#0;class#29595:29805" expanded="false" />
                 <element signature="method#listenPublicServiceTackle#0;class#Main#0" expanded="false" />
-                <element signature="class#27655:27865" expanded="false" />
-                <element signature="method#invalidated#0;class#27655:27865" expanded="false" />
-                <element signature="class#28019:28229" expanded="false" />
-                <element signature="method#invalidated#0;class#28019:28229" expanded="false" />
+                <element signature="class#29927:30137" expanded="false" />
+                <element signature="method#invalidated#0;class#29927:30137" expanded="false" />
                 <element signature="method#listenMedicalTreatmentApproval#0;class#Main#0" expanded="false" />
-                <element signature="class#28361:28571" expanded="false" />
-                <element signature="method#invalidated#0;class#28361:28571" expanded="false" />
+                <element signature="class#30633:30843" expanded="false" />
+                <element signature="method#invalidated#0;class#30633:30843" expanded="false" />
                 <element signature="method#listenIntegratedQuery#0;class#Main#0" expanded="false" />
-                <element signature="class#28685:28895" expanded="false" />
-                <element signature="method#invalidated#0;class#28685:28895" expanded="false" />
+                <element signature="class#30957:31167" expanded="false" />
+                <element signature="method#invalidated#0;class#30957:31167" expanded="false" />
                 <element signature="method#start#0;class#Main#0" expanded="false" />
-                <element signature="class#30740:31603" expanded="false" />
-                <element signature="method#invalidated#0;class#30740:31603" expanded="false" />
-                <element signature="class#31650:31860" expanded="false" />
-                <element signature="method#invalidated#0;class#31650:31860" expanded="false" />
-                <element signature="class#31919:32129" expanded="false" />
-                <element signature="method#invalidated#0;class#31919:32129" expanded="false" />
-                <element signature="class#32204:32414" expanded="false" />
-                <element signature="method#invalidated#0;class#32204:32414" expanded="false" />
-                <element signature="class#32470:32680" expanded="false" />
-                <element signature="method#invalidated#0;class#32470:32680" expanded="false" />
-                <element signature="class#32735:32945" expanded="false" />
-                <element signature="method#invalidated#0;class#32735:32945" expanded="false" />
+                <element signature="class#33012:33875" expanded="false" />
+                <element signature="method#invalidated#0;class#33012:33875" expanded="false" />
+                <element signature="class#33922:34132" expanded="false" />
+                <element signature="method#invalidated#0;class#33922:34132" expanded="false" />
+                <element signature="class#34191:34401" expanded="false" />
+                <element signature="method#invalidated#0;class#34191:34401" expanded="false" />
+                <element signature="class#34476:34686" expanded="false" />
+                <element signature="method#invalidated#0;class#34476:34686" expanded="false" />
+                <element signature="class#34742:34952" expanded="false" />
+                <element signature="method#invalidated#0;class#34742:34952" expanded="false" />
+                <element signature="class#35007:35217" expanded="false" />
+                <element signature="method#invalidated#0;class#35007:35217" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MedicalInsuranceCenterReimbursement.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/MedicalInsuranceCenterReimbursement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="735" column="0" lean-forward="true" selection-start-line="735" selection-start-column="0" selection-end-line="735" selection-end-column="0" />
+              <folding>
+                <element signature="method#MedicalInsuranceCenterReimbursement#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="method#layoutinitialPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="e#3160#4613#0" expanded="false" />
+                <element signature="e#4471#4587#0" expanded="false" />
+                <element signature="method#layoutshowPersonInfoPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="e#6919#7020#0" expanded="false" />
+                <element signature="method#layoutenterVisitInfoPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="e#10103#11073#0" expanded="false" />
+                <element signature="method#layoutenterMedicineDetailPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="e#12777#12823#0" expanded="false" />
+                <element signature="e#15676#17965#0" expanded="false" />
+                <element signature="method#layoutenterTreatmentDetailPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="e#20091#21329#0" expanded="false" />
+                <element signature="method#layoutenterServiceFacilityDetailPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="e#22569#23462#0" expanded="false" />
+                <element signature="method#layoutchoosePane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="e#24230#24336#0" expanded="false" />
+                <element signature="e#24371#24478#0" expanded="false" />
+                <element signature="e#24513#24626#0" expanded="false" />
+                <element signature="e#24661#27436#0" expanded="false" />
+                <element signature="method#layoutnotApprovedPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="method#layoutshowCalculationPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="method#setShowCalculationPaneId#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="method#setEnterMedicineDetailPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="method#setEnterTreatmentDetailPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="method#setEnterServiceFacilityDetailPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="method#setEnterMedicineDetailPaneId#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="method#setEnterTreatmentDetailPaneId#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+                <element signature="method#setEnterServiceFacilityDetailPaneId#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Treatment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Treatment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="69" column="28" lean-forward="false" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+              <folding>
+                <element signature="method#Treatment#0;class#Treatment#0" expanded="false" />
+                <element signature="method#Treatment#1;class#Treatment#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prescriptionDetail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/prescriptionDetail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+              <folding>
+                <element signature="e#794#795#0" expanded="true" />
+                <element signature="e#833#834#0" expanded="true" />
+                <element signature="e#897#898#0" expanded="true" />
+                <element signature="e#953#954#0" expanded="true" />
+                <element signature="e#1003#1004#0" expanded="true" />
+                <element signature="e#1036#1037#0" expanded="true" />
+                <element signature="e#1101#1102#0" expanded="true" />
+                <element signature="e#1145#1146#0" expanded="true" />
+                <element signature="e#1197#1198#0" expanded="true" />
+                <element signature="e#1231#1232#0" expanded="true" />
+                <element signature="e#1299#1300#0" expanded="true" />
+                <element signature="e#1345#1346#0" expanded="true" />
+                <element signature="e#1409#1410#0" expanded="true" />
+                <element signature="e#1449#1450#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visitInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/visitInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="75" lean-forward="false" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
+              <folding>
+                <element signature="method#visitInfo#0;class#visitInfo#0" expanded="false" />
+                <element signature="method#visitInfo#1;class#visitInfo#0" expanded="false" />
+                <element signature="method#visitInfo#2;class#visitInfo#0" expanded="false" />
+                <element signature="method#setPrescriptionDetail#0;class#visitInfo#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -129,50 +252,57 @@
       <file leaf-file-name="MedicalTreatmentApproval.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/MedicalTreatmentApproval.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+            <state relative-caret-position="704">
+              <caret line="1485" column="0" lean-forward="true" selection-start-line="1485" selection-start-column="0" selection-end-line="1485" selection-end-column="0" />
               <folding>
+                <element signature="method#MedicalTreatmentApproval#0;class#MedicalTreatmentApproval#0" expanded="false" />
                 <element signature="method#layoutSerchIdPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-                <element signature="e#4598#4726#0" expanded="false" />
-                <element signature="e#4813#4942#0" expanded="false" />
-                <element signature="e#5167#5270#0" expanded="false" />
+                <element signature="e#4228#5888#0" expanded="false" />
+                <element signature="e#5746#5862#0" expanded="false" />
                 <element signature="method#layoutpersonApprovalHasPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-                <element signature="e#7596#7909#0" expanded="false" />
+                <element signature="e#8205#8525#0" expanded="false" />
                 <element signature="method#layoutspecialSpectionHasPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-                <element signature="e#10225#10539#0" expanded="false" />
+                <element signature="e#10841#11163#0" expanded="false" />
+                <element signature="method#layoutShowPersonApprovalPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
+                <element signature="e#14170#14205#0" expanded="false" />
+                <element signature="e#14285#14379#0" expanded="false" />
+                <element signature="method#layoutShowSpecialApprovalPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
+                <element signature="e#17382#17418#0" expanded="false" />
+                <element signature="e#17498#17592#0" expanded="false" />
                 <element signature="method#layoutPersonApprovalChoosePane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-                <element signature="e#12922#13026#0" expanded="false" />
-                <element signature="e#13059#13166#0" expanded="false" />
-                <element signature="e#13199#13306#0" expanded="false" />
+                <element signature="e#19975#20079#0" expanded="false" />
+                <element signature="e#20112#20219#0" expanded="false" />
+                <element signature="e#20252#20359#0" expanded="false" />
                 <element signature="method#layoutSpecialSpectionChoosePane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-                <element signature="e#15691#15796#0" expanded="false" />
-                <element signature="e#15829#15937#0" expanded="false" />
-                <element signature="e#15970#16078#0" expanded="false" />
+                <element signature="e#22744#22849#0" expanded="false" />
+                <element signature="e#22882#22990#0" expanded="false" />
+                <element signature="e#23023#23131#0" expanded="false" />
                 <element signature="method#layoutpersonApprovalNotPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
+                <element signature="e#24682#24786#0" expanded="false" />
                 <element signature="method#layoutspecialSpectionNotPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
+                <element signature="e#26339#26444#0" expanded="false" />
                 <element signature="method#layoutpersonApprovalAddPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-                <element signature="e#21185#22232#0" expanded="false" />
+                <element signature="e#29756#30803#0" expanded="false" />
                 <element signature="method#layoutpersonApprovalDeletePane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-                <element signature="e#23002#24516#0" expanded="false" />
-                <element signature="class#23197:24504" expanded="false" />
-                <element signature="method#invalidated#0;class#23197:24504" expanded="false" />
-                <element signature="e#24270#24421#0" expanded="false" />
+                <element signature="e#31574#33141#0" expanded="false" />
+                <element signature="class#31769:33129" expanded="false" />
+                <element signature="method#invalidated#0;class#31769:33129" expanded="false" />
+                <element signature="e#32895#33046#0" expanded="false" />
                 <element signature="method#layoutpersonApprovalChangePane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-                <element signature="e#25365#31793#0" expanded="false" />
-                <element signature="e#26025#26140#0" expanded="false" />
-                <element signature="e#30567#31765#0" expanded="false" />
+                <element signature="e#34044#40763#0" expanded="false" />
+                <element signature="e#34704#34819#0" expanded="false" />
+                <element signature="e#39329#40735#0" expanded="false" />
                 <element signature="method#layoutspecialSpectionAddPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-                <element signature="e#35069#36112#0" expanded="false" />
+                <element signature="e#44028#45071#0" expanded="false" />
                 <element signature="method#layoutspecialSpectionDeletePane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-                <element signature="e#36883#38396#0" expanded="false" />
-                <element signature="class#37078:38384" expanded="false" />
-                <element signature="method#invalidated#0;class#37078:38384" expanded="false" />
-                <element signature="e#38150#38301#0" expanded="false" />
+                <element signature="e#45842#47408#0" expanded="false" />
+                <element signature="class#46037:47396" expanded="false" />
+                <element signature="method#invalidated#0;class#46037:47396" expanded="false" />
+                <element signature="e#47162#47313#0" expanded="false" />
                 <element signature="method#layoutspecialSpectionChangePane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-                <element signature="e#39246#45662#0" expanded="false" />
-                <element signature="e#39905#40020#0" expanded="false" />
-                <element signature="e#44440#45634#0" expanded="false" />
-                <element signature="method#layoutSuccessfulPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
+                <element signature="e#48258#54994#0" expanded="false" />
+                <element signature="e#48918#49033#0" expanded="false" />
+                <element signature="e#53535#54966#0" expanded="false" />
                 <element signature="method#setPersonApprovalHasPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
                 <element signature="method#setSpecialSpectionHasPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
                 <element signature="method#setPersonApprovalNotPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
@@ -193,200 +323,9 @@
                 <element signature="method#setSpecialSpectionAddPaneId#0;class#MedicalTreatmentApproval#0" expanded="false" />
                 <element signature="method#setSpecialSpectionDeletePaneId#0;class#MedicalTreatmentApproval#0" expanded="false" />
                 <element signature="method#setSpecialSpectionChangePaneId#0;class#MedicalTreatmentApproval#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MedicalInsuranceCenterReimbursement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/MedicalInsuranceCenterReimbursement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="8" column="66" lean-forward="false" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
-              <folding>
-                <element signature="e#1577#1578#0" expanded="true" />
-                <element signature="e#1617#1618#0" expanded="true" />
-                <element signature="e#1663#1664#0" expanded="true" />
-                <element signature="e#1703#1704#0" expanded="true" />
-                <element signature="e#1757#1758#0" expanded="true" />
-                <element signature="e#1805#1806#0" expanded="true" />
-                <element signature="e#1848#1849#0" expanded="true" />
-                <element signature="e#1885#1886#0" expanded="true" />
-                <element signature="e#1932#1933#0" expanded="true" />
-                <element signature="e#1973#1974#0" expanded="true" />
-                <element signature="e#2015#2016#0" expanded="true" />
-                <element signature="e#2057#2058#0" expanded="true" />
-                <element signature="e#2118#2119#0" expanded="true" />
-                <element signature="e#2154#2155#0" expanded="true" />
-                <element signature="e#2195#2196#0" expanded="true" />
-                <element signature="e#2238#2239#0" expanded="true" />
-                <element signature="e#2300#2301#0" expanded="true" />
-                <element signature="e#2337#2338#0" expanded="true" />
-                <element signature="e#2373#2374#0" expanded="true" />
-                <element signature="e#2407#2408#0" expanded="true" />
-                <element signature="e#2459#2460#0" expanded="true" />
-                <element signature="e#2505#2506#0" expanded="true" />
-                <element signature="e#2548#2549#0" expanded="true" />
-                <element signature="e#2589#2590#0" expanded="true" />
-                <element signature="e#2655#2656#0" expanded="true" />
-                <element signature="e#2715#2716#0" expanded="true" />
-                <element signature="e#2758#2759#0" expanded="true" />
-                <element signature="e#2799#2800#0" expanded="true" />
-                <element signature="e#2865#2866#0" expanded="true" />
-                <element signature="e#2925#2926#0" expanded="true" />
-                <element signature="e#2976#2977#0" expanded="true" />
-                <element signature="e#3025#3026#0" expanded="true" />
-                <element signature="e#3223#3224#0" expanded="true" />
-                <element signature="e#3261#3262#0" expanded="true" />
-                <element signature="e#3321#3322#0" expanded="true" />
-                <element signature="e#3375#3376#0" expanded="true" />
-                <element signature="e#3419#3420#0" expanded="true" />
-                <element signature="e#3461#3462#0" expanded="true" />
-                <element signature="e#3529#3530#0" expanded="true" />
-                <element signature="e#3591#3592#0" expanded="true" />
-                <element signature="e#3635#3636#0" expanded="true" />
-                <element signature="e#3678#3679#0" expanded="true" />
-                <element signature="e#3747#3748#0" expanded="true" />
-                <element signature="e#3811#3812#0" expanded="true" />
-                <element signature="e#3855#3856#0" expanded="true" />
-                <element signature="e#3898#3899#0" expanded="true" />
-                <element signature="e#3967#3968#0" expanded="true" />
-                <element signature="e#4031#4032#0" expanded="true" />
-                <element signature="e#4083#4084#0" expanded="true" />
-                <element signature="e#4134#4135#0" expanded="true" />
-                <element signature="e#4340#4341#0" expanded="true" />
-                <element signature="e#4380#4381#0" expanded="true" />
-                <element signature="e#4443#4444#0" expanded="true" />
-                <element signature="e#4501#4502#0" expanded="true" />
-                <element signature="e#4546#4547#0" expanded="true" />
-                <element signature="e#4590#4591#0" expanded="true" />
-                <element signature="e#4763#4764#0" expanded="true" />
-                <element signature="e#4801#4802#0" expanded="true" />
-                <element signature="e#4851#4852#0" expanded="true" />
-                <element signature="e#4883#4884#0" expanded="true" />
-                <element signature="e#4934#4935#0" expanded="true" />
-                <element signature="e#4979#4980#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="personVisitApprovalInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/personVisitApprovalInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-              <folding>
-                <element signature="e#953#954#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-                <element signature="e#1038#1039#0" expanded="true" />
-                <element signature="e#1082#1083#0" expanded="true" />
-                <element signature="e#1117#1118#0" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
-                <element signature="e#1196#1197#0" expanded="true" />
-                <element signature="e#1236#1237#0" expanded="true" />
-                <element signature="e#1270#1271#0" expanded="true" />
-                <element signature="e#1302#1303#0" expanded="true" />
-                <element signature="e#1350#1351#0" expanded="true" />
-                <element signature="e#1392#1393#0" expanded="true" />
-                <element signature="e#1424#1425#0" expanded="true" />
-                <element signature="e#1454#1455#0" expanded="true" />
-                <element signature="e#1498#1499#0" expanded="true" />
-                <element signature="e#1536#1537#0" expanded="true" />
-                <element signature="e#1578#1579#0" expanded="true" />
-                <element signature="e#1616#1617#0" expanded="true" />
-                <element signature="e#1678#1679#0" expanded="true" />
-                <element signature="e#1732#1733#0" expanded="true" />
-                <element signature="e#1773#1774#0" expanded="true" />
-                <element signature="e#1810#1811#0" expanded="true" />
-                <element signature="e#1870#1871#0" expanded="true" />
-                <element signature="e#1922#1923#0" expanded="true" />
-                <element signature="e#1967#1968#0" expanded="true" />
-                <element signature="e#2008#2009#0" expanded="true" />
-                <element signature="e#2076#2077#0" expanded="true" />
-                <element signature="e#2136#2137#0" expanded="true" />
-                <element signature="e#2175#2176#0" expanded="true" />
-                <element signature="e#2210#2211#0" expanded="true" />
-                <element signature="e#2266#2267#0" expanded="true" />
-                <element signature="e#2314#2315#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IntegratedQuery.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/IntegratedQuery.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding>
-                <element signature="e#1127#1128#0" expanded="true" />
-                <element signature="e#1154#1155#0" expanded="true" />
-                <element signature="e#1187#1188#0" expanded="true" />
-                <element signature="e#1214#1215#0" expanded="true" />
-                <element signature="e#1250#1251#0" expanded="true" />
-                <element signature="e#1288#1289#0" expanded="true" />
-                <element signature="e#1338#1339#0" expanded="true" />
-                <element signature="e#1370#1371#0" expanded="true" />
-                <element signature="e#1421#1422#0" expanded="true" />
-                <element signature="e#1466#1467#0" expanded="true" />
-                <element signature="e#1496#1497#0" expanded="true" />
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="e#1564#1565#0" expanded="true" />
-                <element signature="e#1598#1599#0" expanded="true" />
-                <element signature="e#1628#1629#0" expanded="true" />
-                <element signature="e#1656#1657#0" expanded="true" />
-                <element signature="e#1696#1697#0" expanded="true" />
-                <element signature="e#1730#1731#0" expanded="true" />
-                <element signature="e#1760#1761#0" expanded="true" />
-                <element signature="e#1788#1789#0" expanded="true" />
-                <element signature="e#1828#1829#0" expanded="true" />
-                <element signature="e#1862#1863#0" expanded="true" />
-                <element signature="e#1893#1894#0" expanded="true" />
-                <element signature="e#1923#1924#0" expanded="true" />
-                <element signature="e#1966#1967#0" expanded="true" />
-                <element signature="e#2004#2005#0" expanded="true" />
-                <element signature="e#2035#2036#0" expanded="true" />
-                <element signature="e#2065#2066#0" expanded="true" />
-                <element signature="e#2108#2109#0" expanded="true" />
-                <element signature="e#2146#2147#0" expanded="true" />
-                <element signature="e#2186#2187#0" expanded="true" />
-                <element signature="e#2228#2229#0" expanded="true" />
-                <element signature="e#2289#2290#0" expanded="true" />
-                <element signature="e#2325#2326#0" expanded="true" />
-                <element signature="e#2366#2367#0" expanded="true" />
-                <element signature="e#2409#2410#0" expanded="true" />
-                <element signature="e#2471#2472#0" expanded="true" />
-                <element signature="e#2508#2509#0" expanded="true" />
-                <element signature="e#2542#2543#0" expanded="true" />
-                <element signature="e#2575#2576#0" expanded="true" />
-                <element signature="e#2624#2625#0" expanded="true" />
-                <element signature="e#2668#2669#0" expanded="true" />
-                <element signature="e#2699#2700#0" expanded="true" />
-                <element signature="e#2729#2730#0" expanded="true" />
-                <element signature="e#2772#2773#0" expanded="true" />
-                <element signature="e#2810#2811#0" expanded="true" />
-                <element signature="e#2846#2847#0" expanded="true" />
-                <element signature="e#2880#2881#0" expanded="true" />
-                <element signature="e#2932#2933#0" expanded="true" />
-                <element signature="e#2978#2979#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="method#start#0;class#login#0" expanded="false" />
-                <element signature="e#2118#2243#0" expanded="false" />
-                <element signature="e#2278#2343#0" expanded="false" />
-                <element signature="e#2814#3377#0" expanded="false" />
-                <element signature="method#isRight#0;class#login#0" expanded="false" />
-                <element signature="method#toChange#0;class#login#0" expanded="false" />
+                <element signature="method#setShowPersonApprovalPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
+                <element signature="method#setShowSpecialApprovalPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
+                <element signature="method#setShowSpecialApprovalId#0;class#MedicalTreatmentApproval#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -395,8 +334,8 @@
       <file leaf-file-name="MedicalInformation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/MedicalInformation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1804">
-              <caret line="2297" column="39" lean-forward="true" selection-start-line="2297" selection-start-column="39" selection-end-line="2297" selection-end-column="39" />
+            <state relative-caret-position="185">
+              <caret line="139" column="44" lean-forward="false" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
               <folding>
                 <element signature="method#MedicalInformation#0;class#MedicalInformation#0" expanded="false" />
                 <element signature="method#layoutInitialPane#0;class#MedicalInformation#0" expanded="false" />
@@ -423,44 +362,45 @@
                 <element signature="class#35544:36629" expanded="false" />
                 <element signature="method#invalidated#0;class#35544:36629" expanded="false" />
                 <element signature="e#36367#36530#0" expanded="false" />
-                <element signature="e#37490#40130#0" expanded="false" />
-                <element signature="e#39968#40095#0" expanded="false" />
-                <element signature="e#40974#45827#0" expanded="false" />
-                <element signature="e#41411#41538#0" expanded="false" />
-                <element signature="e#44635#45791#0" expanded="false" />
+                <element signature="e#37490#40121#0" expanded="false" />
+                <element signature="e#39959#40086#0" expanded="false" />
+                <element signature="e#40965#45811#0" expanded="false" />
+                <element signature="e#41402#41529#0" expanded="false" />
+                <element signature="e#44619#45775#0" expanded="false" />
                 <element signature="method#layoutServiceFacilityPane#0;class#MedicalInformation#0" expanded="false" />
-                <element signature="e#47152#47674#0" expanded="false" />
-                <element signature="e#48439#49797#0" expanded="false" />
-                <element signature="class#48684:49781" expanded="false" />
-                <element signature="method#invalidated#0;class#48684:49781" expanded="false" />
-                <element signature="e#49519#49682#0" expanded="false" />
-                <element signature="e#50650#52308#0" expanded="false" />
-                <element signature="e#52146#52273#0" expanded="false" />
-                <element signature="e#53160#56171#0" expanded="false" />
-                <element signature="e#53633#53760#0" expanded="false" />
-                <element signature="e#55484#56135#0" expanded="false" />
+                <element signature="e#47136#47658#0" expanded="false" />
+                <element signature="e#48423#49781#0" expanded="false" />
+                <element signature="class#48668:49765" expanded="false" />
+                <element signature="method#invalidated#0;class#48668:49765" expanded="false" />
+                <element signature="e#49503#49666#0" expanded="false" />
+                <element signature="e#50634#52292#0" expanded="false" />
+                <element signature="e#52130#52257#0" expanded="false" />
+                <element signature="e#53144#56155#0" expanded="false" />
+                <element signature="e#53617#53744#0" expanded="false" />
+                <element signature="e#55468#56119#0" expanded="false" />
                 <element signature="method#layoutFixedMedicalInstitutionPane#0;class#MedicalInformation#0" expanded="false" />
-                <element signature="e#59128#60355#0" expanded="false" />
-                <element signature="e#61128#62502#0" expanded="false" />
-                <element signature="class#61373:62486" expanded="false" />
-                <element signature="method#invalidated#0;class#61373:62486" expanded="false" />
-                <element signature="e#62224#62387#0" expanded="false" />
-                <element signature="e#63363#66964#0" expanded="false" />
-                <element signature="e#66802#66929#0" expanded="false" />
-                <element signature="e#67824#74007#0" expanded="false" />
-                <element signature="e#68346#68473#0" expanded="false" />
-                <element signature="e#72521#73971#0" expanded="false" />
+                <element signature="e#59112#60339#0" expanded="false" />
+                <element signature="e#61112#62486#0" expanded="false" />
+                <element signature="class#61357:62470" expanded="false" />
+                <element signature="method#invalidated#0;class#61357:62470" expanded="false" />
+                <element signature="e#62208#62371#0" expanded="false" />
+                <element signature="e#63347#66948#0" expanded="false" />
+                <element signature="e#66786#66913#0" expanded="false" />
+                <element signature="e#67808#73991#0" expanded="false" />
+                <element signature="e#68330#68457#0" expanded="false" />
+                <element signature="e#72505#73955#0" expanded="false" />
                 <element signature="method#layoutMedicalTreatmentCalculationParameterPane#0;class#MedicalInformation#0" expanded="false" />
-                <element signature="e#76375#77544#0" expanded="false" />
-                <element signature="e#78332#79731#0" expanded="false" />
-                <element signature="class#78577:79715" expanded="false" />
-                <element signature="method#invalidated#0;class#78577:79715" expanded="false" />
-                <element signature="e#79454#79617#0" expanded="false" />
-                <element signature="e#80607#83734#0" expanded="false" />
-                <element signature="e#83573#83700#0" expanded="false" />
-                <element signature="e#84609#90122#0" expanded="false" />
-                <element signature="e#85209#85336#0" expanded="false" />
-                <element signature="e#88673#90086#0" expanded="false" />
+                <element signature="e#76359#77528#0" expanded="false" />
+                <element signature="e#78316#79715#0" expanded="false" />
+                <element signature="class#78561:79699" expanded="false" />
+                <element signature="method#invalidated#0;class#78561:79699" expanded="false" />
+                <element signature="e#79438#79601#0" expanded="false" />
+                <element signature="e#80591#83718#0" expanded="false" />
+                <element signature="e#83557#83684#0" expanded="false" />
+                <element signature="e#84593#90106#0" expanded="false" />
+                <element signature="e#85193#85320#0" expanded="false" />
+                <element signature="e#88657#90070#0" expanded="false" />
+                <element signature="method#layoutMedicineSuccessfulPane#0;class#MedicalInformation#0" expanded="false" />
                 <element signature="method#layoutTreatmentSuccessfulPane#0;class#MedicalInformation#0" expanded="false" />
                 <element signature="method#layoutServiceFacilitySuccessfulPane#0;class#MedicalInformation#0" expanded="false" />
                 <element signature="method#layoutFixedMedicalInstitutionSuccessfulPane#0;class#MedicalInformation#0" expanded="false" />
@@ -472,37 +412,6 @@
                 <element signature="method#changeInFile#0;class#MedicalInformation#0" expanded="false" />
                 <element signature="method#setFixedMedicalInstitutionPane#0;class#MedicalInformation#0" expanded="false" />
                 <element signature="method#setMedicalTreatmentCalculationParameterPane#0;class#MedicalInformation#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PublicServiceTackle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/PublicServiceTackle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-717">
-              <caret line="409" column="54" lean-forward="true" selection-start-line="409" selection-start-column="54" selection-end-line="409" selection-end-column="54" />
-              <folding>
-                <element signature="method#PublicServiceTackle#0;class#PublicServiceTackle#0" expanded="false" />
-                <element signature="method#layoutInitialPane#0;class#PublicServiceTackle#0" expanded="false" />
-                <element signature="e#4182#4274#0" expanded="false" />
-                <element signature="e#4307#4399#0" expanded="false" />
-                <element signature="e#4432#4524#0" expanded="false" />
-                <element signature="e#4557#4649#0" expanded="false" />
-                <element signature="e#7785#9375#0" expanded="false" />
-                <element signature="e#10141#11471#0" expanded="false" />
-                <element signature="e#11193#11356#0" expanded="false" />
-                <element signature="e#15607#15735#0" expanded="false" />
-                <element signature="e#16625#23125#0" expanded="false" />
-                <element signature="e#17035#17162#0" expanded="false" />
-                <element signature="e#21239#23089#0" expanded="false" />
-                <element signature="method#layoutPublicServiceTackleSuccessfulPane#0;class#PublicServiceTackle#0" expanded="false" />
-                <element signature="method#writeFile#0;class#PublicServiceTackle#0" expanded="false" />
-                <element signature="method#readFile#0;class#PublicServiceTackle#0" expanded="false" />
-                <element signature="method#deleteInFile#0;class#PublicServiceTackle#0" expanded="false" />
-                <element signature="method#selectFromTheFile#0;class#PublicServiceTackle#0" expanded="false" />
-                <element signature="method#changeInFile#0;class#PublicServiceTackle#0" expanded="false" />
-                <element signature="method#setPublicServiceTacklePane#0;class#PublicServiceTackle#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -527,6 +436,12 @@
       <find>visitInfoLs</find>
       <find>sideBarProperty</find>
       <find>choosePane</find>
+      <find>not</find>
+      <find>showPersonApprovalId</find>
+      <find>person.dat</find>
+      <find>person.dat.dat</find>
+      <find>person.dat.</find>
+      <find>HBox</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -552,9 +467,7 @@
         <option value="$PROJECT_DIR$/src/sample/Main1.java" />
         <option value="$PROJECT_DIR$/src/sample/maybe" />
         <option value="$PROJECT_DIR$/src/sample/medicalInformation.java" />
-        <option value="$PROJECT_DIR$/src/sample/visitInfo.java" />
         <option value="$PROJECT_DIR$/src/sample/prescription.java" />
-        <option value="$PROJECT_DIR$/src/sample/prescriptionDetail.java" />
         <option value="$PROJECT_DIR$/src/sample/specialCheck.java" />
         <option value="$PROJECT_DIR$/src/sample/difHospital.java" />
         <option value="$PROJECT_DIR$/src/css/MedicalInformation.css" />
@@ -567,20 +480,22 @@
         <option value="$PROJECT_DIR$/src/sample/NotFoundWindow.java" />
         <option value="$PROJECT_DIR$/src/sample/FixedMedicalInstitution.java" />
         <option value="$PROJECT_DIR$/src/sample/ServiceFacility.java" />
-        <option value="$PROJECT_DIR$/src/sample/Treatment.java" />
         <option value="$PROJECT_DIR$/src/sample/MedicalTreatmentCalculationParameter.java" />
         <option value="$PROJECT_DIR$/src/sample/birthday.java" />
         <option value="$PROJECT_DIR$/src/sample/time.java" />
         <option value="$PROJECT_DIR$/src/sample/Person.java" />
-        <option value="$PROJECT_DIR$/src/sample/PublicServiceTackle.java" />
-        <option value="$PROJECT_DIR$/src/sample/specialSpectionApproval.java" />
-        <option value="$PROJECT_DIR$/src/sample/personVisitApprovalInfo.java" />
         <option value="$PROJECT_DIR$/src/sample/dddd.java" />
-        <option value="$PROJECT_DIR$/src/sample/MedicalInformation.java" />
-        <option value="$PROJECT_DIR$/src/sample/MedicalTreatmentApproval.java" />
-        <option value="$PROJECT_DIR$/src/sample/MedicalInsuranceCenterReimbursement.java" />
         <option value="$PROJECT_DIR$/src/sample/IntegratedQuery.java" />
+        <option value="$PROJECT_DIR$/src/sample/personVisitApprovalInfo.java" />
+        <option value="$PROJECT_DIR$/src/sample/specialSpectionApproval.java" />
+        <option value="$PROJECT_DIR$/src/sample/PublicServiceTackle.java" />
+        <option value="$PROJECT_DIR$/src/sample/MedicalTreatmentApproval.java" />
+        <option value="$PROJECT_DIR$/src/sample/visitInfo.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/prescriptionDetail.java" />
+        <option value="$PROJECT_DIR$/src/sample/Treatment.java" />
+        <option value="$PROJECT_DIR$/src/sample/MedicalInformation.java" />
+        <option value="$PROJECT_DIR$/src/sample/MedicalInsuranceCenterReimbursement.java" />
       </list>
     </option>
   </component>
@@ -892,12 +807,12 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1532403442212" duration="5717000" />
-      <workItem from="1532864079530" duration="43099000" />
+      <workItem from="1532864079530" duration="82055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157157000" />
+    <option name="totallyTimeSpent" value="196113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="49" width="1942" height="1042" extended-state="6" />
@@ -905,7 +820,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -916,8 +831,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21328294" sideWeight="0.6703755" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21328294" sideWeight="0.6703755" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -934,7 +850,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -996,7 +911,6 @@
           <caret line="466" column="56" lean-forward="false" selection-start-line="466" selection-start-column="56" selection-end-line="466" selection-end-column="56" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#layoutMainPane#0;class#Main#0" expanded="false" />
             <element signature="e#2272#2306#0" expanded="false" />
             <element signature="method#layoutNavigationPane#0;class#Main#0" expanded="false" />
             <element signature="e#3607#3671#0" expanded="false" />
@@ -1018,32 +932,30 @@
             <element signature="e#11184#11255#0" expanded="false" />
             <element signature="method#layoutTopPane#0;class#Main#0" expanded="false" />
             <element signature="method#listenMedicalInformation#0;class#Main#0" expanded="false" />
-            <element signature="class#27323:27533" expanded="false" />
-            <element signature="method#invalidated#0;class#27323:27533" expanded="false" />
+            <element signature="class#29595:29805" expanded="false" />
+            <element signature="method#invalidated#0;class#29595:29805" expanded="false" />
             <element signature="method#listenPublicServiceTackle#0;class#Main#0" expanded="false" />
-            <element signature="class#27655:27865" expanded="false" />
-            <element signature="method#invalidated#0;class#27655:27865" expanded="false" />
-            <element signature="class#28019:28229" expanded="false" />
-            <element signature="method#invalidated#0;class#28019:28229" expanded="false" />
+            <element signature="class#29927:30137" expanded="false" />
+            <element signature="method#invalidated#0;class#29927:30137" expanded="false" />
             <element signature="method#listenMedicalTreatmentApproval#0;class#Main#0" expanded="false" />
-            <element signature="class#28361:28571" expanded="false" />
-            <element signature="method#invalidated#0;class#28361:28571" expanded="false" />
+            <element signature="class#30633:30843" expanded="false" />
+            <element signature="method#invalidated#0;class#30633:30843" expanded="false" />
             <element signature="method#listenIntegratedQuery#0;class#Main#0" expanded="false" />
-            <element signature="class#28685:28895" expanded="false" />
-            <element signature="method#invalidated#0;class#28685:28895" expanded="false" />
+            <element signature="class#30957:31167" expanded="false" />
+            <element signature="method#invalidated#0;class#30957:31167" expanded="false" />
             <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="class#30740:31603" expanded="false" />
-            <element signature="method#invalidated#0;class#30740:31603" expanded="false" />
-            <element signature="class#31650:31860" expanded="false" />
-            <element signature="method#invalidated#0;class#31650:31860" expanded="false" />
-            <element signature="class#31919:32129" expanded="false" />
-            <element signature="method#invalidated#0;class#31919:32129" expanded="false" />
-            <element signature="class#32204:32414" expanded="false" />
-            <element signature="method#invalidated#0;class#32204:32414" expanded="false" />
-            <element signature="class#32470:32680" expanded="false" />
-            <element signature="method#invalidated#0;class#32470:32680" expanded="false" />
-            <element signature="class#32735:32945" expanded="false" />
-            <element signature="method#invalidated#0;class#32735:32945" expanded="false" />
+            <element signature="class#33012:33875" expanded="false" />
+            <element signature="method#invalidated#0;class#33012:33875" expanded="false" />
+            <element signature="class#33922:34132" expanded="false" />
+            <element signature="method#invalidated#0;class#33922:34132" expanded="false" />
+            <element signature="class#34191:34401" expanded="false" />
+            <element signature="method#invalidated#0;class#34191:34401" expanded="false" />
+            <element signature="class#34476:34686" expanded="false" />
+            <element signature="method#invalidated#0;class#34476:34686" expanded="false" />
+            <element signature="class#34742:34952" expanded="false" />
+            <element signature="method#invalidated#0;class#34742:34952" expanded="false" />
+            <element signature="class#35007:35217" expanded="false" />
+            <element signature="method#invalidated#0;class#35007:35217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1136,44 +1048,45 @@
             <element signature="class#35544:36629" expanded="false" />
             <element signature="method#invalidated#0;class#35544:36629" expanded="false" />
             <element signature="e#36367#36530#0" expanded="false" />
-            <element signature="e#37490#40130#0" expanded="false" />
-            <element signature="e#39968#40095#0" expanded="false" />
-            <element signature="e#40974#45827#0" expanded="false" />
-            <element signature="e#41411#41538#0" expanded="false" />
-            <element signature="e#44635#45791#0" expanded="false" />
+            <element signature="e#37490#40121#0" expanded="false" />
+            <element signature="e#39959#40086#0" expanded="false" />
+            <element signature="e#40965#45811#0" expanded="false" />
+            <element signature="e#41402#41529#0" expanded="false" />
+            <element signature="e#44619#45775#0" expanded="false" />
             <element signature="method#layoutServiceFacilityPane#0;class#MedicalInformation#0" expanded="false" />
-            <element signature="e#47152#47674#0" expanded="false" />
-            <element signature="e#48439#49797#0" expanded="false" />
-            <element signature="class#48684:49781" expanded="false" />
-            <element signature="method#invalidated#0;class#48684:49781" expanded="false" />
-            <element signature="e#49519#49682#0" expanded="false" />
-            <element signature="e#50650#52308#0" expanded="false" />
-            <element signature="e#52146#52273#0" expanded="false" />
-            <element signature="e#53160#56171#0" expanded="false" />
-            <element signature="e#53633#53760#0" expanded="false" />
-            <element signature="e#55484#56135#0" expanded="false" />
+            <element signature="e#47136#47658#0" expanded="false" />
+            <element signature="e#48423#49781#0" expanded="false" />
+            <element signature="class#48668:49765" expanded="false" />
+            <element signature="method#invalidated#0;class#48668:49765" expanded="false" />
+            <element signature="e#49503#49666#0" expanded="false" />
+            <element signature="e#50634#52292#0" expanded="false" />
+            <element signature="e#52130#52257#0" expanded="false" />
+            <element signature="e#53144#56155#0" expanded="false" />
+            <element signature="e#53617#53744#0" expanded="false" />
+            <element signature="e#55468#56119#0" expanded="false" />
             <element signature="method#layoutFixedMedicalInstitutionPane#0;class#MedicalInformation#0" expanded="false" />
-            <element signature="e#59128#60355#0" expanded="false" />
-            <element signature="e#61128#62502#0" expanded="false" />
-            <element signature="class#61373:62486" expanded="false" />
-            <element signature="method#invalidated#0;class#61373:62486" expanded="false" />
-            <element signature="e#62224#62387#0" expanded="false" />
-            <element signature="e#63363#66964#0" expanded="false" />
-            <element signature="e#66802#66929#0" expanded="false" />
-            <element signature="e#67824#74007#0" expanded="false" />
-            <element signature="e#68346#68473#0" expanded="false" />
-            <element signature="e#72521#73971#0" expanded="false" />
+            <element signature="e#59112#60339#0" expanded="false" />
+            <element signature="e#61112#62486#0" expanded="false" />
+            <element signature="class#61357:62470" expanded="false" />
+            <element signature="method#invalidated#0;class#61357:62470" expanded="false" />
+            <element signature="e#62208#62371#0" expanded="false" />
+            <element signature="e#63347#66948#0" expanded="false" />
+            <element signature="e#66786#66913#0" expanded="false" />
+            <element signature="e#67808#73991#0" expanded="false" />
+            <element signature="e#68330#68457#0" expanded="false" />
+            <element signature="e#72505#73955#0" expanded="false" />
             <element signature="method#layoutMedicalTreatmentCalculationParameterPane#0;class#MedicalInformation#0" expanded="false" />
-            <element signature="e#76375#77544#0" expanded="false" />
-            <element signature="e#78332#79731#0" expanded="false" />
-            <element signature="class#78577:79715" expanded="false" />
-            <element signature="method#invalidated#0;class#78577:79715" expanded="false" />
-            <element signature="e#79454#79617#0" expanded="false" />
-            <element signature="e#80607#83734#0" expanded="false" />
-            <element signature="e#83573#83700#0" expanded="false" />
-            <element signature="e#84609#90122#0" expanded="false" />
-            <element signature="e#85209#85336#0" expanded="false" />
-            <element signature="e#88673#90086#0" expanded="false" />
+            <element signature="e#76359#77528#0" expanded="false" />
+            <element signature="e#78316#79715#0" expanded="false" />
+            <element signature="class#78561:79699" expanded="false" />
+            <element signature="method#invalidated#0;class#78561:79699" expanded="false" />
+            <element signature="e#79438#79601#0" expanded="false" />
+            <element signature="e#80591#83718#0" expanded="false" />
+            <element signature="e#83557#83684#0" expanded="false" />
+            <element signature="e#84593#90106#0" expanded="false" />
+            <element signature="e#85193#85320#0" expanded="false" />
+            <element signature="e#88657#90070#0" expanded="false" />
+            <element signature="method#layoutMedicineSuccessfulPane#0;class#MedicalInformation#0" expanded="false" />
             <element signature="method#layoutTreatmentSuccessfulPane#0;class#MedicalInformation#0" expanded="false" />
             <element signature="method#layoutServiceFacilitySuccessfulPane#0;class#MedicalInformation#0" expanded="false" />
             <element signature="method#layoutFixedMedicalInstitutionSuccessfulPane#0;class#MedicalInformation#0" expanded="false" />
@@ -1195,7 +1108,6 @@
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#layoutMainPane#0;class#Main#0" expanded="false" />
             <element signature="e#2272#2306#0" expanded="false" />
             <element signature="method#layoutNavigationPane#0;class#Main#0" expanded="false" />
             <element signature="e#3607#3671#0" expanded="false" />
@@ -1217,32 +1129,30 @@
             <element signature="e#11184#11255#0" expanded="false" />
             <element signature="method#layoutTopPane#0;class#Main#0" expanded="false" />
             <element signature="method#listenMedicalInformation#0;class#Main#0" expanded="false" />
-            <element signature="class#27323:27533" expanded="false" />
-            <element signature="method#invalidated#0;class#27323:27533" expanded="false" />
+            <element signature="class#29595:29805" expanded="false" />
+            <element signature="method#invalidated#0;class#29595:29805" expanded="false" />
             <element signature="method#listenPublicServiceTackle#0;class#Main#0" expanded="false" />
-            <element signature="class#27655:27865" expanded="false" />
-            <element signature="method#invalidated#0;class#27655:27865" expanded="false" />
-            <element signature="class#28019:28229" expanded="false" />
-            <element signature="method#invalidated#0;class#28019:28229" expanded="false" />
+            <element signature="class#29927:30137" expanded="false" />
+            <element signature="method#invalidated#0;class#29927:30137" expanded="false" />
             <element signature="method#listenMedicalTreatmentApproval#0;class#Main#0" expanded="false" />
-            <element signature="class#28361:28571" expanded="false" />
-            <element signature="method#invalidated#0;class#28361:28571" expanded="false" />
+            <element signature="class#30633:30843" expanded="false" />
+            <element signature="method#invalidated#0;class#30633:30843" expanded="false" />
             <element signature="method#listenIntegratedQuery#0;class#Main#0" expanded="false" />
-            <element signature="class#28685:28895" expanded="false" />
-            <element signature="method#invalidated#0;class#28685:28895" expanded="false" />
+            <element signature="class#30957:31167" expanded="false" />
+            <element signature="method#invalidated#0;class#30957:31167" expanded="false" />
             <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="class#30740:31603" expanded="false" />
-            <element signature="method#invalidated#0;class#30740:31603" expanded="false" />
-            <element signature="class#31650:31860" expanded="false" />
-            <element signature="method#invalidated#0;class#31650:31860" expanded="false" />
-            <element signature="class#31919:32129" expanded="false" />
-            <element signature="method#invalidated#0;class#31919:32129" expanded="false" />
-            <element signature="class#32204:32414" expanded="false" />
-            <element signature="method#invalidated#0;class#32204:32414" expanded="false" />
-            <element signature="class#32470:32680" expanded="false" />
-            <element signature="method#invalidated#0;class#32470:32680" expanded="false" />
-            <element signature="class#32735:32945" expanded="false" />
-            <element signature="method#invalidated#0;class#32735:32945" expanded="false" />
+            <element signature="class#33012:33875" expanded="false" />
+            <element signature="method#invalidated#0;class#33012:33875" expanded="false" />
+            <element signature="class#33922:34132" expanded="false" />
+            <element signature="method#invalidated#0;class#33922:34132" expanded="false" />
+            <element signature="class#34191:34401" expanded="false" />
+            <element signature="method#invalidated#0;class#34191:34401" expanded="false" />
+            <element signature="class#34476:34686" expanded="false" />
+            <element signature="method#invalidated#0;class#34476:34686" expanded="false" />
+            <element signature="class#34742:34952" expanded="false" />
+            <element signature="method#invalidated#0;class#34742:34952" expanded="false" />
+            <element signature="class#35007:35217" expanded="false" />
+            <element signature="method#invalidated#0;class#35007:35217" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1259,77 +1169,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main1.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/maybe">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/prescription.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/prescriptionDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding>
-            <element signature="e#475#476#0" expanded="false" />
-            <element signature="e#539#540#0" expanded="false" />
-            <element signature="e#595#596#0" expanded="false" />
-            <element signature="e#649#650#0" expanded="false" />
-            <element signature="e#682#683#0" expanded="false" />
-            <element signature="e#751#752#0" expanded="false" />
-            <element signature="e#795#796#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/visitInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding>
-            <element signature="e#1138#1139#0" expanded="false" />
-            <element signature="e#1169#1170#0" expanded="false" />
-            <element signature="e#1214#1215#0" expanded="false" />
-            <element signature="e#1254#1255#0" expanded="false" />
-            <element signature="e#1296#1297#0" expanded="false" />
-            <element signature="e#1334#1335#0" expanded="false" />
-            <element signature="e#1396#1397#0" expanded="false" />
-            <element signature="e#1450#1451#0" expanded="false" />
-            <element signature="e#1490#1491#0" expanded="false" />
-            <element signature="e#1526#1527#0" expanded="false" />
-            <element signature="e#1584#1585#0" expanded="false" />
-            <element signature="e#1634#1635#0" expanded="false" />
-            <element signature="e#1676#1677#0" expanded="false" />
-            <element signature="e#1714#1715#0" expanded="false" />
-            <element signature="e#1776#1777#0" expanded="false" />
-            <element signature="e#1830#1831#0" expanded="false" />
-            <element signature="e#1870#1871#0" expanded="false" />
-            <element signature="e#1906#1907#0" expanded="false" />
-            <element signature="e#1964#1965#0" expanded="false" />
-            <element signature="e#2014#2015#0" expanded="false" />
-            <element signature="e#2054#2055#0" expanded="false" />
-            <element signature="e#2090#2091#0" expanded="false" />
-            <element signature="e#2148#2149#0" expanded="false" />
-            <element signature="e#2198#2199#0" expanded="false" />
-            <element signature="e#2241#2242#0" expanded="false" />
-            <element signature="e#2280#2281#0" expanded="false" />
-            <element signature="e#2344#2345#0" expanded="false" />
-            <element signature="e#2400#2401#0" expanded="false" />
-            <element signature="e#2442#2443#0" expanded="false" />
-            <element signature="e#2480#2481#0" expanded="false" />
-            <element signature="e#2542#2543#0" expanded="false" />
-            <element signature="e#2596#2597#0" expanded="false" />
-            <element signature="e#2660#2661#0" expanded="false" />
-            <element signature="e#2701#2702#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1439,6 +1283,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1516,27 +1361,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/files/person.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="85" column="31" lean-forward="false" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1891#1892#0" expanded="true" />
-            <element signature="e#1939#1940#0" expanded="true" />
-            <element signature="e#2202#2203#0" expanded="true" />
-            <element signature="e#2249#2250#0" expanded="true" />
-            <element signature="e#2955#2956#0" expanded="true" />
-            <element signature="e#3001#3002#0" expanded="true" />
-            <element signature="e#3041#3042#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1891#1892#0" expanded="false" />
+            <element signature="e#1939#1940#0" expanded="false" />
+            <element signature="e#2202#2203#0" expanded="false" />
+            <element signature="e#2249#2250#0" expanded="false" />
+            <element signature="e#2955#2956#0" expanded="false" />
+            <element signature="e#3001#3002#0" expanded="false" />
+            <element signature="e#3041#3042#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1547,54 +1384,6 @@
           <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
           <folding>
             <marker date="1532916557986" expanded="false" signature="216:303" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/specialSpectionApproval.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="32" />
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="38" />
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="34" />
-          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="34" />
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="25" />
-          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="27" />
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="28" />
-          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="30" />
-          <folding>
-            <element signature="e#949#950#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-            <element signature="e#1266#1267#0" expanded="true" />
-            <element signature="e#1298#1299#0" expanded="true" />
-            <element signature="e#1346#1347#0" expanded="true" />
-            <element signature="e#1388#1389#0" expanded="true" />
-            <element signature="e#1420#1421#0" expanded="true" />
-            <element signature="e#1450#1451#0" expanded="true" />
-            <element signature="e#1494#1495#0" expanded="true" />
-            <element signature="e#1532#1533#0" expanded="true" />
-            <element signature="e#1573#1574#0" expanded="true" />
-            <element signature="e#1610#1611#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1722#1723#0" expanded="true" />
-            <element signature="e#1763#1764#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1860#1861#0" expanded="true" />
-            <element signature="e#1912#1913#0" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#1998#1999#0" expanded="true" />
-            <element signature="e#2066#2067#0" expanded="true" />
-            <element signature="e#2126#2127#0" expanded="true" />
-            <element signature="e#2165#2166#0" expanded="true" />
-            <element signature="e#2200#2201#0" expanded="true" />
-            <element signature="e#2256#2257#0" expanded="true" />
-            <element signature="e#2304#2305#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1631,84 +1420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Treatment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/PublicServiceTackle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-717">
-          <caret line="409" column="54" lean-forward="true" selection-start-line="409" selection-start-column="54" selection-end-line="409" selection-end-column="54" />
-          <folding>
-            <element signature="method#PublicServiceTackle#0;class#PublicServiceTackle#0" expanded="false" />
-            <element signature="method#layoutInitialPane#0;class#PublicServiceTackle#0" expanded="false" />
-            <element signature="e#4182#4274#0" expanded="false" />
-            <element signature="e#4307#4399#0" expanded="false" />
-            <element signature="e#4432#4524#0" expanded="false" />
-            <element signature="e#4557#4649#0" expanded="false" />
-            <element signature="e#7785#9375#0" expanded="false" />
-            <element signature="e#10141#11471#0" expanded="false" />
-            <element signature="e#11193#11356#0" expanded="false" />
-            <element signature="e#15607#15735#0" expanded="false" />
-            <element signature="e#16625#23125#0" expanded="false" />
-            <element signature="e#17035#17162#0" expanded="false" />
-            <element signature="e#21239#23089#0" expanded="false" />
-            <element signature="method#layoutPublicServiceTackleSuccessfulPane#0;class#PublicServiceTackle#0" expanded="false" />
-            <element signature="method#writeFile#0;class#PublicServiceTackle#0" expanded="false" />
-            <element signature="method#readFile#0;class#PublicServiceTackle#0" expanded="false" />
-            <element signature="method#deleteInFile#0;class#PublicServiceTackle#0" expanded="false" />
-            <element signature="method#selectFromTheFile#0;class#PublicServiceTackle#0" expanded="false" />
-            <element signature="method#changeInFile#0;class#PublicServiceTackle#0" expanded="false" />
-            <element signature="method#setPublicServiceTacklePane#0;class#PublicServiceTackle#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/personVisitApprovalInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-          <folding>
-            <element signature="e#953#954#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1236#1237#0" expanded="true" />
-            <element signature="e#1270#1271#0" expanded="true" />
-            <element signature="e#1302#1303#0" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-            <element signature="e#1392#1393#0" expanded="true" />
-            <element signature="e#1424#1425#0" expanded="true" />
-            <element signature="e#1454#1455#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
-            <element signature="e#1616#1617#0" expanded="true" />
-            <element signature="e#1678#1679#0" expanded="true" />
-            <element signature="e#1732#1733#0" expanded="true" />
-            <element signature="e#1773#1774#0" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1870#1871#0" expanded="true" />
-            <element signature="e#1922#1923#0" expanded="true" />
-            <element signature="e#1967#1968#0" expanded="true" />
-            <element signature="e#2008#2009#0" expanded="true" />
-            <element signature="e#2076#2077#0" expanded="true" />
-            <element signature="e#2136#2137#0" expanded="true" />
-            <element signature="e#2175#2176#0" expanded="true" />
-            <element signature="e#2210#2211#0" expanded="true" />
-            <element signature="e#2266#2267#0" expanded="true" />
-            <element signature="e#2314#2315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1724,10 +1435,250 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/IntegratedQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="e#1127#1128#0" expanded="false" />
+            <element signature="e#1154#1155#0" expanded="false" />
+            <element signature="e#1187#1188#0" expanded="false" />
+            <element signature="e#1214#1215#0" expanded="false" />
+            <element signature="e#1250#1251#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1338#1339#0" expanded="false" />
+            <element signature="e#1370#1371#0" expanded="false" />
+            <element signature="e#1421#1422#0" expanded="false" />
+            <element signature="e#1466#1467#0" expanded="false" />
+            <element signature="e#1496#1497#0" expanded="false" />
+            <element signature="e#1524#1525#0" expanded="false" />
+            <element signature="e#1564#1565#0" expanded="false" />
+            <element signature="e#1598#1599#0" expanded="false" />
+            <element signature="e#1628#1629#0" expanded="false" />
+            <element signature="e#1656#1657#0" expanded="false" />
+            <element signature="e#1696#1697#0" expanded="false" />
+            <element signature="e#1730#1731#0" expanded="false" />
+            <element signature="e#1760#1761#0" expanded="false" />
+            <element signature="e#1788#1789#0" expanded="false" />
+            <element signature="e#1828#1829#0" expanded="false" />
+            <element signature="e#1862#1863#0" expanded="false" />
+            <element signature="e#1893#1894#0" expanded="false" />
+            <element signature="e#1923#1924#0" expanded="false" />
+            <element signature="e#1966#1967#0" expanded="false" />
+            <element signature="e#2004#2005#0" expanded="false" />
+            <element signature="e#2035#2036#0" expanded="false" />
+            <element signature="e#2065#2066#0" expanded="false" />
+            <element signature="e#2108#2109#0" expanded="false" />
+            <element signature="e#2146#2147#0" expanded="false" />
+            <element signature="e#2186#2187#0" expanded="false" />
+            <element signature="e#2228#2229#0" expanded="false" />
+            <element signature="e#2289#2290#0" expanded="false" />
+            <element signature="e#2325#2326#0" expanded="false" />
+            <element signature="e#2366#2367#0" expanded="false" />
+            <element signature="e#2409#2410#0" expanded="false" />
+            <element signature="e#2471#2472#0" expanded="false" />
+            <element signature="e#2508#2509#0" expanded="false" />
+            <element signature="e#2542#2543#0" expanded="false" />
+            <element signature="e#2575#2576#0" expanded="false" />
+            <element signature="e#2624#2625#0" expanded="false" />
+            <element signature="e#2668#2669#0" expanded="false" />
+            <element signature="e#2699#2700#0" expanded="false" />
+            <element signature="e#2729#2730#0" expanded="false" />
+            <element signature="e#2772#2773#0" expanded="false" />
+            <element signature="e#2810#2811#0" expanded="false" />
+            <element signature="e#2846#2847#0" expanded="false" />
+            <element signature="e#2880#2881#0" expanded="false" />
+            <element signature="e#2932#2933#0" expanded="false" />
+            <element signature="e#2978#2979#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/specialSpectionApproval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#1002#1003#0" expanded="false" />
+            <element signature="e#1035#1036#0" expanded="false" />
+            <element signature="e#1087#1088#0" expanded="false" />
+            <element signature="e#1131#1132#0" expanded="false" />
+            <element signature="e#1166#1167#0" expanded="false" />
+            <element signature="e#1197#1198#0" expanded="false" />
+            <element signature="e#1245#1246#0" expanded="false" />
+            <element signature="e#1285#1286#0" expanded="false" />
+            <element signature="e#1319#1320#0" expanded="false" />
+            <element signature="e#1351#1352#0" expanded="false" />
+            <element signature="e#1399#1400#0" expanded="false" />
+            <element signature="e#1441#1442#0" expanded="false" />
+            <element signature="e#1473#1474#0" expanded="false" />
+            <element signature="e#1503#1504#0" expanded="false" />
+            <element signature="e#1547#1548#0" expanded="false" />
+            <element signature="e#1585#1586#0" expanded="false" />
+            <element signature="e#1626#1627#0" expanded="false" />
+            <element signature="e#1663#1664#0" expanded="false" />
+            <element signature="e#1723#1724#0" expanded="false" />
+            <element signature="e#1775#1776#0" expanded="false" />
+            <element signature="e#1816#1817#0" expanded="false" />
+            <element signature="e#1853#1854#0" expanded="false" />
+            <element signature="e#1913#1914#0" expanded="false" />
+            <element signature="e#1965#1966#0" expanded="false" />
+            <element signature="e#2010#2011#0" expanded="false" />
+            <element signature="e#2051#2052#0" expanded="false" />
+            <element signature="e#2119#2120#0" expanded="false" />
+            <element signature="e#2179#2180#0" expanded="false" />
+            <element signature="e#2218#2219#0" expanded="false" />
+            <element signature="e#2253#2254#0" expanded="false" />
+            <element signature="e#2309#2310#0" expanded="false" />
+            <element signature="e#2357#2358#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/files/person.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/personVisitApprovalInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="e#1006#1007#0" expanded="false" />
+            <element signature="e#1039#1040#0" expanded="false" />
+            <element signature="e#1091#1092#0" expanded="false" />
+            <element signature="e#1135#1136#0" expanded="false" />
+            <element signature="e#1170#1171#0" expanded="false" />
+            <element signature="e#1201#1202#0" expanded="false" />
+            <element signature="e#1249#1250#0" expanded="false" />
+            <element signature="e#1289#1290#0" expanded="false" />
+            <element signature="e#1323#1324#0" expanded="false" />
+            <element signature="e#1355#1356#0" expanded="false" />
+            <element signature="e#1403#1404#0" expanded="false" />
+            <element signature="e#1445#1446#0" expanded="false" />
+            <element signature="e#1477#1478#0" expanded="false" />
+            <element signature="e#1507#1508#0" expanded="false" />
+            <element signature="e#1551#1552#0" expanded="false" />
+            <element signature="e#1589#1590#0" expanded="false" />
+            <element signature="e#1631#1632#0" expanded="false" />
+            <element signature="e#1669#1670#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="false" />
+            <element signature="e#1785#1786#0" expanded="false" />
+            <element signature="e#1826#1827#0" expanded="false" />
+            <element signature="e#1863#1864#0" expanded="false" />
+            <element signature="e#1923#1924#0" expanded="false" />
+            <element signature="e#1975#1976#0" expanded="false" />
+            <element signature="e#2020#2021#0" expanded="false" />
+            <element signature="e#2061#2062#0" expanded="false" />
+            <element signature="e#2129#2130#0" expanded="false" />
+            <element signature="e#2189#2190#0" expanded="false" />
+            <element signature="e#2228#2229#0" expanded="false" />
+            <element signature="e#2263#2264#0" expanded="false" />
+            <element signature="e#2319#2320#0" expanded="false" />
+            <element signature="e#2367#2368#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/PublicServiceTackle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="775" column="0" lean-forward="false" selection-start-line="775" selection-start-column="0" selection-end-line="775" selection-end-column="0" />
+          <folding>
+            <element signature="method#PublicServiceTackle#0;class#PublicServiceTackle#0" expanded="false" />
+            <element signature="method#layoutInitialPane#0;class#PublicServiceTackle#0" expanded="false" />
+            <element signature="e#4182#4274#0" expanded="false" />
+            <element signature="e#4307#4399#0" expanded="false" />
+            <element signature="e#4432#4524#0" expanded="false" />
+            <element signature="e#4557#4649#0" expanded="false" />
+            <element signature="e#7785#9375#0" expanded="false" />
+            <element signature="e#10141#11471#0" expanded="false" />
+            <element signature="class#10385:11455" expanded="false" />
+            <element signature="method#invalidated#0;class#10385:11455" expanded="false" />
+            <element signature="e#11193#11356#0" expanded="false" />
+            <element signature="e#12325#15770#0" expanded="false" />
+            <element signature="e#15607#15735#0" expanded="false" />
+            <element signature="e#17035#17162#0" expanded="false" />
+            <element signature="method#layoutPublicServiceTackleSuccessfulPane#0;class#PublicServiceTackle#0" expanded="false" />
+            <element signature="method#readFile#0;class#PublicServiceTackle#0" expanded="false" />
+            <element signature="method#deleteInFile#0;class#PublicServiceTackle#0" expanded="false" />
+            <element signature="method#changeInFile#0;class#PublicServiceTackle#0" expanded="false" />
+            <element signature="method#setPublicServiceTacklePane#0;class#PublicServiceTackle#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/maybe">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="544" column="80" lean-forward="false" selection-start-line="544" selection-start-column="80" selection-end-line="544" selection-end-column="80" />
+          <folding>
+            <element signature="method#Main#0;class#Main#0" expanded="false" />
+            <element signature="e#2272#2306#0" expanded="false" />
+            <element signature="method#layoutNavigationPane#0;class#Main#0" expanded="false" />
+            <element signature="e#3607#3671#0" expanded="false" />
+            <element signature="e#4625#4673#0" expanded="false" />
+            <element signature="e#4707#4755#0" expanded="false" />
+            <element signature="e#4789#4837#0" expanded="false" />
+            <element signature="e#4871#4919#0" expanded="false" />
+            <element signature="e#4953#5001#0" expanded="false" />
+            <element signature="method#layoutSidebarPane#0;class#Main#0" expanded="false" />
+            <element signature="e#6747#6810#0" expanded="false" />
+            <element signature="e#6848#6911#0" expanded="false" />
+            <element signature="e#6949#7012#0" expanded="false" />
+            <element signature="e#7050#7113#0" expanded="false" />
+            <element signature="e#7151#7214#0" expanded="false" />
+            <element signature="e#8067#8142#0" expanded="false" />
+            <element signature="e#8996#9087#0" expanded="false" />
+            <element signature="e#10149#10221#0" expanded="false" />
+            <element signature="e#10259#10331#0" expanded="false" />
+            <element signature="e#11184#11255#0" expanded="false" />
+            <element signature="method#layoutTopPane#0;class#Main#0" expanded="false" />
+            <element signature="method#listenMedicalInformation#0;class#Main#0" expanded="false" />
+            <element signature="class#29595:29805" expanded="false" />
+            <element signature="method#invalidated#0;class#29595:29805" expanded="false" />
+            <element signature="method#listenPublicServiceTackle#0;class#Main#0" expanded="false" />
+            <element signature="class#29927:30137" expanded="false" />
+            <element signature="method#invalidated#0;class#29927:30137" expanded="false" />
+            <element signature="method#listenMedicalTreatmentApproval#0;class#Main#0" expanded="false" />
+            <element signature="class#30633:30843" expanded="false" />
+            <element signature="method#invalidated#0;class#30633:30843" expanded="false" />
+            <element signature="method#listenIntegratedQuery#0;class#Main#0" expanded="false" />
+            <element signature="class#30957:31167" expanded="false" />
+            <element signature="method#invalidated#0;class#30957:31167" expanded="false" />
+            <element signature="method#start#0;class#Main#0" expanded="false" />
+            <element signature="class#33012:33875" expanded="false" />
+            <element signature="method#invalidated#0;class#33012:33875" expanded="false" />
+            <element signature="class#33922:34132" expanded="false" />
+            <element signature="method#invalidated#0;class#33922:34132" expanded="false" />
+            <element signature="class#34191:34401" expanded="false" />
+            <element signature="method#invalidated#0;class#34191:34401" expanded="false" />
+            <element signature="class#34476:34686" expanded="false" />
+            <element signature="method#invalidated#0;class#34476:34686" expanded="false" />
+            <element signature="class#34742:34952" expanded="false" />
+            <element signature="method#invalidated#0;class#34742:34952" expanded="false" />
+            <element signature="class#35007:35217" expanded="false" />
+            <element signature="method#invalidated#0;class#35007:35217" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/MedicalInformation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1804">
-          <caret line="2297" column="39" lean-forward="true" selection-start-line="2297" selection-start-column="39" selection-end-line="2297" selection-end-column="39" />
+        <state relative-caret-position="185">
+          <caret line="139" column="44" lean-forward="false" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
           <folding>
             <element signature="method#MedicalInformation#0;class#MedicalInformation#0" expanded="false" />
             <element signature="method#layoutInitialPane#0;class#MedicalInformation#0" expanded="false" />
@@ -1754,44 +1705,45 @@
             <element signature="class#35544:36629" expanded="false" />
             <element signature="method#invalidated#0;class#35544:36629" expanded="false" />
             <element signature="e#36367#36530#0" expanded="false" />
-            <element signature="e#37490#40130#0" expanded="false" />
-            <element signature="e#39968#40095#0" expanded="false" />
-            <element signature="e#40974#45827#0" expanded="false" />
-            <element signature="e#41411#41538#0" expanded="false" />
-            <element signature="e#44635#45791#0" expanded="false" />
+            <element signature="e#37490#40121#0" expanded="false" />
+            <element signature="e#39959#40086#0" expanded="false" />
+            <element signature="e#40965#45811#0" expanded="false" />
+            <element signature="e#41402#41529#0" expanded="false" />
+            <element signature="e#44619#45775#0" expanded="false" />
             <element signature="method#layoutServiceFacilityPane#0;class#MedicalInformation#0" expanded="false" />
-            <element signature="e#47152#47674#0" expanded="false" />
-            <element signature="e#48439#49797#0" expanded="false" />
-            <element signature="class#48684:49781" expanded="false" />
-            <element signature="method#invalidated#0;class#48684:49781" expanded="false" />
-            <element signature="e#49519#49682#0" expanded="false" />
-            <element signature="e#50650#52308#0" expanded="false" />
-            <element signature="e#52146#52273#0" expanded="false" />
-            <element signature="e#53160#56171#0" expanded="false" />
-            <element signature="e#53633#53760#0" expanded="false" />
-            <element signature="e#55484#56135#0" expanded="false" />
+            <element signature="e#47136#47658#0" expanded="false" />
+            <element signature="e#48423#49781#0" expanded="false" />
+            <element signature="class#48668:49765" expanded="false" />
+            <element signature="method#invalidated#0;class#48668:49765" expanded="false" />
+            <element signature="e#49503#49666#0" expanded="false" />
+            <element signature="e#50634#52292#0" expanded="false" />
+            <element signature="e#52130#52257#0" expanded="false" />
+            <element signature="e#53144#56155#0" expanded="false" />
+            <element signature="e#53617#53744#0" expanded="false" />
+            <element signature="e#55468#56119#0" expanded="false" />
             <element signature="method#layoutFixedMedicalInstitutionPane#0;class#MedicalInformation#0" expanded="false" />
-            <element signature="e#59128#60355#0" expanded="false" />
-            <element signature="e#61128#62502#0" expanded="false" />
-            <element signature="class#61373:62486" expanded="false" />
-            <element signature="method#invalidated#0;class#61373:62486" expanded="false" />
-            <element signature="e#62224#62387#0" expanded="false" />
-            <element signature="e#63363#66964#0" expanded="false" />
-            <element signature="e#66802#66929#0" expanded="false" />
-            <element signature="e#67824#74007#0" expanded="false" />
-            <element signature="e#68346#68473#0" expanded="false" />
-            <element signature="e#72521#73971#0" expanded="false" />
+            <element signature="e#59112#60339#0" expanded="false" />
+            <element signature="e#61112#62486#0" expanded="false" />
+            <element signature="class#61357:62470" expanded="false" />
+            <element signature="method#invalidated#0;class#61357:62470" expanded="false" />
+            <element signature="e#62208#62371#0" expanded="false" />
+            <element signature="e#63347#66948#0" expanded="false" />
+            <element signature="e#66786#66913#0" expanded="false" />
+            <element signature="e#67808#73991#0" expanded="false" />
+            <element signature="e#68330#68457#0" expanded="false" />
+            <element signature="e#72505#73955#0" expanded="false" />
             <element signature="method#layoutMedicalTreatmentCalculationParameterPane#0;class#MedicalInformation#0" expanded="false" />
-            <element signature="e#76375#77544#0" expanded="false" />
-            <element signature="e#78332#79731#0" expanded="false" />
-            <element signature="class#78577:79715" expanded="false" />
-            <element signature="method#invalidated#0;class#78577:79715" expanded="false" />
-            <element signature="e#79454#79617#0" expanded="false" />
-            <element signature="e#80607#83734#0" expanded="false" />
-            <element signature="e#83573#83700#0" expanded="false" />
-            <element signature="e#84609#90122#0" expanded="false" />
-            <element signature="e#85209#85336#0" expanded="false" />
-            <element signature="e#88673#90086#0" expanded="false" />
+            <element signature="e#76359#77528#0" expanded="false" />
+            <element signature="e#78316#79715#0" expanded="false" />
+            <element signature="class#78561:79699" expanded="false" />
+            <element signature="method#invalidated#0;class#78561:79699" expanded="false" />
+            <element signature="e#79438#79601#0" expanded="false" />
+            <element signature="e#80591#83718#0" expanded="false" />
+            <element signature="e#83557#83684#0" expanded="false" />
+            <element signature="e#84593#90106#0" expanded="false" />
+            <element signature="e#85193#85320#0" expanded="false" />
+            <element signature="e#88657#90070#0" expanded="false" />
+            <element signature="method#layoutMedicineSuccessfulPane#0;class#MedicalInformation#0" expanded="false" />
             <element signature="method#layoutTreatmentSuccessfulPane#0;class#MedicalInformation#0" expanded="false" />
             <element signature="method#layoutServiceFacilitySuccessfulPane#0;class#MedicalInformation#0" expanded="false" />
             <element signature="method#layoutFixedMedicalInstitutionSuccessfulPane#0;class#MedicalInformation#0" expanded="false" />
@@ -1809,50 +1761,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/MedicalTreatmentApproval.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+        <state relative-caret-position="704">
+          <caret line="1485" column="0" lean-forward="true" selection-start-line="1485" selection-start-column="0" selection-end-line="1485" selection-end-column="0" />
           <folding>
+            <element signature="method#MedicalTreatmentApproval#0;class#MedicalTreatmentApproval#0" expanded="false" />
             <element signature="method#layoutSerchIdPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-            <element signature="e#4598#4726#0" expanded="false" />
-            <element signature="e#4813#4942#0" expanded="false" />
-            <element signature="e#5167#5270#0" expanded="false" />
+            <element signature="e#4228#5888#0" expanded="false" />
+            <element signature="e#5746#5862#0" expanded="false" />
             <element signature="method#layoutpersonApprovalHasPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-            <element signature="e#7596#7909#0" expanded="false" />
+            <element signature="e#8205#8525#0" expanded="false" />
             <element signature="method#layoutspecialSpectionHasPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-            <element signature="e#10225#10539#0" expanded="false" />
+            <element signature="e#10841#11163#0" expanded="false" />
+            <element signature="method#layoutShowPersonApprovalPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
+            <element signature="e#14170#14205#0" expanded="false" />
+            <element signature="e#14285#14379#0" expanded="false" />
+            <element signature="method#layoutShowSpecialApprovalPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
+            <element signature="e#17382#17418#0" expanded="false" />
+            <element signature="e#17498#17592#0" expanded="false" />
             <element signature="method#layoutPersonApprovalChoosePane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-            <element signature="e#12922#13026#0" expanded="false" />
-            <element signature="e#13059#13166#0" expanded="false" />
-            <element signature="e#13199#13306#0" expanded="false" />
+            <element signature="e#19975#20079#0" expanded="false" />
+            <element signature="e#20112#20219#0" expanded="false" />
+            <element signature="e#20252#20359#0" expanded="false" />
             <element signature="method#layoutSpecialSpectionChoosePane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-            <element signature="e#15691#15796#0" expanded="false" />
-            <element signature="e#15829#15937#0" expanded="false" />
-            <element signature="e#15970#16078#0" expanded="false" />
+            <element signature="e#22744#22849#0" expanded="false" />
+            <element signature="e#22882#22990#0" expanded="false" />
+            <element signature="e#23023#23131#0" expanded="false" />
             <element signature="method#layoutpersonApprovalNotPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
+            <element signature="e#24682#24786#0" expanded="false" />
             <element signature="method#layoutspecialSpectionNotPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
+            <element signature="e#26339#26444#0" expanded="false" />
             <element signature="method#layoutpersonApprovalAddPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-            <element signature="e#21185#22232#0" expanded="false" />
+            <element signature="e#29756#30803#0" expanded="false" />
             <element signature="method#layoutpersonApprovalDeletePane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-            <element signature="e#23002#24516#0" expanded="false" />
-            <element signature="class#23197:24504" expanded="false" />
-            <element signature="method#invalidated#0;class#23197:24504" expanded="false" />
-            <element signature="e#24270#24421#0" expanded="false" />
+            <element signature="e#31574#33141#0" expanded="false" />
+            <element signature="class#31769:33129" expanded="false" />
+            <element signature="method#invalidated#0;class#31769:33129" expanded="false" />
+            <element signature="e#32895#33046#0" expanded="false" />
             <element signature="method#layoutpersonApprovalChangePane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-            <element signature="e#25365#31793#0" expanded="false" />
-            <element signature="e#26025#26140#0" expanded="false" />
-            <element signature="e#30567#31765#0" expanded="false" />
+            <element signature="e#34044#40763#0" expanded="false" />
+            <element signature="e#34704#34819#0" expanded="false" />
+            <element signature="e#39329#40735#0" expanded="false" />
             <element signature="method#layoutspecialSpectionAddPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-            <element signature="e#35069#36112#0" expanded="false" />
+            <element signature="e#44028#45071#0" expanded="false" />
             <element signature="method#layoutspecialSpectionDeletePane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-            <element signature="e#36883#38396#0" expanded="false" />
-            <element signature="class#37078:38384" expanded="false" />
-            <element signature="method#invalidated#0;class#37078:38384" expanded="false" />
-            <element signature="e#38150#38301#0" expanded="false" />
+            <element signature="e#45842#47408#0" expanded="false" />
+            <element signature="class#46037:47396" expanded="false" />
+            <element signature="method#invalidated#0;class#46037:47396" expanded="false" />
+            <element signature="e#47162#47313#0" expanded="false" />
             <element signature="method#layoutspecialSpectionChangePane#0;class#MedicalTreatmentApproval#0" expanded="false" />
-            <element signature="e#39246#45662#0" expanded="false" />
-            <element signature="e#39905#40020#0" expanded="false" />
-            <element signature="e#44440#45634#0" expanded="false" />
-            <element signature="method#layoutSuccessfulPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
+            <element signature="e#48258#54994#0" expanded="false" />
+            <element signature="e#48918#49033#0" expanded="false" />
+            <element signature="e#53535#54966#0" expanded="false" />
             <element signature="method#setPersonApprovalHasPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
             <element signature="method#setSpecialSpectionHasPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
             <element signature="method#setPersonApprovalNotPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
@@ -1873,194 +1832,94 @@
             <element signature="method#setSpecialSpectionAddPaneId#0;class#MedicalTreatmentApproval#0" expanded="false" />
             <element signature="method#setSpecialSpectionDeletePaneId#0;class#MedicalTreatmentApproval#0" expanded="false" />
             <element signature="method#setSpecialSpectionChangePaneId#0;class#MedicalTreatmentApproval#0" expanded="false" />
+            <element signature="method#setShowPersonApprovalPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
+            <element signature="method#setShowSpecialApprovalPane#0;class#MedicalTreatmentApproval#0" expanded="false" />
+            <element signature="method#setShowSpecialApprovalId#0;class#MedicalTreatmentApproval#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/visitInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="75" lean-forward="false" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
+          <folding>
+            <element signature="method#visitInfo#0;class#visitInfo#0" expanded="false" />
+            <element signature="method#visitInfo#1;class#visitInfo#0" expanded="false" />
+            <element signature="method#visitInfo#2;class#visitInfo#0" expanded="false" />
+            <element signature="method#setPrescriptionDetail#0;class#visitInfo#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/prescriptionDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="e#794#795#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1036#1037#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
+            <element signature="e#1345#1346#0" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Treatment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="69" column="28" lean-forward="false" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+          <folding>
+            <element signature="method#Treatment#0;class#Treatment#0" expanded="false" />
+            <element signature="method#Treatment#1;class#Treatment#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/MedicalInsuranceCenterReimbursement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="66" lean-forward="false" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+        <state relative-caret-position="251">
+          <caret line="735" column="0" lean-forward="true" selection-start-line="735" selection-start-column="0" selection-end-line="735" selection-end-column="0" />
           <folding>
-            <element signature="e#1577#1578#0" expanded="true" />
-            <element signature="e#1617#1618#0" expanded="true" />
-            <element signature="e#1663#1664#0" expanded="true" />
-            <element signature="e#1703#1704#0" expanded="true" />
-            <element signature="e#1757#1758#0" expanded="true" />
-            <element signature="e#1805#1806#0" expanded="true" />
-            <element signature="e#1848#1849#0" expanded="true" />
-            <element signature="e#1885#1886#0" expanded="true" />
-            <element signature="e#1932#1933#0" expanded="true" />
-            <element signature="e#1973#1974#0" expanded="true" />
-            <element signature="e#2015#2016#0" expanded="true" />
-            <element signature="e#2057#2058#0" expanded="true" />
-            <element signature="e#2118#2119#0" expanded="true" />
-            <element signature="e#2154#2155#0" expanded="true" />
-            <element signature="e#2195#2196#0" expanded="true" />
-            <element signature="e#2238#2239#0" expanded="true" />
-            <element signature="e#2300#2301#0" expanded="true" />
-            <element signature="e#2337#2338#0" expanded="true" />
-            <element signature="e#2373#2374#0" expanded="true" />
-            <element signature="e#2407#2408#0" expanded="true" />
-            <element signature="e#2459#2460#0" expanded="true" />
-            <element signature="e#2505#2506#0" expanded="true" />
-            <element signature="e#2548#2549#0" expanded="true" />
-            <element signature="e#2589#2590#0" expanded="true" />
-            <element signature="e#2655#2656#0" expanded="true" />
-            <element signature="e#2715#2716#0" expanded="true" />
-            <element signature="e#2758#2759#0" expanded="true" />
-            <element signature="e#2799#2800#0" expanded="true" />
-            <element signature="e#2865#2866#0" expanded="true" />
-            <element signature="e#2925#2926#0" expanded="true" />
-            <element signature="e#2976#2977#0" expanded="true" />
-            <element signature="e#3025#3026#0" expanded="true" />
-            <element signature="e#3223#3224#0" expanded="true" />
-            <element signature="e#3261#3262#0" expanded="true" />
-            <element signature="e#3321#3322#0" expanded="true" />
-            <element signature="e#3375#3376#0" expanded="true" />
-            <element signature="e#3419#3420#0" expanded="true" />
-            <element signature="e#3461#3462#0" expanded="true" />
-            <element signature="e#3529#3530#0" expanded="true" />
-            <element signature="e#3591#3592#0" expanded="true" />
-            <element signature="e#3635#3636#0" expanded="true" />
-            <element signature="e#3678#3679#0" expanded="true" />
-            <element signature="e#3747#3748#0" expanded="true" />
-            <element signature="e#3811#3812#0" expanded="true" />
-            <element signature="e#3855#3856#0" expanded="true" />
-            <element signature="e#3898#3899#0" expanded="true" />
-            <element signature="e#3967#3968#0" expanded="true" />
-            <element signature="e#4031#4032#0" expanded="true" />
-            <element signature="e#4083#4084#0" expanded="true" />
-            <element signature="e#4134#4135#0" expanded="true" />
-            <element signature="e#4340#4341#0" expanded="true" />
-            <element signature="e#4380#4381#0" expanded="true" />
-            <element signature="e#4443#4444#0" expanded="true" />
-            <element signature="e#4501#4502#0" expanded="true" />
-            <element signature="e#4546#4547#0" expanded="true" />
-            <element signature="e#4590#4591#0" expanded="true" />
-            <element signature="e#4763#4764#0" expanded="true" />
-            <element signature="e#4801#4802#0" expanded="true" />
-            <element signature="e#4851#4852#0" expanded="true" />
-            <element signature="e#4883#4884#0" expanded="true" />
-            <element signature="e#4934#4935#0" expanded="true" />
-            <element signature="e#4979#4980#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/IntegratedQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="e#1127#1128#0" expanded="true" />
-            <element signature="e#1154#1155#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-            <element signature="e#1214#1215#0" expanded="true" />
-            <element signature="e#1250#1251#0" expanded="true" />
-            <element signature="e#1288#1289#0" expanded="true" />
-            <element signature="e#1338#1339#0" expanded="true" />
-            <element signature="e#1370#1371#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
-            <element signature="e#1466#1467#0" expanded="true" />
-            <element signature="e#1496#1497#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
-            <element signature="e#1564#1565#0" expanded="true" />
-            <element signature="e#1598#1599#0" expanded="true" />
-            <element signature="e#1628#1629#0" expanded="true" />
-            <element signature="e#1656#1657#0" expanded="true" />
-            <element signature="e#1696#1697#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
-            <element signature="e#1760#1761#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-            <element signature="e#1828#1829#0" expanded="true" />
-            <element signature="e#1862#1863#0" expanded="true" />
-            <element signature="e#1893#1894#0" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-            <element signature="e#1966#1967#0" expanded="true" />
-            <element signature="e#2004#2005#0" expanded="true" />
-            <element signature="e#2035#2036#0" expanded="true" />
-            <element signature="e#2065#2066#0" expanded="true" />
-            <element signature="e#2108#2109#0" expanded="true" />
-            <element signature="e#2146#2147#0" expanded="true" />
-            <element signature="e#2186#2187#0" expanded="true" />
-            <element signature="e#2228#2229#0" expanded="true" />
-            <element signature="e#2289#2290#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2366#2367#0" expanded="true" />
-            <element signature="e#2409#2410#0" expanded="true" />
-            <element signature="e#2471#2472#0" expanded="true" />
-            <element signature="e#2508#2509#0" expanded="true" />
-            <element signature="e#2542#2543#0" expanded="true" />
-            <element signature="e#2575#2576#0" expanded="true" />
-            <element signature="e#2624#2625#0" expanded="true" />
-            <element signature="e#2668#2669#0" expanded="true" />
-            <element signature="e#2699#2700#0" expanded="true" />
-            <element signature="e#2729#2730#0" expanded="true" />
-            <element signature="e#2772#2773#0" expanded="true" />
-            <element signature="e#2810#2811#0" expanded="true" />
-            <element signature="e#2846#2847#0" expanded="true" />
-            <element signature="e#2880#2881#0" expanded="true" />
-            <element signature="e#2932#2933#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="663" column="56" lean-forward="true" selection-start-line="663" selection-start-column="56" selection-end-line="663" selection-end-column="56" />
-          <folding>
-            <element signature="method#Main#0;class#Main#0" expanded="false" />
-            <element signature="method#layoutMainPane#0;class#Main#0" expanded="false" />
-            <element signature="e#2272#2306#0" expanded="false" />
-            <element signature="method#layoutNavigationPane#0;class#Main#0" expanded="false" />
-            <element signature="e#3607#3671#0" expanded="false" />
-            <element signature="e#4625#4673#0" expanded="false" />
-            <element signature="e#4707#4755#0" expanded="false" />
-            <element signature="e#4789#4837#0" expanded="false" />
-            <element signature="e#4871#4919#0" expanded="false" />
-            <element signature="e#4953#5001#0" expanded="false" />
-            <element signature="method#layoutSidebarPane#0;class#Main#0" expanded="false" />
-            <element signature="e#6747#6810#0" expanded="false" />
-            <element signature="e#6848#6911#0" expanded="false" />
-            <element signature="e#6949#7012#0" expanded="false" />
-            <element signature="e#7050#7113#0" expanded="false" />
-            <element signature="e#7151#7214#0" expanded="false" />
-            <element signature="e#8067#8142#0" expanded="false" />
-            <element signature="e#8996#9087#0" expanded="false" />
-            <element signature="e#10149#10221#0" expanded="false" />
-            <element signature="e#10259#10331#0" expanded="false" />
-            <element signature="e#11184#11255#0" expanded="false" />
-            <element signature="method#layoutTopPane#0;class#Main#0" expanded="false" />
-            <element signature="method#listenMedicalInformation#0;class#Main#0" expanded="false" />
-            <element signature="class#27323:27533" expanded="false" />
-            <element signature="method#invalidated#0;class#27323:27533" expanded="false" />
-            <element signature="method#listenPublicServiceTackle#0;class#Main#0" expanded="false" />
-            <element signature="class#27655:27865" expanded="false" />
-            <element signature="method#invalidated#0;class#27655:27865" expanded="false" />
-            <element signature="class#28019:28229" expanded="false" />
-            <element signature="method#invalidated#0;class#28019:28229" expanded="false" />
-            <element signature="method#listenMedicalTreatmentApproval#0;class#Main#0" expanded="false" />
-            <element signature="class#28361:28571" expanded="false" />
-            <element signature="method#invalidated#0;class#28361:28571" expanded="false" />
-            <element signature="method#listenIntegratedQuery#0;class#Main#0" expanded="false" />
-            <element signature="class#28685:28895" expanded="false" />
-            <element signature="method#invalidated#0;class#28685:28895" expanded="false" />
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="class#30740:31603" expanded="false" />
-            <element signature="method#invalidated#0;class#30740:31603" expanded="false" />
-            <element signature="class#31650:31860" expanded="false" />
-            <element signature="method#invalidated#0;class#31650:31860" expanded="false" />
-            <element signature="class#31919:32129" expanded="false" />
-            <element signature="method#invalidated#0;class#31919:32129" expanded="false" />
-            <element signature="class#32204:32414" expanded="false" />
-            <element signature="method#invalidated#0;class#32204:32414" expanded="false" />
-            <element signature="class#32470:32680" expanded="false" />
-            <element signature="method#invalidated#0;class#32470:32680" expanded="false" />
-            <element signature="class#32735:32945" expanded="false" />
-            <element signature="method#invalidated#0;class#32735:32945" expanded="false" />
+            <element signature="method#MedicalInsuranceCenterReimbursement#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="method#layoutinitialPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="e#3160#4613#0" expanded="false" />
+            <element signature="e#4471#4587#0" expanded="false" />
+            <element signature="method#layoutshowPersonInfoPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="e#6919#7020#0" expanded="false" />
+            <element signature="method#layoutenterVisitInfoPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="e#10103#11073#0" expanded="false" />
+            <element signature="method#layoutenterMedicineDetailPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="e#12777#12823#0" expanded="false" />
+            <element signature="e#15676#17965#0" expanded="false" />
+            <element signature="method#layoutenterTreatmentDetailPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="e#20091#21329#0" expanded="false" />
+            <element signature="method#layoutenterServiceFacilityDetailPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="e#22569#23462#0" expanded="false" />
+            <element signature="method#layoutchoosePane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="e#24230#24336#0" expanded="false" />
+            <element signature="e#24371#24478#0" expanded="false" />
+            <element signature="e#24513#24626#0" expanded="false" />
+            <element signature="e#24661#27436#0" expanded="false" />
+            <element signature="method#layoutnotApprovedPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="method#layoutshowCalculationPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="method#setShowCalculationPaneId#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="method#setEnterMedicineDetailPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="method#setEnterTreatmentDetailPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="method#setEnterServiceFacilityDetailPane#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="method#setEnterMedicineDetailPaneId#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="method#setEnterTreatmentDetailPaneId#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
+            <element signature="method#setEnterServiceFacilityDetailPaneId#0;class#MedicalInsuranceCenterReimbursement#0" expanded="false" />
           </folding>
         </state>
       </provider>

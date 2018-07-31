@@ -8,7 +8,7 @@ public class Treatment implements prescription, Serializable {
     private String treatmentLevel;
     private String hospitalLevel;
     private boolean isLabeled;
-    private String manufacturer;
+    private String price;
     private String remark;
 
     public Treatment() {
@@ -22,7 +22,7 @@ public class Treatment implements prescription, Serializable {
         this.treatmentLevel = treatmentLevel;
         this.hospitalLevel = hospitalLevel;
         this.isLabeled = isLabeled;
-        this.manufacturer = manufacturer;
+        this.price = manufacturer;
         this.remark = remark;
     }
 
@@ -67,12 +67,12 @@ public class Treatment implements prescription, Serializable {
         isLabeled = labeled;
     }
 
-    public String getManufacturer() {
-        return manufacturer;
+    public String getPrice() {
+        return price;
     }
 
-    public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
+    public void setPrice(String price) {
+        this.price = price;
     }
 
     public String getRemark() {

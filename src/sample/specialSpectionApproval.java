@@ -1,6 +1,8 @@
 package sample;
 
-public class specialSpectionApproval {
+import java.io.Serializable;
+
+public class specialSpectionApproval implements Serializable{
     private String approvalId;
     private String personId;
     private time beginTime;

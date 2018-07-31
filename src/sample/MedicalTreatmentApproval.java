@@ -31,6 +31,8 @@ public class MedicalTreatmentApproval {
     private Pane specialSpectionAddPane;
     private Pane specialSpectionDeletePane;
     private Pane specialSpectionChangePane;
+    private Pane showPersonApprovalPane;
+    private Pane showSpecialApprovalPane;
     private Pane chooseAPane;
     private Pane chooseSPane;
     private Pane successPane;
@@ -45,6 +47,8 @@ public class MedicalTreatmentApproval {
     private int specialSpectionAddPaneId;
     private int specialSpectionDeletePaneId;
     private int specialSpectionChangePaneId;
+    private int showPersonApprovalId;
+    private int showSpecialApprovalId;
     private int successId;
     private int chooseAPaneId;
     private int chooseSPaneId;
@@ -67,8 +71,13 @@ public class MedicalTreatmentApproval {
         specialSpectionAddPane = new Pane();
         specialSpectionDeletePane = new Pane();
         specialSpectionChangePane = new Pane();
+        showPersonApprovalPane = new Pane();
+        showSpecialApprovalPane = new Pane();
+
         successPane = new Pane();
 
+        showPersonApprovalId = 0;
+        showSpecialApprovalId = 0;
         personApprovalHasPaneId = 0;
         specialSpectionHasPaneId = 0;
         personApprovalNotPaneId = 0;
@@ -113,52 +122,55 @@ public class MedicalTreatmentApproval {
         stackPane.getChildren().add(gridPane1);
         serchIdPane = stackPane;
 
-        File file = new File("src/files/person.dat");
-        try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file)))
-        {
-            LinkedList<Object> linkedList = (LinkedList<Object>)ois.readObject();
-            for (int i = 0; i < linkedList.size(); i++) {
-                if (((Person)linkedList.get(i)).getPersonId().equals(textField.getText())){
-                    person = (Person)linkedList.get(i);
+
+        button.setOnMouseClicked(e -> {
+            File file = new File("src/files/person.dat");
+            LinkedList<Object> linkedList = new LinkedList<>();
+
+            try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))){
+                linkedList = (LinkedList<Object>)ois.readObject();
+            }
+            catch (Exception ex) {
+                if (ex instanceof EOFException) {
+                    linkedList = new LinkedList<>();
+                }
+                else {
+                    System.out.println(ex);
+                    System.out.println("Exception when reading in medical information!");
+                    System.out.println(ex.getStackTrace());
                 }
             }
-        }
-        catch(Exception ex) {
-            System.out.println(ex);
-            System.out.println("Exception when reading file!");
-        }
+            for (int i = 0; i < linkedList.size(); i++) {
+                if (((Person)(linkedList.get(i))).getPersonId().equals(textField.getText())){
+                    person = (Person)(linkedList.get(i));
+                }
+            }
 
 
 
 
-
-        if (person != null) {
-
-            if (num == 1) {
-                button.setOnMouseClicked(e -> {
+            if (person != null) {
+                if (num == 1) {
                     personApprovalHasPaneId = 1;
                     isChanged.set(!(isChanged.get()));
-                });
-            }
-
-            if (num == 2) {
-                button.setOnMouseClicked(e -> {
+                }
+                else {
                     specialSpectionHasPaneId = 1;
+                    isChanged.set(!(isChanged.get()));
+                }
+            }
+            else {
+                NotFoundWindow notFoundWindow = new NotFoundWindow();
+                Stage stage = new Stage();
+                notFoundWindow.start(stage);
+                stage.setOnCloseRequest(ee -> {
+                    isNotFound = 1;
                     isChanged.set(!(isChanged.get()));
                 });
             }
+        });
 
-        }
-        else {
-            NotFoundWindow notFoundWindow = new NotFoundWindow();
-            Stage stage = new Stage();
-            notFoundWindow.start(stage);
-            stage.setOnCloseRequest(e -> {
-                isNotFound = 1;
-                isChanged.set(!(isChanged.get()));
-            });
 
-        }
 
     }
 
@@ -232,7 +244,7 @@ public class MedicalTreatmentApproval {
 
         btn.setOnMouseClicked(e -> {
             if (person.getPersonVisitApprovalInfoLs().size() != 0){
-                chooseAPaneId = 1;
+                showPersonApprovalId = 1;
                 isChanged.set(!(isChanged.get()));
             }
             else {
@@ -313,13 +325,189 @@ public class MedicalTreatmentApproval {
         specialSpectionHasPane = gridPane2;
         btn.setOnMouseClicked(e -> {
             if (person.getSpecialSpectionApprovaLs().size() != 0) {
-                chooseSPaneId = 1;
+                showSpecialApprovalId = 1;
                 isChanged.set(!(isChanged.get()));
             }
             else {
                 specialSpectionNotPaneId = 1;
                 isChanged.set(!(isChanged.get()));
             }
+        });
+    }
+
+    public void layoutShowPersonApprovalPane() {
+        showPersonApprovalId = 0;
+        int number = person.getPersonVisitApprovalInfoLs().size();
+        VBox vBox = new VBox();
+        for (int i = 0; i < number; i++) {
+
+            personVisitApprovalInfo personVisitApprovalInfo = person.getPersonVisitApprovalInfoLs().get(i);
+            Label lb1 = new Label("审批ID:");
+            Label lb2 = new Label("人员ID:");
+            Label lb3 = new Label("开始日期:");
+            Label lb4 = new Label("结束日期:");
+            Label lb5 = new Label("定点医疗机构ID:");
+            Label lb6 = new Label("审批人:");
+            Label lb7 = new Label("审批意见:");
+            Label lb8 = new Label("审批时间:");
+            Label lb9 = new Label("年:");
+            Label lb10 = new Label("月:");
+            Label lb11 = new Label("日:");
+            Label lb12 = new Label("年:");
+            Label lb13 = new Label("月:");
+            Label lb14 = new Label("日:");
+
+            time beginTime = personVisitApprovalInfo.getBeginTime();
+            time endTime = personVisitApprovalInfo.getEndTime();
+
+            Text t1 = new Text(personVisitApprovalInfo.getApprovalId());
+            Text t2 = new Text(personVisitApprovalInfo.getPersonId());
+            Text t3 = new Text(personVisitApprovalInfo.getFixedHospitalId());
+            Text t4 = new Text(personVisitApprovalInfo.getApprovalPerson());
+            Text t5 = new Text(personVisitApprovalInfo.getApprovalSuggestion());
+            Text t6 = new Text(personVisitApprovalInfo.getApprovalTime());
+            Text t7 = new Text(beginTime.getYear());
+            Text t8 = new Text(beginTime.getMonth());
+            Text t9 = new Text(beginTime.getDate());
+            Text t10 = new Text(endTime.getYear());
+            Text t11 = new Text(endTime.getMonth());
+            Text t12 = new Text(endTime.getDate());
+
+
+            GridPane gridPane2 = new GridPane();
+
+            gridPane2.add(lb1, 0, 0);
+            gridPane2.add(lb2, 2, 0);
+            gridPane2.add(lb5, 0, 3);
+            gridPane2.add(lb6, 2, 3);
+            gridPane2.add(lb7, 0, 4);
+            gridPane2.add(lb8, 2, 4);
+
+            gridPane2.add(lb3, 0, 1);
+            gridPane2.add(lb4, 0, 2);
+
+
+            HBox hBox1 = new HBox();
+            hBox1.getChildren().addAll(t7, lb9, t8, lb10, t9, lb11);
+            HBox hBox2 = new HBox();
+            hBox2.getChildren().addAll(t10, lb12, t11, lb13, t12, lb14);
+
+            gridPane2.add(hBox1, 2, 1, 3, 1);
+            gridPane2.add(hBox2, 2, 2, 3, 1);
+
+            gridPane2.add(t1, 1, 0);
+            gridPane2.add(t2, 3, 0);
+            gridPane2.add(t3, 1, 3);
+            gridPane2.add(t4, 3, 3);
+            gridPane2.add(t5, 1, 4);
+            gridPane2.add(t6, 3, 4);
+
+
+            gridPane2.setVgap(15);
+            gridPane2.setHgap(15);
+
+            vBox.getChildren().add(gridPane2);
+
+        }
+
+        Button button = new Button("进入维护界面");
+        vBox.getChildren().add(button);
+
+        showPersonApprovalPane = vBox;
+//        showPersonApprovalId = 1;
+//        isChanged.set(!(isChanged.get()));
+
+        button.setOnMouseClicked(e -> {
+            chooseAPaneId = 1;
+            isChanged.set(!(isChanged.get()));
+        });
+    }
+
+    public void layoutShowSpecialApprovalPane() {
+        showSpecialApprovalId = 0;
+        int number = person.getSpecialSpectionApprovaLs().size();
+        VBox vBox = new VBox();
+        for (int i = 0; i < number; i++) {
+            specialSpectionApproval specialSpectionApproval = person.getSpecialSpectionApprovaLs().get(i);
+            Label lb1 = new Label("审批ID:");
+            Label lb2 = new Label("人员ID:");
+            Label lb3 = new Label("开始日期:");
+            Label lb4 = new Label("结束日期:");
+            Label lb5 = new Label("项目ID:");
+            Label lb6 = new Label("审批人:");
+            Label lb7 = new Label("审批意见:");
+            Label lb8 = new Label("审批时间:");
+            Label lb9 = new Label("年:");
+            Label lb10 = new Label("月:");
+            Label lb11 = new Label("日:");
+            Label lb12 = new Label("年:");
+            Label lb13 = new Label("月:");
+            Label lb14 = new Label("日:");
+
+            time beginTime = specialSpectionApproval.getBeginTime();
+            time endTime = specialSpectionApproval.getEndTime();
+
+            Text t1 = new Text(specialSpectionApproval.getApprovalId());
+            Text t2 = new Text(specialSpectionApproval.getPersonId());
+            Text t3 = new Text(specialSpectionApproval.getPrescriptionId());
+            Text t4 = new Text(specialSpectionApproval.getApprovalPerson());
+            Text t5 = new Text(specialSpectionApproval.getApprovalSuggestion());
+            Text t6 = new Text(specialSpectionApproval.getApprovalTime());
+            Text t7 = new Text(beginTime.getYear());
+            Text t8 = new Text(beginTime.getMonth());
+            Text t9 = new Text(beginTime.getDate());
+            Text t10 = new Text(endTime.getYear());
+            Text t11 = new Text(endTime.getMonth());
+            Text t12 = new Text(endTime.getDate());
+
+
+            GridPane gridPane2 = new GridPane();
+
+            gridPane2.add(lb1, 0, 0);
+            gridPane2.add(lb2, 2, 0);
+            gridPane2.add(lb5, 0, 3);
+            gridPane2.add(lb6, 2, 3);
+            gridPane2.add(lb7, 0, 4);
+            gridPane2.add(lb8, 2, 4);
+
+            gridPane2.add(lb3, 0, 1);
+            gridPane2.add(lb4, 0, 2);
+
+
+            HBox hBox1 = new HBox();
+            hBox1.getChildren().addAll(t7, lb9, t8, lb10, t9, lb11);
+            HBox hBox2 = new HBox();
+            hBox2.getChildren().addAll(t10, lb12, t11, lb13, t12, lb14);
+
+            gridPane2.add(hBox1, 2, 1, 3, 1);
+            gridPane2.add(hBox2, 2, 2, 3, 1);
+
+            gridPane2.add(t1, 1, 0);
+            gridPane2.add(t2, 3, 0);
+            gridPane2.add(t3, 1, 3);
+            gridPane2.add(t4, 3, 3);
+            gridPane2.add(t5, 1, 4);
+            gridPane2.add(t6, 3, 4);
+
+
+            gridPane2.setVgap(15);
+            gridPane2.setHgap(15);
+
+            vBox.getChildren().add(gridPane2);
+
+
+        }
+
+        Button button = new Button("进入维护界面");
+        vBox.getChildren().add(button);
+
+        showSpecialApprovalPane = vBox;
+//        showSpecialApprovalId = 1;
+//        isChanged.set(!(isChanged.get()));
+
+        button.setOnMouseClicked(e -> {
+            chooseSPaneId = 1;
+            isChanged.set(!(isChanged.get()));
         });
     }
 
@@ -488,8 +676,27 @@ public class MedicalTreatmentApproval {
         img2.fitHeightProperty().bind(heightProperty.divide(9));
 
         hBox.getChildren().addAll(img1, img2);
-        stackPane.getChildren().add(hBox);
+
+        ImageView imgAdd = new ImageView("img/addIcon.png");
+        ImageView imgtAdd = new ImageView("img/addInfo.png");
+        imgAdd.fitWidthProperty().bind(widthProperty.divide(11));
+        imgAdd.fitHeightProperty().bind(heightProperty.divide(8.5));
+        imgtAdd.fitWidthProperty().bind(widthProperty.divide(10));
+        imgtAdd.fitHeightProperty().bind(heightProperty.divide(20));
+        HBox hBox1 = new HBox();
+        hBox1.getChildren().addAll(imgAdd, imgtAdd);
+        hBox1.setAlignment(Pos.TOP_LEFT);
+
+        VBox vBox = new VBox();
+        vBox.getChildren().addAll(hBox1, hBox);
+
+        stackPane.getChildren().add(vBox);
         personApprovalNotPane = stackPane;
+
+        hBox1.setOnMouseClicked(e -> {
+            personApprovalAddPaneId = 1;
+            isChanged.set(!(isChanged.get()));
+        });
     }
 
     public void layoutspecialSpectionNotPane() {
@@ -511,15 +718,33 @@ public class MedicalTreatmentApproval {
         img2.fitHeightProperty().bind(heightProperty.divide(9));
 
         hBox.getChildren().addAll(img1, img2);
-        stackPane.getChildren().add(hBox);
+
+        ImageView imgAdd = new ImageView("img/addIcon.png");
+        ImageView imgtAdd = new ImageView("img/addInfo.png");
+        imgAdd.fitWidthProperty().bind(widthProperty.divide(11));
+        imgAdd.fitHeightProperty().bind(heightProperty.divide(8.5));
+        imgtAdd.fitWidthProperty().bind(widthProperty.divide(10));
+        imgtAdd.fitHeightProperty().bind(heightProperty.divide(20));
+        HBox hBox1 = new HBox();
+        hBox1.getChildren().addAll(imgAdd, imgtAdd);
+        hBox1.setAlignment(Pos.TOP_LEFT);
+
+        VBox vBox = new VBox();
+        vBox.getChildren().addAll(hBox1, hBox);
+
+        stackPane.getChildren().add(vBox);
+        personApprovalNotPane = stackPane;
+
+        hBox1.setOnMouseClicked(e -> {
+            specialSpectionAddPaneId = 1;
+            isChanged.set(!(isChanged.get()));
+        });
 
         specialSpectionNotPane = stackPane;
     }
 
-
-
     public void layoutpersonApprovalAddPane(){
-        specialSpectionAddPaneId = 0;
+        personApprovalAddPaneId = 0;
         StackPane stackPane = new StackPane();
         stackPane.setId("sp");
         stackPane.prefWidthProperty().bind(widthProperty.divide(1.25));
@@ -564,12 +789,12 @@ public class MedicalTreatmentApproval {
         Label lb6 = new Label("审批人:");
         Label lb7 = new Label("审批意见:");
         Label lb8 = new Label("审批时间:");
-        Label lb9 = new Label("开始年:");
-        Label lb10 = new Label("开始月:");
-        Label lb11 = new Label("开始日:");
-        Label lb12 = new Label("结束年:");
-        Label lb13 = new Label("结束月:");
-        Label lb14 = new Label("结束日:");
+        Label lb9 = new Label("年:");
+        Label lb10 = new Label("月:");
+        Label lb11 = new Label("日:");
+        Label lb12 = new Label("年:");
+        Label lb13 = new Label("月:");
+        Label lb14 = new Label("日:");
 
         Button btn = new Button("确认提交本人员就诊审批信息");
 
@@ -614,7 +839,7 @@ public class MedicalTreatmentApproval {
 
         stackPane.getChildren().add(gridPane);
 
-        specialSpectionAddPane = stackPane;
+        personApprovalAddPane = stackPane;
 
         btn.setOnMouseClicked(e -> {
             String approvalId = tf1.getText();
@@ -638,6 +863,7 @@ public class MedicalTreatmentApproval {
             successId = 1;
             isChanged.set(!(isChanged.get()));
         });
+
     }
 
     public void layoutpersonApprovalDeletePane() {
@@ -673,6 +899,7 @@ public class MedicalTreatmentApproval {
                         for (int i = 0; i < arrayList.size(); i++) {
                             if (arrayList.get(i).getApprovalId().equals(textField.getText())){
                                 isFound = true;
+                                arrayList.remove(i);
                             }
                         }
                         if (isFound) {
@@ -717,6 +944,7 @@ public class MedicalTreatmentApproval {
 
         stackPane.getChildren().add(gridPane1);
         personApprovalChangePane = stackPane;
+        System.out.println(personApprovalChangePane);
 
         button.setOnMouseClicked(ee -> {
             ArrayList<personVisitApprovalInfo> arrayList = person.getPersonVisitApprovalInfoLs();
@@ -834,6 +1062,9 @@ public class MedicalTreatmentApproval {
                 personApprovalChangePane = stackPane1;
 
 
+                successId = 5;
+                isChanged.set(!(isChanged.get()));
+
                 btn.setOnMouseClicked(exx -> {
                     String approvalId = tf1.getText();
                     String personId = tf2.getText();
@@ -849,11 +1080,18 @@ public class MedicalTreatmentApproval {
                                     endTime, fixedHospitalId, approvalPerson,
                                     approvalSuggestion, approvalTime);
 
+
                     ArrayList<personVisitApprovalInfo> arrayList1 = person.getPersonVisitApprovalInfoLs();
-                    arrayList1.add(personVisitApprovalInfo1);
+
+                    for (int i = 0; i < arrayList1.size(); i++) {
+                        if (personId.equals(arrayList1.get(i).getPersonId())) {
+                            arrayList1.set(i, personVisitApprovalInfo1);
+                        }
+                    }
+
                     person.setPersonVisitApprovalInfoLs(arrayList1);
 
-                    successId = 3;
+                    successId = 4;
                     isChanged.set(!(isChanged.get()));
                 });
 
@@ -863,7 +1101,7 @@ public class MedicalTreatmentApproval {
     }
 
     public void layoutspecialSpectionAddPane() {
-        personApprovalAddPaneId = 0;
+        specialSpectionAddPaneId = 0;
         StackPane stackPane = new StackPane();
         stackPane.setId("sp");
         stackPane.prefWidthProperty().bind(widthProperty.divide(1.25));
@@ -908,12 +1146,12 @@ public class MedicalTreatmentApproval {
         Label lb6 = new Label("审批人:");
         Label lb7 = new Label("审批意见:");
         Label lb8 = new Label("审批时间:");
-        Label lb9 = new Label("开始年:");
-        Label lb10 = new Label("开始月:");
-        Label lb11 = new Label("开始日:");
-        Label lb12 = new Label("结束年:");
-        Label lb13 = new Label("结束月:");
-        Label lb14 = new Label("结束日:");
+        Label lb9 = new Label("年:");
+        Label lb10 = new Label("月:");
+        Label lb11 = new Label("日:");
+        Label lb12 = new Label("年:");
+        Label lb13 = new Label("月:");
+        Label lb14 = new Label("日:");
 
         Button btn = new Button("确认提交本特申特批信息");
 
@@ -1017,6 +1255,7 @@ public class MedicalTreatmentApproval {
                         for (int i = 0; i < arrayList.size(); i++) {
                             if (arrayList.get(i).getApprovalId().equals(textField.getText())){
                                 isFound = true;
+                                arrayList.remove(i);
                             }
                         }
                         if (isFound) {
@@ -1070,6 +1309,7 @@ public class MedicalTreatmentApproval {
                     specialSpectionApproval = arrayList.get(i);
                 }
             }
+
 
             if (specialSpectionApproval == null) {
                 NotFoundWindow notFoundWindow = new NotFoundWindow();
@@ -1176,6 +1416,8 @@ public class MedicalTreatmentApproval {
 
                 specialSpectionChangePane = stackPane1;
 
+                successId = 6;
+                isChanged.set(!(isChanged.get()));
 
                 btn.setOnMouseClicked(exx -> {
                     String approvalId = tf1.getText();
@@ -1193,10 +1435,16 @@ public class MedicalTreatmentApproval {
                                     approvalSuggestion, approvalTime);
 
                     ArrayList<specialSpectionApproval> arrayList1 = person.getSpecialSpectionApprovaLs();
-                    arrayList1.add(specialSpectionApproval1);
+
+                    for (int i = 0; i < arrayList1.size(); i++) {
+                        if (specialSpectionApproval1.getPersonId().equals(arrayList1.get(i).getPersonId())) {
+                            arrayList1.set(i, specialSpectionApproval1);
+                        }
+                    }
+
                     person.setSpecialSpectionApprovaLs(arrayList1);
 
-                    successId = 3;
+                    successId = 4;
                     isChanged.set(!(isChanged.get()));
                 });
 
@@ -1209,26 +1457,40 @@ public class MedicalTreatmentApproval {
         successId = 0;
 
         File file = new File("src/files/person.dat");
-        LinkedList<Object> linkedList = new LinkedList<>();
-        try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file, false))) {
-            try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file)))
-            {
-                linkedList = (LinkedList<Object>)ois.readObject();
-            }
-            catch (Exception ex) {
-                System.out.println(ex);
-                System.out.println("Exception when reading file!");
-            }
 
+        LinkedList<Object> linkedList = new LinkedList<>();
+
+        try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))){
+            linkedList = (LinkedList<Object>)ois.readObject();
+        }
+        catch (Exception ex) {
+            if (ex instanceof EOFException) {
+                linkedList = new LinkedList<>();
+            }
+            else {
+                System.out.println(ex);
+                System.out.println("Exception when reading information!");
+                System.out.println(ex.getStackTrace());
+            }
+        }
+
+        try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file, false))){
             linkedList.add(person);
             oos.writeObject(linkedList);
         }
         catch (Exception ex) {
             System.out.println(ex);
-            System.out.println("Exception when writing file!");
+            System.out.println("Exception when writing information!");
+            System.out.println(ex.getStackTrace());
         }
 
-        person = null;
+
+        if ((num != 5) && (num != 6)) {
+            person = null;
+        }
+
+
+
 
 
         StackPane stackPane = new StackPane();
@@ -1259,6 +1521,14 @@ public class MedicalTreatmentApproval {
         stackPane.getChildren().add(hBox);
 
         successPane = stackPane;
+
+        if (num == 5) {
+            successPane = personApprovalChangePane;
+        }
+
+        if (num == 6) {
+            successPane = specialSpectionChangePane;
+        }
     }
 
 
@@ -1521,5 +1791,37 @@ public class MedicalTreatmentApproval {
 
     public void setPerson(Person person) {
         this.person = person;
+    }
+
+    public Pane getShowPersonApprovalPane() {
+        return showPersonApprovalPane;
+    }
+
+    public void setShowPersonApprovalPane(Pane showPersonApprovalPane) {
+        this.showPersonApprovalPane = showPersonApprovalPane;
+    }
+
+    public Pane getShowSpecialApprovalPane() {
+        return showSpecialApprovalPane;
+    }
+
+    public void setShowSpecialApprovalPane(Pane showSpecialApprovalPane) {
+        this.showSpecialApprovalPane = showSpecialApprovalPane;
+    }
+
+    public int getShowPersonApprovalId() {
+        return showPersonApprovalId;
+    }
+
+    public void setShowPersonApprovalId(int showPersonApprovalId) {
+        this.showPersonApprovalId = showPersonApprovalId;
+    }
+
+    public int getShowSpecialApprovalId() {
+        return showSpecialApprovalId;
+    }
+
+    public void setShowSpecialApprovalId(int showSpecialApprovalId) {
+        this.showSpecialApprovalId = showSpecialApprovalId;
     }
 }
