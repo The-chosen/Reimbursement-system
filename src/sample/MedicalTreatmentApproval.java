@@ -1,5 +1,11 @@
 package sample;
 
+/*
+ * 该类负责医疗待遇审批信息录入界面的布局和相关信息的录入
+ * author: 杨越
+ * version: v1
+ * */
+
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
 import javafx.beans.property.BooleanProperty;
@@ -10,6 +16,7 @@ import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
+import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -59,6 +66,10 @@ public class MedicalTreatmentApproval {
     private ReadOnlyDoubleProperty widthProperty;
     private ReadOnlyDoubleProperty heightProperty;
 
+
+    /*
+    * 构造器
+    * */
     public MedicalTreatmentApproval(ReadOnlyDoubleProperty widthProperty, ReadOnlyDoubleProperty heightProperty) {
         serchIdPane = new Pane();
         personApprovalHasPane = new Pane();
@@ -100,6 +111,11 @@ public class MedicalTreatmentApproval {
         isChanged.set(false);
     }
 
+    /*
+     * 初始搜索界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutSerchIdPane(int num) {
         StackPane stackPane = new StackPane();
         stackPane.setId("sp");
@@ -112,15 +128,36 @@ public class MedicalTreatmentApproval {
         gridPane1.setAlignment(Pos.CENTER);
 
         Label label = new Label("请输入个人编号:");
+        label.setFont(new Font(20));
         TextField textField = new TextField();
         Button button = new Button("查找");
-        button.setAlignment(Pos.CENTER_RIGHT);
+
+
+        textField.setMinHeight(20);
+        button.setAlignment(Pos.CENTER);
+        button.setMinWidth(270);
+        button.setMinHeight(35);
+        button.setOnMouseEntered(e -> {
+            button.setStyle("-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );");
+        });
+        button.setOnMouseExited(e -> {
+            button.setStyle("-fx-effect: null");
+        });
+        StackPane sp = new StackPane();
+        sp.getChildren().add(button);
+
+
         gridPane1.add(label, 0, 0);
         gridPane1.add(textField, 1, 0);
-        gridPane1.add(button, 1, 1);
+        gridPane1.add(sp, 0, 1, 2, 1);
+
+        gridPane1.setVgap(50);
+        gridPane1.setHgap(12);
+        textField.setMinWidth(300);
 
         stackPane.getChildren().add(gridPane1);
         serchIdPane = stackPane;
+
 
 
         button.setOnMouseClicked(e -> {
@@ -174,6 +211,11 @@ public class MedicalTreatmentApproval {
 
     }
 
+    /*
+     * 参保人信息显示的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutpersonApprovalHasPane() {
         personApprovalHasPaneId = 0;
         Label lb1 = new Label("参保人ID:");
@@ -236,11 +278,24 @@ public class MedicalTreatmentApproval {
         gridPane2.add(t9, 1, 5);
 
         Button btn = new Button("查询人员就诊机构审批信息");
-        gridPane2.add(btn, 1, 6, 2,1 );
-        gridPane2.setVgap(15);
-        gridPane2.setHgap(15);
+        btn.setMinWidth(200);
+        btn.setAlignment(Pos.CENTER);
+        StackPane sp1 = new StackPane();
+        sp1.getChildren().add(btn);
 
-        personApprovalHasPane = gridPane2;
+        gridPane2.add(sp1, 0, 6, 4,1 );
+
+        StackPane sp = new StackPane();
+
+        sp.prefWidthProperty().bind(widthProperty.divide(1.25));
+        sp.getChildren().add(gridPane2);
+        sp.setId("sp");
+        gridPane2.setAlignment(Pos.CENTER);
+        gridPane2.setPadding(new Insets(20, 0, 20, 20));
+        gridPane2.setHgap(50);
+        gridPane2.setVgap(10);
+
+        personApprovalHasPane = sp;
 
         btn.setOnMouseClicked(e -> {
             if (person.getPersonVisitApprovalInfoLs().size() != 0){
@@ -256,6 +311,11 @@ public class MedicalTreatmentApproval {
 
     }
 
+    /*
+     * 参保人信息显示的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutspecialSpectionHasPane() {
         specialSpectionHasPaneId = 0;
         Label lb1 = new Label("参保人ID:");
@@ -318,11 +378,24 @@ public class MedicalTreatmentApproval {
         gridPane2.add(t9, 1, 5);
 
         Button btn = new Button("查询特申特批审批信息");
-        gridPane2.add(btn, 1, 6, 2,1 );
-        gridPane2.setVgap(15);
-        gridPane2.setHgap(15);
+        btn.setMinWidth(200);
+        btn.setAlignment(Pos.CENTER);
+        StackPane sp1 = new StackPane();
+        sp1.getChildren().add(btn);
 
-        specialSpectionHasPane = gridPane2;
+        gridPane2.add(sp1, 0, 6, 4,1 );
+
+        StackPane sp = new StackPane();
+        sp.getChildren().add(gridPane2);
+        sp.setId("sp");
+        sp.prefWidthProperty().bind(widthProperty.divide(1.25));
+        gridPane2.setAlignment(Pos.CENTER);
+        gridPane2.setPadding(new Insets(20, 0, 20, 20));
+        gridPane2.setHgap(50);
+        gridPane2.setVgap(10);
+
+        specialSpectionHasPane = sp;
+
         btn.setOnMouseClicked(e -> {
             if (person.getSpecialSpectionApprovaLs().size() != 0) {
                 showSpecialApprovalId = 1;
@@ -335,6 +408,11 @@ public class MedicalTreatmentApproval {
         });
     }
 
+    /*
+     * 人员就诊审批信息显示的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutShowPersonApprovalPane() {
         showPersonApprovalId = 0;
         int number = person.getPersonVisitApprovalInfoLs().size();
@@ -412,8 +490,16 @@ public class MedicalTreatmentApproval {
 
         Button button = new Button("进入维护界面");
         vBox.getChildren().add(button);
+        GridPane gridPane = new GridPane();
 
-        showPersonApprovalPane = vBox;
+        gridPane.getChildren().add(vBox);
+        gridPane.setAlignment(Pos.CENTER);
+        StackPane sp = new StackPane();
+        sp.prefWidthProperty().bind(widthProperty.divide(1.25));
+        sp.setId("sp");
+        sp.getChildren().add(gridPane);
+
+        showPersonApprovalPane = sp;
 //        showPersonApprovalId = 1;
 //        isChanged.set(!(isChanged.get()));
 
@@ -423,6 +509,11 @@ public class MedicalTreatmentApproval {
         });
     }
 
+    /*
+     * 特检特治信息显示的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutShowSpecialApprovalPane() {
         showSpecialApprovalId = 0;
         int number = person.getSpecialSpectionApprovaLs().size();
@@ -501,7 +592,14 @@ public class MedicalTreatmentApproval {
         Button button = new Button("进入维护界面");
         vBox.getChildren().add(button);
 
-        showSpecialApprovalPane = vBox;
+        StackPane sp = new StackPane();
+        GridPane gridPane = new GridPane();
+        gridPane.setAlignment(Pos.CENTER);
+        gridPane.getChildren().add(vBox);
+        sp.prefWidthProperty().bind(widthProperty.divide(1.25));
+        sp.setId("sp");
+
+        showSpecialApprovalPane = sp;
 //        showSpecialApprovalId = 1;
 //        isChanged.set(!(isChanged.get()));
 
@@ -511,6 +609,11 @@ public class MedicalTreatmentApproval {
         });
     }
 
+    /*
+     * 人员就诊审批信息选择的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutPersonApprovalChoosePane() {
         chooseAPaneId = 0;
         StackPane stackPane = new StackPane();
@@ -584,6 +687,11 @@ public class MedicalTreatmentApproval {
 
     }
 
+    /*
+     * 特申特批审批信息选择的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutSpecialSpectionChoosePane() {
         chooseSPaneId = 0;
         StackPane stackPane = new StackPane();
@@ -657,6 +765,11 @@ public class MedicalTreatmentApproval {
 
     }
 
+    /*
+     * 无就诊医院审核信息的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutpersonApprovalNotPane() {
         personApprovalNotPaneId = 0;
         StackPane stackPane = new StackPane();
@@ -688,9 +801,14 @@ public class MedicalTreatmentApproval {
         hBox1.setAlignment(Pos.TOP_LEFT);
 
         VBox vBox = new VBox();
-        vBox.getChildren().addAll(hBox1, hBox);
+        vBox.getChildren().addAll(hBox, hBox1);
+        GridPane gridPane = new GridPane();
+        gridPane.getChildren().add(vBox);
 
-        stackPane.getChildren().add(vBox);
+        gridPane.setAlignment(Pos.CENTER);
+        stackPane.getChildren().add(gridPane);
+        stackPane.prefWidthProperty().bind(widthProperty.divide(1.25));
+        stackPane.setId("sp");
         personApprovalNotPane = stackPane;
 
         hBox1.setOnMouseClicked(e -> {
@@ -699,6 +817,11 @@ public class MedicalTreatmentApproval {
         });
     }
 
+    /*
+     * 无特申特批审核信息的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutspecialSpectionNotPane() {
         specialSpectionNotPaneId = 0;
         StackPane stackPane = new StackPane();
@@ -730,9 +853,15 @@ public class MedicalTreatmentApproval {
         hBox1.setAlignment(Pos.TOP_LEFT);
 
         VBox vBox = new VBox();
-        vBox.getChildren().addAll(hBox1, hBox);
+        vBox.getChildren().addAll(hBox, hBox1);
 
-        stackPane.getChildren().add(vBox);
+        GridPane gridPane = new GridPane();
+        gridPane.getChildren().add(vBox);
+
+        gridPane.setAlignment(Pos.CENTER);
+        stackPane.getChildren().add(gridPane);
+        stackPane.prefWidthProperty().bind(widthProperty.divide(1.25));
+        stackPane.setId("sp");
         personApprovalNotPane = stackPane;
 
         hBox1.setOnMouseClicked(e -> {
@@ -743,6 +872,11 @@ public class MedicalTreatmentApproval {
         specialSpectionNotPane = stackPane;
     }
 
+    /*
+     * 人员就诊审批信息的添加布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutpersonApprovalAddPane(){
         personApprovalAddPaneId = 0;
         StackPane stackPane = new StackPane();
@@ -866,6 +1000,11 @@ public class MedicalTreatmentApproval {
 
     }
 
+    /*
+     * 人员就诊审批信息的删除布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutpersonApprovalDeletePane() {
         personApprovalDeletePaneId = 0;
         StackPane stackPane = new StackPane();
@@ -922,6 +1061,11 @@ public class MedicalTreatmentApproval {
         });
     }
 
+    /*
+     * 人员就诊审批信息的修改布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutpersonApprovalChangePane() {
         personApprovalChangePaneId = 0;
         StackPane stackPane = new StackPane();
@@ -1100,6 +1244,11 @@ public class MedicalTreatmentApproval {
         });
     }
 
+    /*
+     * 特申特批审批信息的添加布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutspecialSpectionAddPane() {
         specialSpectionAddPaneId = 0;
         StackPane stackPane = new StackPane();
@@ -1222,6 +1371,11 @@ public class MedicalTreatmentApproval {
         });
     }
 
+    /*
+     * 特申特批审批信息的删除布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutspecialSpectionDeletePane() {
         specialSpectionDeletePaneId = 0;
         StackPane stackPane = new StackPane();
@@ -1278,6 +1432,11 @@ public class MedicalTreatmentApproval {
         });
     }
 
+    /*
+     * 特申特批审批信息的修改布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutspecialSpectionChangePane() {
         specialSpectionChangePaneId = 0;
         StackPane stackPane = new StackPane();
@@ -1453,6 +1612,11 @@ public class MedicalTreatmentApproval {
         });
     }
 
+    /*
+     * 成功完成医疗待遇审批界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutSuccessfulPane(int num) {
         successId = 0;
 

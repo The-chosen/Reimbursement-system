@@ -1,8 +1,15 @@
 package sample;
 
+/*
+ * 该类主要负责医疗计算参数的描述
+ * @author: 杨越
+ * @version: v1
+ * */
+
 import java.io.Serializable;
 
 public class MedicalTreatmentCalculationParameter implements Serializable{
+    private static final long serialVersionUID = 8504896965939479380L;
     private String parameterId;
     private String medicalPeopleCategory;
     private String medicalCategory;
@@ -15,6 +22,10 @@ public class MedicalTreatmentCalculationParameter implements Serializable{
     public MedicalTreatmentCalculationParameter() {
 
     }
+
+    /*
+    * 构造器
+    * */
 
     public MedicalTreatmentCalculationParameter(String parameterId, String medicalPeopleCategory, String medicalCategory,
                                                 double thresholdPrice, double cappingLine, double upperLine,

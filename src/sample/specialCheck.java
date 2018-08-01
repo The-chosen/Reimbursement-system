@@ -1,5 +1,11 @@
 package sample;
 
+/*
+ * 该类主要负责参保人的描述
+ * @author: 杨越
+ * @version: v1
+ * */
+
 public class specialCheck {
     private String approveID;
     private String medicineId;

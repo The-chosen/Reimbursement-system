@@ -1,8 +1,16 @@
 package sample;
 
+/*
+ * 该类主要负责人员就诊审批信息的描述
+ * @author: 杨越
+ * @version: v1
+ * */
+
+
 import java.io.Serializable;
 
 public class personVisitApprovalInfo implements Serializable{
+    private static final long serialVersionUID = 8504896965939479380L;
     private String approvalId;
     private String personId;
     private time beginTime;
@@ -11,6 +19,10 @@ public class personVisitApprovalInfo implements Serializable{
     private String approvalPerson;
     private String approvalSuggestion;
     private String approvalTime;
+
+    /*
+    * 构造器
+    * */
 
     public personVisitApprovalInfo(String approvalId, String personId, time beginTime,
                                    time endTime, String fixedHospitalId, String approvalPerson,

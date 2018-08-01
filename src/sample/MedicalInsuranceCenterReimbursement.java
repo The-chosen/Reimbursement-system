@@ -1,5 +1,12 @@
 package sample;
 
+
+/*
+ * 该类负责医保中心报销信息录入界面的布局和相关信息的录入
+ * author: 杨越
+ * version: v1
+ * */
+
 import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
 import com.sun.org.apache.bcel.internal.generic.LADD;
 import javafx.beans.property.BooleanProperty;
@@ -10,6 +17,7 @@ import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
+import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -23,7 +31,6 @@ public class MedicalInsuranceCenterReimbursement {
     private ReadOnlyDoubleProperty widthProperty;
     private ReadOnlyDoubleProperty heightProperty;
 
-//    记得变回去
     private Person person;
     private visitInfo visitInfo;
     private int isEnteredOutpatientNumber = 0;
@@ -55,6 +62,10 @@ public class MedicalInsuranceCenterReimbursement {
     private int showCalculationPaneId;
     private int choosePaneId;
 
+
+    /*
+    * 构造器
+    * */
     public MedicalInsuranceCenterReimbursement(ReadOnlyDoubleProperty widthProperty, ReadOnlyDoubleProperty heightProperty) {
         this.widthProperty = widthProperty;
         this.heightProperty = heightProperty;
@@ -73,6 +84,11 @@ public class MedicalInsuranceCenterReimbursement {
         showCalculationPaneId = 0;
     }
 
+    /*
+     * 初始搜索界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutinitialPane() {
         StackPane stackPane = new StackPane();
         stackPane.setId("sp");
@@ -85,16 +101,35 @@ public class MedicalInsuranceCenterReimbursement {
         gridPane1.setAlignment(Pos.CENTER);
 
         Label label = new Label("请输入个人编号:");
+        label.setFont(new Font(20));
         TextField textField = new TextField();
         Button button = new Button("查找");
-        button.setAlignment(Pos.CENTER_RIGHT);
+
+
+        textField.setMinHeight(20);
+        button.setAlignment(Pos.CENTER);
+        button.setMinWidth(270);
+        button.setMinHeight(35);
+        button.setOnMouseEntered(e -> {
+            button.setStyle("-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );");
+        });
+        button.setOnMouseExited(e -> {
+            button.setStyle("-fx-effect: null");
+        });
+        StackPane sp = new StackPane();
+        sp.getChildren().add(button);
+
+
         gridPane1.add(label, 0, 0);
         gridPane1.add(textField, 1, 0);
-        gridPane1.add(button, 1, 1);
+        gridPane1.add(sp, 0, 1, 2, 1);
+
+        gridPane1.setVgap(50);
+        gridPane1.setHgap(12);
+        textField.setMinWidth(300);
 
         stackPane.getChildren().add(gridPane1);
         initialPane = stackPane;
-
 
         button.setOnMouseClicked(e -> {
             File file = new File("src/files/person.dat");
@@ -141,6 +176,11 @@ public class MedicalInsuranceCenterReimbursement {
 
     }
 
+    /*
+     * 显示个人信息的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutshowPersonInfoPane() {
         showPersonInfoPaneId = 0;
         Label lb1 = new Label("参保人ID:");
@@ -203,11 +243,28 @@ public class MedicalInsuranceCenterReimbursement {
         gridPane2.add(t9, 1, 5);
 
         Button btn = new Button("录入参保人员就诊信息");
-        gridPane2.add(btn, 1, 6, 2,1 );
+        btn.setMinWidth(200);
+        btn.setAlignment(Pos.CENTER);
+        StackPane sp = new StackPane();
+        sp.getChildren().add(btn);
+        gridPane2.add(sp, 0, 6, 4,1 );
         gridPane2.setVgap(15);
         gridPane2.setHgap(15);
 
-        showPersonInfoPane = gridPane2;
+        StackPane stackPane = new StackPane();
+        stackPane.setId("sp");
+        stackPane.prefWidthProperty().bind(widthProperty.divide(1.25));
+        stackPane.getChildren().add(gridPane2);
+        gridPane2.setAlignment(Pos.CENTER);
+        gridPane2.setPadding(new Insets(20, 0, 20, 20));
+        gridPane2.setHgap(50);
+        gridPane2.setVgap(10);
+
+
+        showPersonInfoPane = stackPane;
+
+
+
 
         btn.setOnMouseClicked(e -> {
             enterVisitInfoPaneId = 1;
@@ -215,6 +272,11 @@ public class MedicalInsuranceCenterReimbursement {
         });
     }
 
+    /*
+     * 就诊信息录入界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutenterVisitInfoPane() {
         enterVisitInfoPaneId = 0;
         StackPane stackPane = new StackPane();
@@ -338,6 +400,11 @@ public class MedicalInsuranceCenterReimbursement {
 
     }
 
+    /*
+     * 处方明细中药物信息录入界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutenterMedicineDetailPane() {
         enterMedicineDetailPaneId = 0;
         StackPane stackPane = new StackPane();
@@ -540,6 +607,11 @@ public class MedicalInsuranceCenterReimbursement {
         });
     }
 
+    /*
+     * 处方明细中诊疗信息录入界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutenterTreatmentDetailPane() {
         enterTreatmentDetailPaneId = 0;
         StackPane stackPane = new StackPane();
@@ -657,6 +729,11 @@ public class MedicalInsuranceCenterReimbursement {
         });
     }
 
+    /*
+     * 处方明细中医疗项目信息录入界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutenterServiceFacilityDetailPane() {
         enterServiceFacilityDetailPaneId = 0;
         StackPane stackPane = new StackPane();
@@ -735,10 +812,15 @@ public class MedicalInsuranceCenterReimbursement {
     }
 
 
-
+    /*
+     * 处方信息录入的选择界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutchoosePane() {
         choosePaneId = 0;
         VBox vBox = new VBox();
+        vBox.setPadding(new Insets(20, 0, 20, 0));
 
         HBox hBox = new HBox();
         Label label = new Label("门诊号");
@@ -750,12 +832,24 @@ public class MedicalInsuranceCenterReimbursement {
         Button btn3 = new Button("医疗项目信息录入");
         Button btn4 = new Button("校验审批信息");
 
+        StackPane sp = new StackPane();
+        GridPane gridPane = new GridPane();
+        gridPane.setAlignment(Pos.CENTER);
+        sp.setId("sp");
+        sp.prefWidthProperty().bind(widthProperty.divide(1.25));
+
+
+
         if (isEnteredOutpatientNumber == 1) {
             vBox.getChildren().addAll(btn1, btn2, btn3, btn4);
+            gridPane.add(vBox, 0, 0);
+            sp.getChildren().add(gridPane);
             choosePane = vBox;
         }
         else {
             vBox.getChildren().addAll(hBox, btn1, btn2, btn3, btn4);
+            gridPane.add(vBox, 0, 0);
+            sp.getChildren().add(gridPane);
             choosePane = vBox;
         }
 
@@ -846,6 +940,11 @@ public class MedicalInsuranceCenterReimbursement {
         isEnteredOutpatientNumber = 1;
     }
 
+    /*
+     * 审核未通过的界面布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutnotApprovedPane(int num) {
         notApprovedPaneId = 0;
 //        不同医院审批未通过
@@ -899,6 +998,11 @@ public class MedicalInsuranceCenterReimbursement {
         isEnteredOutpatientNumber = 0;
     }
 
+    /*
+     * 显示结算结果的界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutshowCalculationPane() {
         showCalculationPaneId = 0;
         int preparePrice = 0;
@@ -991,6 +1095,11 @@ public class MedicalInsuranceCenterReimbursement {
             gridPane.add(t6, 1, 5);
             gridPane.add(t7, 1, 6);
 
+
+            gridPane.setPadding(new Insets(20, 0, 20, 20));
+            gridPane.setHgap(50);
+            gridPane.setVgap(10);
+
             vBox1.getChildren().add(gridPane);
         }
 
@@ -1055,6 +1164,10 @@ public class MedicalInsuranceCenterReimbursement {
 
 
 
+            gridPane.setPadding(new Insets(20, 0, 20, 20));
+            gridPane.setHgap(50);
+            gridPane.setVgap(10);
+
             vBox2.getChildren().add(gridPane);
 
         }
@@ -1065,6 +1178,10 @@ public class MedicalInsuranceCenterReimbursement {
         Label lb1 = new Label("起付费用:");
         Label lb2 = new Label("封顶费用:");
         Label lb3 = new Label("最终结算费用:");
+
+        gridPane.setPadding(new Insets(20, 0, 20, 20));
+        gridPane.setHgap(50);
+        gridPane.setVgap(10);
 
 
         File file = new File("src/files/medicalTreatmentCalculationParameter.dat");
@@ -1113,8 +1230,14 @@ public class MedicalInsuranceCenterReimbursement {
 
 
         vBox.getChildren().addAll(vBox1, vBox2, gridPane);
-        vBox.setPadding(new Insets(20, 0, 10, 0));
-        stackPane.getChildren().addAll(vBox);
+        vBox.setPadding(new Insets(8, 0, 8, 0));
+        GridPane gridPane1 = new GridPane();
+        gridPane1.add(vBox, 0, 0);
+        gridPane1.setAlignment(Pos.CENTER);
+        stackPane.getChildren().addAll(gridPane1);
+        stackPane.setId("sp");
+        stackPane.prefWidthProperty().bind(widthProperty.divide(1.25));
+
         showCalculationPane = stackPane;
 
 

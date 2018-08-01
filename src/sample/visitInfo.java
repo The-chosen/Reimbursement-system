@@ -1,8 +1,13 @@
 package sample;
-
+/*
+ * 该类主要负责就诊信息的描述
+ * @author: 杨越
+ * @version: v1
+ * */
 import java.io.Serializable;
 
 public class visitInfo implements Serializable {
+    private static final long serialVersionUID = 8504896965939479380L;
     private String personId;
     private String medicalCategory;
     private String institutionId;
@@ -12,6 +17,10 @@ public class visitInfo implements Serializable {
     private String institutionLevel;
     private String dischargeReason;
     private prescriptionDetail prescriptionDetail = new prescriptionDetail();
+
+    /*
+    * 构造器
+    * */
 
     public visitInfo() {
 

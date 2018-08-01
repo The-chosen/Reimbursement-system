@@ -1,8 +1,16 @@
 package sample;
 
+/*
+ * 该类主要负责药物的描述
+ * @author: 杨越
+ * @version: v1
+ * */
+
+
 import java.io.Serializable;
 
-public class Medicine implements prescription, Serializable {
+public class Medicine implements Serializable {
+    private static final long serialVersionUID = 8504896965939479380L;
     private String medicineId;
     private String medicineNameCh;
     private String medicineNameEn;
@@ -23,6 +31,9 @@ public class Medicine implements prescription, Serializable {
     private String placeOfProduction;
     private String remark;
 
+    /*
+    * 构造器
+    * */
     public Medicine() {
 
     }

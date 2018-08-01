@@ -1,5 +1,11 @@
 package sample;
 
+/*
+ * 该类主要负责固定医疗机构的描述
+ * @author: 杨越
+ * @version: v1
+ * */
+
 import java.io.Serializable;
 
 public class FixedMedicalInstitution implements Serializable {
@@ -15,6 +21,9 @@ public class FixedMedicalInstitution implements Serializable {
     private String address;
     private String remark;
 
+    /*
+    * 构造器
+    * */
     public FixedMedicalInstitution() {
 
     }

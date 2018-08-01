@@ -1,5 +1,11 @@
 package sample;
 
+/*
+* 该类主要负责主界面的布置，并进行和子界面类的衔接
+* @author: 杨越
+* @version: v1
+* */
+
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;
@@ -48,6 +54,10 @@ public class Main extends Application {
     private MedicalTreatmentApproval medicalTreatmentApproval;
     private IntegratedQuery integratedQuery;
 
+
+    /*
+     * 构造器
+     * */
     public Main() {
         navigationPane = new Pane();
         sidebarPane = new Pane();
@@ -57,6 +67,11 @@ public class Main extends Application {
 
     }
 
+    /*
+    * 负责主页面的总布局
+    * parameter: 无
+    * return: void
+    * */
     public void layoutMainPane() {
 //        pane = new BorderPane();
 //        VBox vBox = new VBox();
@@ -75,6 +90,11 @@ public class Main extends Application {
         pane.getChildren().add(hBox);
     }
 
+    /*
+     * 负责导航栏的布局
+     * parameter: 无
+     * return: void
+     * */
     public void layoutNavigationPane() {
         HBox hBox = new HBox();
         StackPane sp1 = new StackPane();
@@ -114,6 +134,46 @@ public class Main extends Application {
         sp.getChildren().add(text);
         hBox.getChildren().addAll(sp, sp1, sp2, sp3, sp4, sp5);
 
+        sp1.setOnMouseEntered(e -> {
+            sp1.setStyle("-fx-background-color: darkcyan");
+        });
+
+        sp1.setOnMouseExited(e -> {
+            sp1.setStyle("-fx-background-color: cadetblue");
+        });
+
+        sp2.setOnMouseEntered(e -> {
+            sp2.setStyle("-fx-background-color: darkcyan");
+        });
+
+        sp2.setOnMouseExited(e -> {
+            sp2.setStyle("-fx-background-color: cadetblue");
+        });
+
+        sp3.setOnMouseEntered(e -> {
+            sp3.setStyle("-fx-background-color: darkcyan");
+        });
+
+        sp3.setOnMouseExited(e -> {
+            sp3.setStyle("-fx-background-color: cadetblue");
+        });
+
+        sp4.setOnMouseEntered(e -> {
+            sp4.setStyle("-fx-background-color: darkcyan");
+        });
+
+        sp4.setOnMouseExited(e -> {
+            sp4.setStyle("-fx-background-color: cadetblue");
+        });
+
+        sp5.setOnMouseEntered(e -> {
+            sp5.setStyle("-fx-background-color: darkcyan");
+        });
+
+        sp5.setOnMouseExited(e -> {
+            sp5.setStyle("-fx-background-color: cadetblue");
+        });
+
         sideBarProperty = widthProperty.subtract(sp1.prefWidthProperty().add(sp2.prefWidthProperty().
                         add(sp3.prefWidthProperty().add(sp4.prefWidthProperty().add(sp5.prefWidthProperty())))));
         sp.prefWidthProperty().bind(sideBarProperty);
@@ -141,6 +201,11 @@ public class Main extends Application {
 
     }
 
+    /*
+     * 负责侧边栏的布局
+     * parameter: 无
+     * return: void
+     * */
     public void layoutSidebarPane() {
         VBox vBox = new VBox();
 
@@ -181,6 +246,46 @@ public class Main extends Application {
             sp3.getChildren().add(text3);
             sp4.getChildren().add(text4);
             sp5.getChildren().add(text5);
+
+            sp1.setOnMouseEntered(e -> {
+                sp1.setStyle("-fx-background-color: cadetblue");
+            });
+
+            sp1.setOnMouseExited(e -> {
+                sp1.setStyle("-fx-background-color: darkcyan");
+            });
+
+            sp2.setOnMouseEntered(e -> {
+                sp2.setStyle("-fx-background-color: cadetblue");
+            });
+
+            sp2.setOnMouseExited(e -> {
+                sp2.setStyle("-fx-background-color: darkcyan");
+            });
+
+            sp3.setOnMouseEntered(e -> {
+                sp3.setStyle("-fx-background-color: cadetblue");
+            });
+
+            sp3.setOnMouseExited(e -> {
+                sp3.setStyle("-fx-background-color: darkcyan");
+            });
+
+            sp4.setOnMouseEntered(e -> {
+                sp4.setStyle("-fx-background-color: cadetblue");
+            });
+
+            sp4.setOnMouseExited(e -> {
+                sp4.setStyle("-fx-background-color: darkcyan");
+            });
+
+            sp5.setOnMouseEntered(e -> {
+                sp5.setStyle("-fx-background-color: cadetblue");
+            });
+
+            sp5.setOnMouseExited(e -> {
+                sp5.setStyle("-fx-background-color: darkcyan");
+            });
 
 
             vBox.getChildren().addAll(sp1, sp2, sp3, sp4, sp5, sp);
@@ -226,6 +331,14 @@ public class Main extends Application {
 
             vBox.getChildren().addAll(sp1, sp);
 
+            sp1.setOnMouseEntered(e -> {
+                sp1.setStyle("-fx-background-color: cadetblue");
+            });
+
+            sp1.setOnMouseExited(e -> {
+                sp1.setStyle("-fx-background-color: darkcyan");
+            });
+
             sp1.setOnMouseClicked(e -> {
                 currentPublicServiceTackleMode.set(1);
             });
@@ -251,6 +364,14 @@ public class Main extends Application {
 
             vBox.getChildren().addAll(sp1, sp);
 
+            sp1.setOnMouseEntered(e -> {
+                sp1.setStyle("-fx-background-color: cadetblue");
+            });
+
+            sp1.setOnMouseExited(e -> {
+                sp1.setStyle("-fx-background-color: darkcyan");
+            });
+
             sp1.setOnMouseClicked(e -> {
                 currentMedicalInsuranceCenterReimbursementMode.set(1);
             });
@@ -271,9 +392,9 @@ public class Main extends Application {
             sp.prefHeightProperty().bind(heightProperty);
             sp.prefWidthProperty().bind(widthProperty.divide(5.35));
 
-            Text text1 = new Text("特检特治");
+            Text text1 = new Text("不同医保医院");
             text1.setFont(new Font(16));
-            Text text2 = new Text("不同医保医院");
+            Text text2 = new Text("特检特治");
             text2.setFont(new Font(16));
 
 
@@ -281,6 +402,23 @@ public class Main extends Application {
             sp2.getChildren().add(text2);
 
             vBox.getChildren().addAll(sp1, sp2, sp);
+
+            sp1.setOnMouseEntered(e -> {
+                sp1.setStyle("-fx-background-color: cadetblue");
+            });
+
+            sp1.setOnMouseExited(e -> {
+                sp1.setStyle("-fx-background-color: darkcyan");
+            });
+
+            sp2.setOnMouseEntered(e -> {
+                sp2.setStyle("-fx-background-color: cadetblue");
+            });
+
+            sp2.setOnMouseExited(e -> {
+                sp2.setStyle("-fx-background-color: darkcyan");
+            });
+
 
             sp1.setOnMouseClicked(e -> {
                 currentMedicalTreatmentMode.set(1);
@@ -312,6 +450,15 @@ public class Main extends Application {
 
             vBox.getChildren().addAll(sp1, sp);
 
+            sp1.setOnMouseEntered(e -> {
+                sp1.setStyle("-fx-background-color: cadetblue");
+            });
+
+            sp1.setOnMouseExited(e -> {
+                sp1.setStyle("-fx-background-color: darkcyan");
+            });
+
+
             sp1.setOnMouseClicked(e -> {
                 currentIntegratedQueryMode.set(1);
             });
@@ -334,6 +481,11 @@ public class Main extends Application {
 
     }
 
+    /*
+     * 负责顶栏的布局
+     * parameter: 无
+     * return: void
+     * */
     public void layoutTopPane() {
         ImageView imageView = new ImageView("img/title.png");
         imageView.fitHeightProperty().bind(heightProperty.divide(9));
@@ -345,6 +497,11 @@ public class Main extends Application {
         topPane = sp;
     }
 
+    /*
+     * 负责业务面板的布局
+     * parameter: 无
+     * return: void
+     * */
     public void layoutDoPane() {
         StackPane stackPane = new StackPane();
         stackPane.setId("welcomePane");
@@ -566,7 +723,7 @@ public class Main extends Application {
 
 
         if (currentMedicalTreatmentMode.get() != 0) {
-            if (currentMedicalTreatmentMode.get() == 2) {
+            if (currentMedicalTreatmentMode.get() == 1) {
                 medicalTreatmentApproval.layoutSerchIdPane(currentMedicalTreatmentMode.get());
                 doPane = medicalTreatmentApproval.getSerchIdPane();
 
@@ -627,7 +784,7 @@ public class Main extends Application {
 
 
             }
-            else if (currentMedicalTreatmentMode.get() == 1) {
+            else if (currentMedicalTreatmentMode.get() == 2) {
                 medicalTreatmentApproval.layoutSerchIdPane(currentMedicalTreatmentMode.get());
                 doPane = medicalTreatmentApproval.getSerchIdPane();
 
@@ -726,6 +883,11 @@ public class Main extends Application {
         }
     }
 
+    /*
+     * 医疗信息子界面的监听
+     * parameter: 无
+     * return: void
+     * */
     public void listenMedicalInformation() {
         (medicalInformation.isChangedProperty()).addListener(new InvalidationListener() {
             @Override
@@ -736,6 +898,11 @@ public class Main extends Application {
         });
     }
 
+    /*
+     * 公共业务子界面的监听
+     * parameter: 无
+     * return: void
+     * */
     public void listenPublicServiceTackle() {
         (publicServiceTackle.isChangedProperty()).addListener(new InvalidationListener() {
             @Override
@@ -746,6 +913,11 @@ public class Main extends Application {
         });
     }
 
+    /*
+     * 报销中心子界面的监听
+     * parameter: 无
+     * return: void
+     * */
     public void listenMedicalInsuranceCenterReimbursement() {
         (medicalInsuranceCenterReimbursement.isChangedProperty()).addListener(new InvalidationListener() {
             @Override
@@ -756,6 +928,11 @@ public class Main extends Application {
         });
     }
 
+    /*
+     * 医疗待遇审批子界面的监听
+     * parameter: 无
+     * return: void
+     * */
     public void listenMedicalTreatmentApproval() {
         (medicalTreatmentApproval.isChangedProperty()).addListener(new InvalidationListener() {
             @Override
@@ -766,6 +943,11 @@ public class Main extends Application {
         });
     }
 
+    /*
+     * 综合查询子页面的监听
+     * parameter: 无
+     * return: void
+     * */
     public void listenIntegratedQuery() {
         (integratedQuery.isChangedProperty()).addListener(new InvalidationListener() {
             @Override
@@ -775,8 +957,6 @@ public class Main extends Application {
             }
         });
     }
-
-
 
 
 
@@ -825,6 +1005,11 @@ public class Main extends Application {
 
 
 
+    /*
+     * 负责主页面的窗口设置以及对该页面多项点击事件的处理
+     * parameter: Stage primaryStage
+     * return: void
+     * */
     @Override
     public void start(Stage primaryStage) {
         widthProperty = primaryStage.widthProperty();

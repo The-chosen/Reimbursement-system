@@ -1,8 +1,15 @@
 package sample;
 
+/*
+ * 该类主要负责诊疗的描述
+ * @author: 杨越
+ * @version: v1
+ * */
+
 import java.io.Serializable;
 
-public class Treatment implements prescription, Serializable {
+public class Treatment implements Serializable {
+    private static final long serialVersionUID = 8504896965939479380L;
     private String treatmentId;
     private String treatmentName;
     private String treatmentLevel;
@@ -10,7 +17,9 @@ public class Treatment implements prescription, Serializable {
     private boolean isLabeled;
     private String price;
     private String remark;
-
+/*
+* 构造器
+* */
     public Treatment() {
 
     }

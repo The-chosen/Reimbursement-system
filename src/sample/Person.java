@@ -1,9 +1,17 @@
 package sample;
 
+/*
+ * 该类主要负责参保人的描述
+ * @author: 杨越
+ * @version: v1
+ * */
+
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Person implements Serializable {
+    private static final long serialVersionUID = 8504896965939479380L;
     private String personId;
     private String personName;
     private String gender;
@@ -18,6 +26,9 @@ public class Person implements Serializable {
     private String designatedHospitalNumber;
     private ArrayList<personVisitApprovalInfo> personVisitApprovalInfoLs;
     private ArrayList<specialSpectionApproval> specialSpectionApprovaLs;
+    /*
+    * 构造器
+    * */
     public Person() {
 
     }

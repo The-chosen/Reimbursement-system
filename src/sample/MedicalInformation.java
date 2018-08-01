@@ -1,5 +1,11 @@
 package sample;
 
+/*
+* 该类负责医疗信息录入界面的布局和相关信息的录入
+* author: 杨越
+* version: v1
+* */
+
 import javafx.application.Application;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
@@ -34,6 +40,9 @@ public class MedicalInformation {
     private ReadOnlyDoubleProperty widthProperty;
     private ReadOnlyDoubleProperty heightProperty;
 
+    /*
+     * 构造器
+     * */
     public MedicalInformation(ReadOnlyDoubleProperty widthProperty, ReadOnlyDoubleProperty heightProperty) {
         medicinePane = new Pane();
         treatmentPane = new Pane();
@@ -50,6 +59,11 @@ public class MedicalInformation {
         isNotFound = 0;
     }
 
+    /*
+     * 初始选择界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutInitialPane() {
         StackPane stackPane = new StackPane();
         stackPane.setId("sp");
@@ -137,6 +151,11 @@ public class MedicalInformation {
 
     }
 
+    /*
+     * 药物信息录入界面的布局以及存储
+     * parameter: 无
+     * return: void
+     * */
     public void layoutMedicinePane(int num) {
         whichChoice = 0;
         if (num == 1) {
@@ -770,6 +789,11 @@ public class MedicalInformation {
         }
     }
 
+    /*
+     * 诊疗信息录入界面的布局以及存储
+     * parameter: 无
+     * return: void
+     * */
     public void layoutTreatmentPane(int num) {
         if (num == 1) {
             StackPane stackPane = new StackPane();
@@ -1170,6 +1194,11 @@ public class MedicalInformation {
         }
     }
 
+    /*
+     * 医疗项目信息录入界面的布局以及存储
+     * parameter: 无
+     * return: void
+     * */
     public void layoutServiceFacilityPane(int num) {
         if (num == 1) {
             StackPane stackPane = new StackPane();
@@ -1455,6 +1484,11 @@ public class MedicalInformation {
         }
     }
 
+    /*
+     * 定点医疗机构信息录入界面的布局以及存储
+     * parameter: 无
+     * return: void
+     * */
     public void layoutFixedMedicalInstitutionPane(int num) {
         if (num == 1) {
             StackPane stackPane = new StackPane();
@@ -1875,6 +1909,11 @@ public class MedicalInformation {
         }
     }
 
+    /*
+     * 医疗计算参数信息录入界面的布局以及存储
+     * parameter: 无
+     * return: void
+     * */
     public void layoutMedicalTreatmentCalculationParameterPane(int num) {
         if (num == 1) {
             StackPane stackPane = new StackPane();
@@ -2252,7 +2291,11 @@ public class MedicalInformation {
 
 
 
-
+    /*
+     * 药物信息录入成功后的界面布局
+     * parameter: 无
+     * return: void
+     * */
     public void layoutMedicineSuccessfulPane(int num) {
         isSuccessful = 0;
         StackPane stackPane = new StackPane();
@@ -2299,6 +2342,11 @@ public class MedicalInformation {
         }
     }
 
+    /*
+     * 诊疗信息录入成功后的界面布局
+     * parameter: 无
+     * return: void
+     * */
     public void layoutTreatmentSuccessfulPane(int num) {
         isSuccessful = 0;
         StackPane stackPane = new StackPane();
@@ -2345,6 +2393,11 @@ public class MedicalInformation {
         }
     }
 
+    /*
+     * 医疗项目信息录入成功后的界面布局
+     * parameter: 无
+     * return: void
+     * */
     public void layoutServiceFacilitySuccessfulPane(int num) {
         isSuccessful = 0;
         StackPane stackPane = new StackPane();
@@ -2391,6 +2444,11 @@ public class MedicalInformation {
         }
     }
 
+    /*
+     * 定点医疗机构信息录入成功后的界面布局
+     * parameter: 无
+     * return: void
+     * */
     public void layoutFixedMedicalInstitutionSuccessfulPane(int num) {
         isSuccessful = 0;
         StackPane stackPane = new StackPane();
@@ -2437,6 +2495,11 @@ public class MedicalInformation {
         }
     }
 
+    /*
+     * 医疗计算参数信息录入成功后的界面布局
+     * parameter: 无
+     * return: void
+     * */
     public void layoutMedicalTreatmentCalculationParameterSuccessfulPane(int num) {
         isSuccessful = 0;
         StackPane stackPane = new StackPane();
@@ -2483,6 +2546,12 @@ public class MedicalInformation {
         }
     }
 
+
+    /*
+     * 写入文件的方法
+     * parameter: File file, Object object
+     * return: void
+     * */
     public void writeFile(File file, Object obj){
         LinkedList<Object> linkedList = new LinkedList<>();
 
@@ -2511,6 +2580,11 @@ public class MedicalInformation {
         }
     }
 
+    /*
+     * 读取文件的方法
+     * parameter: File file
+     * return: LinkedList<Object>
+     * */
     public LinkedList<Object> readFile(File file) {
         LinkedList<Object> linkedList = new LinkedList<>();
         try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))){
@@ -2530,6 +2604,11 @@ public class MedicalInformation {
         return linkedList;
     }
 
+    /*
+     * 在文件中删除的方法
+     * parameter: File file, String objName, String id
+     * return: boolean
+     * */
     public boolean deleteInFile(File file, String objName,String id) {
         LinkedList<Object> linkedList = readFile(file);
         boolean found = false;
@@ -2569,6 +2648,11 @@ public class MedicalInformation {
         return found;
     }
 
+    /*
+     * 在文件搜索的方法
+     * parameter: File file, String id, String objName
+     * return: Object
+     * */
     public Object selectFromTheFile(File file, String id, String objName) {
 
         try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))){
@@ -2605,6 +2689,11 @@ public class MedicalInformation {
         return null;
     }
 
+    /*
+     * 在文件改变某对象的方法
+     * parameter: File file, String id, String objName, Object obj
+     * return: void
+     * */
     public void changeInFile(File file, String id, String objName, Object obj) {
         try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))){
             LinkedList<Object> linkedList = (LinkedList<Object>)ois.readObject();

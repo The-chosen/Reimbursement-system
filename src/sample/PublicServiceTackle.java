@@ -1,5 +1,11 @@
 package sample;
 
+/*
+ * 该类负责诊疗信息录入界面的布局和相关信息的录入
+ * author: 杨越
+ * version: v1
+ * */
+
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
 import javafx.beans.property.BooleanProperty;
@@ -39,7 +45,11 @@ public class PublicServiceTackle {
         isSuccessful = 0;
     }
 
-
+    /*
+     * 初始选择界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutInitialPane() {
         StackPane stackPane = new StackPane();
         stackPane.setId("sp");
@@ -127,6 +137,11 @@ public class PublicServiceTackle {
 
     }
 
+    /*
+     * 诊疗信息录入界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutPublicServiceTacklePane(int num) {
         whichChoice = 0;
         if (num == 1) {
@@ -601,10 +616,11 @@ public class PublicServiceTackle {
         }
     }
 
-
-
-
-
+    /*
+     * 诊疗信息录入成功界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutPublicServiceTackleSuccessfulPane(int num) {
         isSuccessful = 0;
         StackPane stackPane = new StackPane();
@@ -651,6 +667,11 @@ public class PublicServiceTackle {
         }
     }
 
+    /*
+     * 写入文件的方法
+     * parameter: File file, Object object
+     * return: void
+     * */
     public void writeFile(File file, Object obj){
         LinkedList<Object> linkedList = new LinkedList<>();
 
@@ -679,6 +700,11 @@ public class PublicServiceTackle {
         }
     }
 
+    /*
+     * 读取文件的方法
+     * parameter: File file
+     * return: LinkedList<Object>
+     * */
     public LinkedList<Object> readFile(File file) {
         LinkedList<Object> linkedList = new LinkedList<>();
         try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))){
@@ -698,6 +724,11 @@ public class PublicServiceTackle {
         return linkedList;
     }
 
+    /*
+     * 在文件中删除的方法
+     * parameter: File file, String objName, String id
+     * return: boolean
+     * */
     public boolean deleteInFile(File file, String id) {
         LinkedList<Object> linkedList = readFile(file);
         boolean found = false;
@@ -721,6 +752,12 @@ public class PublicServiceTackle {
         return found;
     }
 
+
+    /*
+     * 在文件搜索的方法
+     * parameter: File file, String id, String objName
+     * return: Object
+     * */
     public Object selectFromTheFile(File file, String id) {
         LinkedList<Object> linkedList = new LinkedList<>();
 
@@ -748,6 +785,11 @@ public class PublicServiceTackle {
         return null;
     }
 
+    /*
+     * 在文件改变某对象的方法
+     * parameter: File file, String id, String objName, Object obj
+     * return: void
+     * */
     public void changeInFile(File file, String id, Object obj) {
         try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))){
             LinkedList<Object> linkedList = (LinkedList<Object>)ois.readObject();

@@ -1,5 +1,11 @@
 package sample;
 
+/*
+ * 该类负责综合查询信息录入界面的布局和相关信息的录入
+ * author: 杨越
+ * version: v1
+ * */
+
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.ReadOnlyDoubleProperty;
@@ -47,7 +53,11 @@ public class IntegratedQuery {
         this.heightProperty = heightProperty;
     }
 
-
+    /*
+     * 初始搜索界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutInitialPane() {
         StackPane stackPane = new StackPane();
         stackPane.setId("sp");
@@ -136,7 +146,11 @@ public class IntegratedQuery {
 
     }
 
-
+    /*
+     * 人员信息显示界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutPane1() {
         isPane1 = 0;
         Label lb1 = new Label("参保人ID:");
@@ -224,6 +238,11 @@ public class IntegratedQuery {
         });
     }
 
+    /*
+     * 就诊信息显示界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutPane2() {
         isPane2 = 0;
 
@@ -314,6 +333,7 @@ public class IntegratedQuery {
             gridPane.setVgap(10);
 
             vBox.getChildren().add(gridPane);
+            vBox.setPadding(new Insets(10, 0, 5, 0));
 
             gridPane.setOnMouseClicked(e -> {
                 gridPane.setOnMouseClicked(ee -> {
@@ -337,6 +357,11 @@ public class IntegratedQuery {
 
     }
 
+    /*
+     * 处方信息显示界面的布局与点击事件处理
+     * parameter: 无
+     * return: void
+     * */
     public void layoutPane3() {
         isPane3 = 0;
 

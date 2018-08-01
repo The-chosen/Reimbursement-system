@@ -1,11 +1,21 @@
 package sample;
+/*
+ * 该类主要负责时间的描述
+ * @author: 杨越
+ * @version: v1
+ * */
 
 import java.io.Serializable;
 
 class time implements Serializable{
+    private static final long serialVersionUID = 8504896965939479380L;
     private String year;
     private String month;
     private String date;
+
+    /*
+    * 构造器
+    * */
 
     public time(String year, String month, String date) {
         this.year = year;

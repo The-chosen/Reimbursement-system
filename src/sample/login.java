@@ -1,5 +1,11 @@
 package sample;
 
+/*
+* 该类负责完成登陆界面，并需要与主界面完成衔接
+* @author:杨越
+* @version:v1
+* */
+
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.geometry.Insets;
@@ -30,6 +36,13 @@ public class login extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
+ /*
+ * 登陆窗口
+ * 该函数主要负责布局该窗口
+ * parameter:   Stage primaryStage
+ * return:  void
+ * */
 
     @Override
     public void start(Stage primaryStage) {
@@ -112,7 +125,13 @@ public class login extends Application {
         scene.getStylesheets().addAll(getClass().getResource("../css/Login.css").toExternalForm());
         primaryStage.show();
     }
-
+    /*
+    * 该方法负责检验用户输入是否正确
+    * 如果正确则进入主页面
+    * 如果不正确就显示提示
+    * parameter:    String name, String password
+    * return:
+    * */
     public boolean isRight(String name, String password){
         if (name.equals("") && password.equals("")){
             return true;
@@ -120,6 +139,12 @@ public class login extends Application {
         return false;
     }
 
+
+    /*
+    * 该方法负责布局，为了使控件居中显示
+    * parameter:    Node node
+    * return:   StackPane
+    * */
     public StackPane toChange(Node node) {
         StackPane stackPane = new StackPane();
         stackPane.getChildren().add(node);

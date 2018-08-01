@@ -10,6 +10,12 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+/*
+* 该类是显示向用户确认是否删除的弹窗
+* author: 杨越
+* version: v1
+* */
+
 class ConformInfo extends Application {
     private BooleanProperty isClicked = new SimpleBooleanProperty();
     private boolean isDeleted = true;
@@ -18,6 +24,11 @@ class ConformInfo extends Application {
         launch(args);
     }
 
+    /*
+     * 确认删除窗口的布局与点击事件处理
+     * parameter: Stage primaryStage
+     * return: void
+     * */
     @Override
     public void start(Stage primaryStage) {
         StackPane sp = new StackPane();

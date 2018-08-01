@@ -1,13 +1,25 @@
 package sample;
 
+/*
+ * 该类主要负责处方信息的描述
+ * @author: 杨越
+ * @version: v1
+ * */
+
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
 public class prescriptionDetail implements Serializable{
+    private static final long serialVersionUID = 8504896965939479380L;
     private String outpatientNumber;
     private ArrayList<Medicine> medicineLs = new ArrayList<>();
     private ArrayList<Treatment> treatmentLs = new ArrayList<>();
     private ArrayList<ServiceFacility> serviceFacilityLs = new ArrayList<>();
+
+    /*
+    * 构造器
+    * */
 
     public prescriptionDetail() {
 
